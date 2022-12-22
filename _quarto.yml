@@ -1,0 +1,27 @@
+project:
+  type: book
+  # change output-dir to "docs" to publish to gh pages
+  output-dir: docs
+
+book:
+  title: "Basic Soil Science (SOIL 2125) Lab Manual - Spring 2023"
+  author: "Nic Jelinski"
+  date: "22DEC2022"
+  cover-image: "soil-2125-03.png"
+  
+  chapters:
+    - index.qmd
+    - laboratory-1.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
