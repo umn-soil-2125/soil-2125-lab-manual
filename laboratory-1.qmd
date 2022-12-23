@@ -1,6 +1,6 @@
 # **Soil Texture, Color, and Structure**
 
-::: {.callout-note}
+::: callout-note
 ## Objectives
 
 -   Use the Bouyoucos hydrometer to determine soil particle distribution.
@@ -10,7 +10,7 @@
 -   Describe different soil structure characteristics and determine the horizon where most commonly found.
 :::
 
-::: {.callout-tip}
+::: callout-tip
 ## Key Words & Concepts
 
 -   Blah Blah
@@ -24,10 +24,11 @@ Particle size distribution has become a standard means for characterizing and cl
 
 Using the hydrometer allows us to determine soil texture by measuring the grams of the soil particles (sand, silt, and, clay) that remain suspended in the cylinder after a specific period of time. Different sized soil particles are separated by their different sedimentation rates -- e.g. larger particles will settle faster in a column of water, while smaller particles remain suspended much longer in the solution (based on Stokes Law).
 
-::: {.callout-note}
+::: callout-note
 ## Watch this video before you start Investigation A
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
 library(qrcode)
 
 hydrometer_test_video <- qrcode::qr_code("https://www.youtube.com/watch?v=78sKJKsaUvY")
@@ -38,7 +39,9 @@ plot(hydrometer_test_video)
 
 ### Preparation
 
-The two cylinders in this investigation each contain ***60*** grams of oven-dry dispersed soil -- one soil is from an E horizon and one is from a B horizon. After mixing thoroughly with a stir stick, the largest particles (sand) will quickly drop to the bottom of the cylinder. After 40 seconds, only silt and clay particles are left suspended in the water. After two hours only clay-sized particles remain.
+The two cylinders in this investigation each contain ***60*** grams of oven-dry dispersed soil -- one soil is from an E horizon and one is from a B horizon. After mixing thoroughly with a stir stick, the largest particles (sand) will quickly drop to the bottom of the cylinder. After 40 seconds, only silt and clay particles are left suspended in the water. After two hours only clay-sized particles remain. 
+
+Example of a citation @knuth84. testing inline citation [@knuth84].
 
 ### Measurements
 
@@ -72,24 +75,23 @@ $$
 
 #### *Results*
 
-| **Measurements**          | **Sample 1** | **Sample 2** |
-|---------------------------|--------------|--------------|
-| Sample mass (oven-dry)    | 60g          | 60g          |
-| 40s reading (uncorrected) | g/L          | g/L          |
-| Temperature (C)           | C            | C            |
-| 40s reading (corrected)   | g/L          | g/L          |
-| \% Sand                   | \%           | \%           |
-| 2hr reading (uncorrected) | g/L          | g/L          |
-| Temperature \@ 2hr (C)    | C            | C            |
-| 2hr reading (corrected)   | g/L          | g/L          |
-| \% Clay                   | \%           | \%           |
-| \% Silt                   | \%           | \%           |
+note just trying to cut out tables to see if that works
 
-| **Summary (copy values from above)** | **Sample 1** | **Sample 2** |
-|--------------------------------------|--------------|--------------|
-| Sand (%)                             |              |              |
-| Silt (%)                             |              |              |
-| Clay (%)                             |              |              |
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(kableExtra)
+
+Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr readng (corrected)", "% Clay", "% Silt")
+Sample1 <- c("60 g", "g/L", "g/L", "C", "%", "g/L", "C", "g/L", "%", "%")
+Sample2 <- c("60 g", "g/L", "g/L", "C", "%", "g/L", "C", "g/L", "%", "%")
+
+tab.1.1 <- data.frame(Measurements, Sample1, Sample2)
+colnames(tab.1.1) = c("Measurements", "Sample 1", "Sample 2")
+
+tab.1.1 %>%
+  kbl(caption = "Hydrometer Measurement Results", align = "lrr") %>%
+  row_spec(0, bold = TRUE) %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
 
 ## INVESTIGATION B: Using the Texture Triangle
 
@@ -102,8 +104,3 @@ A soil's textural class is determined by that soil's respective content of sand,
 ### Results
 
 Using the soil particle percent data from Investigation A determine the texture class for the soil samples 1 and 2.
-
-| **Sample** | **Sand (%)** | **Silt (%)** | **Clay (%)** | **Texture Class** |
-|------------|--------------|--------------|--------------|-------------------|
-| Sand (%)   |              |              |              |                   |
-| Silt (%)   |              |              |              |                   |

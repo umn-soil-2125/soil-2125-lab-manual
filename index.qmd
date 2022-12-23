@@ -1,8 +1,8 @@
 # Preface {.unnumbered}
 
-> ### **"Tell me an I forget, teach me and I may remember, involve me and I learn."**
+> **"Tell me an I forget, teach me and I may remember, involve me and I learn."**
 >
-> ### *- Benjamin Franklin*
+> *- Benjamin Franklin*
 
 ::: callout-note
 ## Laboratory Schedule
@@ -12,7 +12,7 @@ Note that the laboratory portion of this course is self-paced. The lab has open 
 Labs take approximately 1-2 hrs to complete. You will sign up for a timeslot of your choice. Open times: W 9:00 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM *241 Borlaug Hall*
 :::
 
-## Lab Teaching Team
+## Lab Teaching Team {#sec-team}
 
 **Teaching Support and Lab Coordinator**
 

@@ -4,11 +4,9 @@ project:
   output-dir: docs
 
 book:
-  title: "Basic Soil Science (SOIL 2125) Lab Manual - Spring 2023"
+  title: "Soil 2125 Laboratory Manual - pdf edition"
   author: "Nic Jelinski"
   date: "22DEC2022"
-  cover-image: "soil-2125-03.png"
-  
   chapters:
     - index.qmd
     - laboratory-1.qmd
@@ -21,7 +19,19 @@ format:
   html:
     theme: cosmo
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
+    classoption: [twocolumn, portrait]
+    fontfamily: libertinus
+    geometry:
+      - top=25.4mm
+      - bottom=30mm
+      - left=25.4mm
+      - right=25.4mm
+      - heightrounded
+    toc: true
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    pagestyle: headings
 
 editor: visual
-
