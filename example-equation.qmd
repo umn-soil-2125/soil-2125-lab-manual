@@ -1,0 +1,5 @@
+use this website: https://latex.codecogs.com/eqneditor/editor.php
+
+$$
+Sand (\%) = \frac{M_{sample,ovendry} - 40s reading}{M_{sample,ovendry}} x 100%
+$$

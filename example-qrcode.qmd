@@ -1,0 +1,13 @@
+::: callout-note
+## Watch this video before you start Investigation A
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://www.youtube.com/watch?v=78sKJKsaUvY")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
+

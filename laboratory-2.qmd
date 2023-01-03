@@ -62,7 +62,7 @@ note just trying to cut out tables to see if that works
 library(kableExtra)
 
 Clay <- c("Kaolinite (1:1)", "Smectite (2:1)")
-Drawing <-
+Drawing <- ("")
 
 tab.1.1 <- data.frame(Clay, Drawing)
 colnames(tab.1.1) = c("Clay", "Drawing")
