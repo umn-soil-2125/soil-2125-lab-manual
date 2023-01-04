@@ -1,0 +1,163 @@
+# **Biological Processes (2)**
+
+::: callout-note
+## Objectives
+
+-   Observation of inoculated plates.
+-   Understand concepts of redoximorphic features in soils.
+-   Understand concepts in bioturbation.
+
+:::
+
+::: callout-tip
+## Key Words & Concepts
+
+-   Redoximorphic
+-   Well-drained
+-   Depletions
+-   Aerobic
+-   Poorly-drained
+-   Bioturbation
+-   Anaerobic
+-   Concentration
+
+:::
+
+## INVESTIGATION A: Observation of Inoculated Plates
+
+The plates you inoculated with various soil materials last week are on display. Find and look at your plate and many others to see the diversity of microorganisms that have grown from your soil inoculants. Take a look at some of the plates under the microscopes provided and look at even the seemingly “empty” parts of the dish – you might be surprised at what you see growing there.
+
+**Fungi** – the most ubiquitous soil fungi are in the *Trichoderma* and *Fusarium* genera. Most soil *Fusarium* sp. are non-pathogenic, but this genus is highly diverse and responsible for many important crop diseases. Fungi are readily identifiable in culture by their filamentous growth pattern (known as hyphae), which appear as strands to the naked eye and under the microscope. In addition to these two genera, there is a huge diversity of fungi that live in soils.
+
+**Bacteria** – bacteria will form colonies (roughly spherical in shape). Actinobacteria are one of the most important groups of soil bacteria and include the *Streptomyces* genus, which are the origin of many modern antibiotics (these are also the “Geosmin” producing bacteria – the earthy smell of soil). In addition to the Actinobacteria, there is a huge diversity of bacteria that live in soils.
+
+1. Are you surprised at the amount and diversity of organisms that grew in only one week from your soil inoculants?
+
+2. Some of the plates have been completely overgrown. However, find one that wasn’t. Does it appear that anything grew from the autoclaved (sterilized) soil material?
+ 
+3. *Estimate* the total number of distinct colonies or organisms on your plate. If you were going to study soil microorganisms, does it make sense why you would need to do a soil dilution of 1,000 to 10,000 times in order to get individual countable colonies that you could work with in a lab?
+
+4. *Estimate* the total number of different organisms on your plate (that look different to the naked eye).
+
+5.	Finally, under the microscope, look at the small aggregate of air-dried soil (Soil 3) that you placed on the plate. Do see fungal hyphae growing out of it? Does it surprise you how many organisms are still alive and viable in soil that has been sitting air-dried for over 10 years?
+
+## INVESTIGATION B: Observation of Redoximorphic Features in Mini-Monoliths
+
+Observe the mini-monolith labelled “Mottles” to see redoximorphic features (one kind of mottling in soils) that are zones of iron depletion and iron concentrations. These zones are formed when the soil is saturated for a period of time (the iron oxides (Fe3+) coating the mineral grains are reduced by anaerobic bacteria which use the Fe3+ as an electron acceptor, reducing it to Fe2+, which is colorless, soluble and mobile in the soil solution). If the soil is then dried out during a drier part of the year, the iron reoxidizes into concentrations, but the zones in between the concentrations where the Fe was depleted will still appear grey because they won’t have iron oxide coatings.
+
+Therefore, because redoximorphic features only form where the soil is saturated for a significant period of time during the year, when we see them in a soil profile, they give us a record of the highest depth that the soil is saturated at throughout the year. For this reason, redoximorphic features play a large role in field determinations of septic system design as well as wetland delineation.
+
+Therefore, in general, *well-drained* (aerobic) soils will have continuous coatings of iron-oxides on all the mineral grains and will appear the typical Fe-oxide colors throughout (brown, red, orange, yellow), while *poorly drained* soils will exhibit redoximorphic features in the form of iron concentrations and depletions (mottles), or a completely grey color if iron has been reduced (solubilized) and removed by moving groundwater.
+
+1. Based on the colors you see in the *poorly drained* mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year? Tip: 1 cm on the mini-monolith = 3 cm in the actual soil it was taken from; so multiply your depth measurement on the mini-monolith x 3 to get the actual depth.
+
+## INVESTIGATION C: Observation of Redox Features in Vials
+
+Three weeks ago, you filled two vials with a orangish-colored soil material from Tennessee. You saturated the soil materials in both vials by filling the vial up with water. In one vial (your control), you did not add anything. In the second vial (your experiment), you added a teaspoon of sugar and a small pinch of inoculant from an anaerobic wetland soil. Find the vials that your discussion group made and observe the vials of other groups as well.
+
+You will also notice that your demo vial probably smells terrible. That is from the reduction of SO42- (sulfate) to H2S (hydrogen sulfide gas) and CO2 (carbon dioxide) to CH4 (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.
+
+Describe the differences you see between the vials. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Treatment <- c("Control (No sugar or inoculum", "Sugar + inoculum")
+Refridgerated <- c("", "")
+RoomTemperature <- c("", "")
+Heated <- c("", "")
+
+treatmentrefridgerated <- data.frame(Treatment, Refridgerated, RoomTemperature, Heated)
+colnames(treatmentrefridgerated) = c("Treatment", "Refridgerated", "Room Temperature", "Heated")
+
+col.num = 4
+row.num = 3 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+treatmentrefridgerated_ht <- as_hux(treatmentrefridgerated)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = treatmentrefridgerated_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:3, col= 2:4, 40) %>%
+      set_top_padding(row = 2:3, col = 2:4, 40) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+1. Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials.
+
+## INVESTIGATION D: Earthworm Activity
+
+Earthworms play a significant role in mixing the soil. Observe the differences in the three columns and, based on your observations, provide four examples of how earthworm activity changes soil properties (many of these changes are positive from a plant growth perspective, but can have other ecological effects as well. Please refer to Lecture 3.2 for assistance in answering the questions below.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Earthwormschangesoilpropertiesby <- c("1", "2", "3", "4")
+
+earthworms <- data.frame(Earthwormschangesoilpropertiesby)
+colnames(earthworms) = c("Earthworms change soil properties by:")
+
+col.num = 1
+row.num = 5 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+earthworms_ht <- as_hux(earthworms)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = earthworms_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:4, col= 1, 30) %>%
+      set_top_padding(row = 2:4, col = 1, 30) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```

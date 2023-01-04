@@ -1,0 +1,234 @@
+# **Legal Land Descriptions and Soil Survey**
+
+::: callout-note
+## Objectives
+
+-   Understand components of a soil survey.
+-   Use a legal land description to identify parcels of land.
+
+:::
+
+::: callout-tip
+## Key Words & Concepts
+
+-   Township
+-   Range
+-   Principal meridian
+-   Section
+-   Soil mapping unit
+-   Soil name
+-   Geographic information systems
+
+:::
+
+## INVESTIGATION A: Legal Land Descriptions
+
+A legal description/land description is the method of locating and describing land in relation to the public land survey system. Land is broken down into areas called townships. Townships are approximately 6 square miles and are divided into 36 sections (each section being approximately 640 acres). Townships have two designators:
+
+1.	A Township designator (T) that describes the distance and direction (north or south) from the Baseline, and
+2.	A Range designator (R) that describes the distance and direction (east or west) from the Principal Meridian.
+
+Townships highlighted (with numbers written in the center) in Figure 7 include:
+
+-   T4N, R4W
+-   T3N, R3E
+-   T1S, R2E
+-   T3S, R4W
+
+The number after the T (township) gives the number of townships N or S of the Baseline, while the number after the R (range) gives the number of townships E or W of the Principal Meridian.
+
+![Figure 7](fig-7-townships.png){#fig-township}
+
+Sections in each township are numbered consecutively beginning with number 1 in the northeast corner of the township and counting from right to left then left to right and so on, weaving back and forth through the sections of the township in a serpentine manner, and ending with number 36 in the southeast corner.
+
+Additionally, sections may be broken into any number of parcels or divisions. When you *write* a legal description, always start with the smallest division first and proceed in steps to the largest division. When you are attempting *read* a legal description to find a parcel of land, do the opposite: start with the largest division first, then proceed to the
+smallest, reversing the order in which the legal description is written.
+
+![Sections within a Township](sections-in-townships.png){#fig-sections}
+
+![One Section, Labled](one-section.png){#fig-labeled}
+
+![Sections Compared to Their Township](township-and-section.png){#fig-both}
+
+![Labeling Areas Within a Section](labeling-sections.png){#fig-practice}
+
+Practice writing legal land descriptions by describing areas A through F below. Make sure you include Township, Range, and Section designators shown by the X’s on the maps above
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Label <- c("A", "B", "C", "D", "E", "F")
+SubdivisionofSection <- c("", "", "", "", "", "")
+Section <- c("", "", "", "", "", "")
+Township <- c("", "", "", "", "", "")
+Range <- c("", "", "", "", "", "")
+Acres <- c("", "", "", "", "", "")
+
+labelsubdivision <- data.frame(Label, SubdivisionofSection, Section, Township, Range, Acres)
+colnames(labelsubdivision) = c("Label", "Subdivision of Section", "Section", "Township", "Range", "Acres")
+
+col.num = 6
+row.num = 7 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+labelsubdivision_ht <- as_hux(labelsubdivision)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = labelsubdivision_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+
+## INVESTIGATION B: Using Web Soil Survey to Make Land-use Recommendations
+
+**HYPOTHETICAL SITUATION**: The College of Food, Agricultural, and Natural Resource Sciences has received funding to build a new research, learning, and outreach center. An alumnus of SOIL 2125 has offered a quarter section of land in Sibley County, Minnesota as a possible location of a new center. The legal land description is NE1/4 of Section 10, T113N, R29W, 5th Principal Meridian. The following questions need to be answered to assess this piece of property.
+
+1. Go to Web Soil Survey: http://websoilsurvey.sc.egov.usda.gov/App/HomePage.htm
+2. Click the green button to start WSS.
+3. Under “Quick Navigation” in the menu bar on the left, click on PLSS (Section, Township, Range).
+4. Enter the information for the property given in the first paragraph, above (i.e., Minnesota, 5th Principle Meridian, Section 10, Township 113N, Range 29W), and click “View”.
+5. WSS will take you directly to that section.
+6. Define the AOI for the parcel. Remember, the property is only the NE ¼ of the section.
+7. Once the AOI is defined, click on the “Soil Map” tab to view the Soil Map.
+8. Check to ensure you have identified the right parcel by comparing it to the figures on the last page of this document.
+9. Use information from properties and interpretations under the “Soil Data Explorer” tab to fill in the table below for each map unit. Navigate to each item then click “View Rating”.
+
+#### Inventory of Soils in NE 1/4 of Section 10
+To assess the property, an inventory of soil map units was done. Now the usefulness of these soils for proposed construction and other uses and activities is needed. Double check you have the right location with this figure:
+
+![Soil Map](inventory-of-soil.png){#fig-inventory}
+
+Use the properties and interpretations from each of the map units given in Web Soil Survey to fill in the following table. The information below the heading of each column shows you where to find that piece of information in Web Soil Survey menus:
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Symbol <- c("", "86", "102B", "386", "L83A", "L84A", "L85A", "L107A", "L163A")
+SoilOrder <- c("", "Canisteo clay loam", "Clarion loam", "Okoboji mucky silty clay loam", "Webster clay loam", "Glencoe clay loam", "Nicollet clay loam", "Canisteo- Glencoe complex, depressions", "Okoboji silty clay loam, depressions")
+Suborder <- c(">Suitability & Limitations for Use >Land Classification >Soil Taxonomy Classification", "", "", "", "", "", "", "", "")
+SmallCommercialBuildings <- c(">Suitability & Limitations for Use >Building Site Development >Small Commercial Building", "", "", "", "", "", "", "", "")
+PathsandTrails <- c(">Suitability & Limitations for Use >Recreational Development >Paths and Trails", "", "", "", "", "", "", "", "")
+AtgradeSeptic <- c(">Suitability and Limitations for Use >Sanitary Facilities >Septic Tank Absorption Fields >At-Grade (MN)", "", "", "", "", "", "", "", "")
+FarmlandofStatewideImportance <- c(">Suitability and Limitations for Use >Land Classifications >Farmland Classifications", "", "", "", "", "", "", "", "")
+
+symbolsoilorder <- data.frame(Symbol, SoilOrder, Suborder, SmallCommercialBuildings, PathsandTrails, AtgradeSeptic, FarmlandofStatewideImportance)
+colnames(symbolsoilorder) = c("Symbol", "Soil Order", "Suborder", "Small Commerical Buildings", "Paths and Trails", "At-Grade Septic", "Farmland of Statewide Importance")
+
+col.num = 7
+row.num = 10 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+symbolsoilorder_ht <- as_hux(symbolsoilorder)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = symbolsoilorder_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:10, col= 1:7, 20) %>%
+      set_top_padding(row = 2:10, col = 1:7, 20) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+The College would like to construct the facilities listed in the table below. Indicate in the table on what soil map unit(s) in this piece of land you would locate each. Include the symbol and soil series for each unit as listed in the previous table. Ignore existing building locations in your choices as the College wishes to make the best possible land-use choices in each case, regardless of current development.
+
+Make suitability determinations based on the Soil Survey data alone:
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Facility <- c("PLant, Animal, and Environmental Science Building (small commercial)", "Septic system for whole unit (At-Grade Septic)", "Restored wetland (Aquic Suborders and/or Histosols", "Permanent soil pit displayed Farmland of Statewide Importance", "Nature and bike trail (Paths and Trails)")
+Mostsuitable <- c("", "", "", "", "")
+
+facilitysuitable <- data.frame(Facility, Mostsuitable)
+colnames(facilitysuitable) = c("Facility", "Most suitable soil map unit(s) and soil series names")
+
+col.num = 2
+row.num = 6 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+facilitysuitable_ht <- as_hux(facilitysuitable)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = facilitysuitable_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:6, col= 1:2, 20) %>%
+      set_top_padding(row = 2:6, col = 1:2, 20) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
