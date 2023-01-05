@@ -27,22 +27,48 @@
 Using the iPads provided, choose the iBook named SOIL 2125 Mineral Structures- Lab 2. Start on the first page, and flip through the iBook. Be sure to read the captions. Turn pages by swiping right or left on the top or bottom. The figures are fully-rotatable 3-D diagrams. You can use your finger on the screen to manipulate them. If you need assistance, ask the TA. **Please navigate with the bookmark or flip back to the very first page (Interactive 1.1) for the next person when you are done.**
 
 Answer the following questions from your observation and reading of the models in the iBook: 
+
 1. What other elements are present in the mineral structure of Feldspars that are not present in Quartz?
 
+\ 
 \ 
 \ 
 
 2.  Based on what you know about the stability of the cation-oxygen bonds in the BIG 8 (Lecture 1.5), do you think Feldspars are more or less stable (or resistant to weathering) than Quartz?
 
+\ 
+\ 
+\ 
+
 3.  In the phyllosilicates, how are the Si-tetrahedral sheets and Al-octahedral sheets linked?
+
+\ 
+\ 
+\ 
 
 4.  Why is kaolinite called a 1:1 clay mineral?
 
+\ 
+\ 
+\ 
+
 5.  Why are Micas called 2:1 clay minerals?
+
+\ 
+\ 
+\ 
 
 6.  What occupies the space between layers in Mica or Illite?
 
+\ 
+\ 
+\ 
+
 7.  Are there any other atoms besides Si in the tetrahedral sheets of a Mica or Illite? If so what element?
+
+\ 
+\ 
+\ 
 
 Note how water (WAT) and other cations (in this case Na) occupy the interlayer of the Vermiculites and Smectites. Unlike Kaolinite and Micas/Illites, Vermiculite/Smectites are shrinking and swelling (or expanding) clays because they have a weak enough negative charge that hydrated ions and water can enter the interlayer space. Smectites can expand even more than vermiculites because they have a lower negative charge so the positively charged cations that hold the layers together are few and the layers can disperse far apart.
 
@@ -100,7 +126,18 @@ tab1.1
 
 Explain why Kaolinite does not expand and Smectite does expand.
 
+\ 
+\ 
+\ 
+
 Draw a picture to aid your explanation.
+
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
 
 ## INVESTIGATION C: Clay Mineral Charges
 
@@ -109,11 +146,19 @@ Draw a picture to aid your explanation.
 3.  Pull the electrodes out and determine the charge (positive or negative) of the clay mineral in the beaker. Wires are attached to the electrodes of the battery -- black is positive and white is negative. The clay will be attracted to the opposite charge of the battery electrode (positive attracted to negative).
 4.  Clean the wires off once you are done with this investigation.
 
-*Observations:*
+**Observations**
 
 What battery electrode positive (+) or negative (-) were the clays in the slurry attracted to?
 
+\ 
+\ 
+\ 
+
 What does this tell you about the charge on those clay particles?
+
+\ 
+\ 
+\ 
 
 ## INVESTIGATION D: Clay Charge, Ion Charge, and Flocculation
 
@@ -131,7 +176,7 @@ library(dplyr)
 ################
 Slurry <- c("DI-H20", "NaCl", "AlCl3") 
 Ion <- c("None", "Na+", "Al3+")
-WaterClarity <-c("","","")
+WaterClarity <-c("", "", "")
 
 slurryion <- data.frame(Slurry, Ion, WaterClarity)
 
@@ -149,11 +194,11 @@ slurryion_ht <- as_hux(slurryion)
 tab1.1 = slurryion_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(2) %>% #this tells it how many decimals to print after any numbers
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:3, col = 1:3, value = 'center') %>%
+      set_align(row = 1:4, col = 1:3, value = 'center') %>%
       #set_valign(row = 2:3, col = 1:2, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
@@ -168,21 +213,11 @@ tab1.1 = slurryion_ht %>%
 tab1.1
 ```
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-library(kableExtra)
-
-Slurry <- c("DI-H20", "NaCl", "AlCl3") 
-Ion <- c("None", "Na+", "Al3+")
-WaterClarity <-c("","","")
-
-tab.1.1 <- data.frame(Slurry, Ion, WaterClarity)
-
-colnames(tab.1.1) = c("Slurry", "Ion", "Water Clarity")
-
-tab.1.1 %>% kbl(caption = "Observing Clay Flocculation", align = "ccc") %>% row_spec(0, bold = TRUE) %>% kable_classic(full_width = F, html_font = "Cambria")
-```
-
 **Interpret the results of Investigation D based on what you know about the charge on clays and the ionic potential of cations. What accounts for the differences observed?** Hint: Look at the lecture slides on clay mineralogy. The answer has to do with the charge on clay particles and the strength of the charge on the cation in solution.
+
+\ 
+\ 
+\ 
 
 ## INVESTIGATION E: Shrink/Swell Observation
 
@@ -192,7 +227,15 @@ tab.1.1 %>% kbl(caption = "Observing Clay Flocculation", align = "ccc") %>% row_
 
 Describe what happens to each of the clays. How much water (ml) could you add to each before there was excess water?
 
+\ 
+\ 
+\ 
+
 Explain this below using what you know about the properties of the major clay mineral groups and the difference between Kaolinites and Smectites.
+
+\ 
+\ 
+\ 
 
 ## INVESTIGATION F: Clay Soils
 
@@ -201,17 +244,54 @@ Two soils have been set out for you to look at. One is dominated by Kaolinite cl
 Note the wetted and dried samples of each and describe what you see in terms of its behavior. Describe the characteristics of each.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
-library(kableExtra)
+library(huxtable)
+library(dplyr)
 
-DominantClayMineralinSoil = c("") 
-MoistCharacteristics = c("")
-DryCharacteristics = c("")
-GeneralLocationsofSoilinUS = c("")
+################
+## BUILD TABLE
+################
 
-tab.1.1 <- data.frame(DominantClayMineralinSoil, MoistCharacteristics, DryCharacteristics, GeneralLocationsofSoilinUS) 
-colnames(tab.1.1) = c("Dominant Clay Mineral in Soil", "Moist Characteristics", "Dry Characteristics", "General Locations of Soil in US)")
+DominantClayMineralinSoil = c("", "") 
+MoistCharacteristics = c("", "")
+DryCharacteristics = c("", "")
+GeneralLocationsofSoilinUS = c("", "")
 
-tab.1.1 %>% kbl(caption = "Examples of Clay Soils", align = "ccc") %>% row_spec(0, bold = TRUE) %>% kable_classic(full_width = F, html_font = "Cambria")
+dominantmoist <- data.frame(DominantClayMineralinSoil, MoistCharacteristics, DryCharacteristics, GeneralLocationsofSoilinUS)
+colnames(dominantmoist) = c("Dominant Clay Mineral in Soil", "Moist Characteristics", "Dry Characteristics", "General Locations of Soil in US")
+
+col.num = 4
+row.num = 3 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+dominantmoist_ht <- as_hux(dominantmoist)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = dominantmoist_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:3, col= 1:4, 60) %>%
+      set_top_padding(row = 2:3, col = 1:4, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
 ```
 
 ## INVESTIGATION G: Article

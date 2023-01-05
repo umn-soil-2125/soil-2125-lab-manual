@@ -1,0 +1,664 @@
+# **Soil Texture, Color, and Structure**
+
+::: callout-note
+## Objectives
+
+-   Use the Bouyoucos hydrometer to determine soil particle distribution.
+-   Use the textural triangle to determine the soil textural class name.
+-   Use the texture by "feel" method to determine soil textural classes.
+-   Determine soil color using Munsell notation.
+-   Describe different soil structure characteristics and determine the horizon where most commonly found.
+:::
+
+::: callout-tip
+## Key Words & Concepts
+
+-   Texture
+-   Loam
+-   Silt
+-   Textural Triangle
+-   Hydrometer
+-   “Feel” method
+-   Munsell color
+-   Aggregate
+-   Iron Oxides
+-   Peds
+-   Granular
+-   Platy
+-   Angular Blocky
+-   Subangular Blocky
+-   Prismatic
+-   Single-grained
+
+:::
+
+## INVESTIGATION A: Using a Hydrometer to Determine Particle Size
+
+Particle size distribution has become a standard means for characterizing and classifying the fine earth fraction of solid soil particles, and is used to determine the soil texture class. This experiment uses a Bouyoucos hydrometer to measure the density (grams per L) of a liquid mixture ("slurry") of soil and water.
+
+Using the hydrometer allows us to determine soil texture by measuring the grams of the soil particles (sand, silt, and, clay) that remain suspended in the cylinder after a specific period of time. Different sized soil particles are separated by their different sedimentation rates -- e.g. larger particles will settle faster in a column of water, while smaller particles remain suspended much longer in the solution (based on Stokes Law).
+
+::: callout-note
+## Watch this video before you start Investigation A
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://www.youtube.com/watch?v=78sKJKsaUvY")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
+
+### Preparation
+
+The two cylinders in this investigation each contain **60** grams of oven-dry dispersed soil -- one soil is from an E horizon and one is from a B horizon. After mixing thoroughly with a stir stick, the largest particles (sand) will quickly drop to the bottom of the cylinder. After 40 seconds, only silt and clay particles are left suspended in the water. After two hours, only clay-sized particles remain. 
+
+### Measurements
+
+**40 Second Measurement**
+
+1.  Carefully use the stirring rod (approximately 18 inches long with a disk on the end) to completely disperse the soil in the cylinder. This requires that you *slowly* lower and lift the stirring rod up and down in the cylinder until **all the sediment is removed from the bottom of the cylinder.**
+
+2.  After stirring, immediately note the time to the nearest second. *Carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on page 2. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
+
+3.  After 40 seconds, read the number (at liquid level) on the hydrometer.
+
+4.  This reading must be corrected for temperature. Add 0.4 g/L for each degree above 20ºCelcius or subtract 0.4 g/L for each degree below 20ºCelcius.
+
+**2 Hour Measurement**
+
+1.  Due to time constraints, two hour readings will be provided in lab.
+
+![Hydrometer Process](hydrometer-Picture1.png){#fig-hydrometer}
+
+(Note: The soil in the diagram has (60-30)/60 x 100= 50% Sand; 10/60 x100= 17% Clay; 100-50-17=33% Silt)
+
+**Calculations**: correct readings before calculating sand, silt, and clay!
+
+$$
+Sand (\%) = \frac{M_{sample,ovendry} - 40s reading}{M_{sample,ovendry}} x 100%
+$$
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+#make tables here: https://www.tablesgenerator.com/markdown_tables
+```
+
+**Results**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr readng (corrected)", "% Clay", "% Silt")
+Sample1 <- c("60 g", "g/L", "g/L", "C", "%", "g/L", "C", "g/L", "%", "%")
+Sample2 <- c("60 g", "g/L", "g/L", "C", "%", "g/L", "C", "g/L", "%", "%")
+
+measurementsample <- data.frame(Measurements, Sample1, Sample2)
+colnames(measurementsample) = c("Measurements", "Sample 1", "Sample 2")
+
+col.num = 3
+row.num = 11 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+measurementsample_ht <- as_hux(measurementsample)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = measurementsample_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1, col = 1:col.num, value = 'center') %>%
+      set_align(row = 2:11, col = 2:3, value = 'right') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Summary <- c("% sand", "% clay", "% silt")
+Sample1 <- c("", "", "")
+Sample2 <- c("", "", "")
+
+summarysample <- data.frame(Summary, Sample1, Sample2)
+colnames(summarysample) = c("Summary", "Sample 1", "Sample 2")
+
+col.num = 3
+row.num = 4 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+summarysample_ht <- as_hux(summarysample)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = summarysample_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+## INVESTIGATION B: Using the Texture Triangle
+
+A soil's textural class is determined by that soil's respective content of sand, silt, and clay. The USDA textural triangle is used to classify the texture class of a soil. The sides of the soil textural triangle are scaled for the percentages of sand, silt, and clay (0-100%). Clay percentages are read along the lines from left to right across the triangle. Silt is read along the lines from the upper right to lower left. Sand along the lines from lower right to the upper left portion of the triangle. The intersections of the three sides on the triangle give the texture class name. For instance, if you have a soil with 20% clay, 45% silt, and 35% sand, it would fall in the "loam" textural class name.
+
+![USDA Soil Texture Triangle](texture-triangle-Picture1.png){#fig-triangle}
+
+**Results**
+
+Using the soil particle percent data from Investigation A, determine the texture class for the soil samples 1 and 2.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Sample <- c("1", "2")
+Sand <- c("", "")
+Silt <- c("", "")
+Clay <- c("", "")
+TextureClass <- c("", "")
+
+samplesand <- data.frame(Sample, Sand, Silt, Clay, TextureClass)
+colnames(samplesand) = c("Sample", "Sand %", "Silt %", "Clay %", "Texture Class")
+
+col.num = 5
+row.num = 3 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+samplesand_ht <- as_hux(samplesand)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = samplesand_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:3, col= 1:5, 20) %>%
+      set_top_padding(row = 2:3, col = 1:5, 20) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+## INVESTIGATION C: Texturing Soil with the “Feel” Method
+Determining texture by feel takes practice (professional soil scientists can texture soil by feel and determine the texture within five percent clay content!). The following table, chart provided in lab, and text will help you learn how to texture by feel.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Texture <- c("Coarse sand", "Fine sand", "Silt", "Clay")
+Feel <- c("Feels sharp, rasping, gritty, individual grains easily distinguished.","Gritty but very fine. Individual grains only just visible. Rasping sound between finger and thumb heard when placed close to the ear.", "Dry pellets will crush between the fingers, yielding a floury dust with a smooth silky feel. When wet, the silkiness persists and the cast is slightly plastic (not
+very sticky). Particles are not quite visible to the naked eye.", "Dry pellets feel very hard, and it is difficult or impossible to crush them between the finger and thumb. When moistened, it is very sticky (plastic-like consistency).")
+
+texturefeel <- data.frame(Texture, Feel)
+colnames(texturefeel) = c("Texture", "Feel")
+
+col.num = 2
+row.num = 5 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+texturefeel_ht <- as_hux(texturefeel)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = texturefeel_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+**WATCH VIDEO TUTORIAL ON IPADS!**
+
+1.	To determine the soil texture by feel, the soil must be moistened. Add a small amount of water to the soil if needed to give it a putty-like (play-doh) consistency. Not too wet - not too dry!
+
+2.	Form the soil into a ball.
+
+3.	Try to push the soil between your thumb and forefinger to make a "ribbon" ~ 2mm thick; the longer the ribbon, the more clay there is in the soil.
+
+4.	Move the soil between your thumb and forefinger to determine if the soil feels really gritty, really smooth, or somewhere in between. Sand feels gritty, silt feels smooth, clay feels sticky (allows you to form ribbons).
+
+5.	Use the provided flow chart and suggested order below to assist in calibrating yourself.
+
+**Practicing – WASH YOUR HANDS BETWEEN EVERY SAMPLE!!!!!!!**
+Use the known texture samples to practice texturing soil with the “feel” method.
+
+Here is a suggested method of practicing (Nic’s method to the madness):
+
+1.	Start with the silt loam – you should be able to make a ribbon, but < 1”
+
+2.	Move to the silty clay loam – you should notice that you can get a longer ribbon, 1-2”
+
+3.	Move to the silty clay – you should be able to get an even longer ribbon, > 2”
+
+4.	In these three samples, you kept increasing clay content while decreasing sand content.
+
+5.	Now try the loam – you should notice that it feels like there is more sand in it than in the silt loam, silty clay loam and silty clay, but it doesn’t feel really gritty. The loam texture class should feel like equal proportions of sand, silt and clay. You should be able to make a ribbon, but < 1”.
+
+6.	Move to the loamy sand. This should feel much grittier and you shouldn’t be able to make a ribbon. However, the soil should form a ball without being excessively wet.
+
+7.	Finally move to the sand. This should feel extremely gritty and you shouldn’t be able to make a ribbon. You need to get sands excessively wet in order make a ball out of them.
+
+8.	Lastly, try moving from the loam to the clay loam and finally the clay. You should feel a clay increase similar to the silt loam to silty clay loam to silty clay samples, but since these all have more sand, they should feel less smooth and more like a mixture of the particle size classes.
+
+**Note**: Check one box to choose between the characteristics (gritty, smooth, or gritty/smooth). For ribbon length, choose between short (<1"), medium (1-2"), or long (>2").
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Texture <- c("Silt Loam", "Silty Clay Loam", "Silty Clay", "Loam", "Loamy Sand", "Sand", "Clay Loam", "Clay")
+Gritty <- c("", "", "", "", "", "", "", "")
+Smooth <- c("", "", "", "", "", "", "", "")
+Equal <- c("", "", "", "", "", "", "", "")
+RibbonLength <- c("", "", "", "", "", "", "", "")
+
+texturegritty <- data.frame(Texture, Gritty, Smooth, Equal, RibbonLength)
+colnames(texturegritty) = c("Texture", "Dominated by gritty feel", "Dominated by smooth feel", "Equally gritty/smooth", "Ribbon length")
+
+col.num = 5
+row.num = 9 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+texturegritty_ht <- as_hux(texturegritty)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = texturegritty_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:9, col= 1:5, 20) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+Texture the following unknown soils and complete the table.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Texture <- c("A", "B", "C")
+Gritty <- c("", "", "")
+Smooth <- c("", "", "")
+Equal <- c("", "", "")
+RibbonLength <- c("", "", "")
+TexturalClass <- c("", "", "")
+
+texturegrittysmooth <- data.frame(Texture, Gritty, Smooth, Equal, RibbonLength, TexturalClass)
+colnames(texturegrittysmooth) = c("Texture", "Dominated by gritty feel", "Dominated by smooth feel", "Equally gritty/smooth", "Ribbon length", "Textural Class Name")
+
+col.num = 6
+row.num = 4 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+texturegrittysmooth_ht <- as_hux(texturegrittysmooth)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = texturegrittysmooth_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:4, col= 1:6, 20) %>%
+      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+## INVESTIGATION D: Soil Color
+
+A Munsell description has three parts: hue, value, and chroma. The color 10YR 4/3 has a hue of 10YR, a value of 4, and a chroma of 3. Each page of a Munsell color book is a different hue.
+Colors are arranged on each page by value and chroma. Value is the relative lightness or darkness of the color. Higher values indicate lighter soil colors. Chroma is the strength or intensity (or grayness) of the color. Higher chromas indicate more intense colors.
+
+Many soil colors in Minnesota are found on the 10YR page. Soils from the eastern and northeastern parts of Minnesota are redder and probably will be found on the 7.5YR pages. (Note: Pure red = 5R; Pure “orange” (Yellow-Red) = 5YR; Pure yellow = 5Y.)
+
+**Practicing**- Determining soil color
+
+We have provided eight soils for you to color. Answers are given for soils 1 to 4; practice with these. Soils A - D are unknowns; check your skills with these soil samples.
+
+1.	Moisten a soil sample (if already moist, do not apply more water). Apply just enough water to moisten the soil, but not so much that it glistens.
+
+2.	Look for the matching hue (page) in the Munsell book, starting with the 10YR page. Be sure to check the same chip on the pages before and after to make sure you have the right hue (page).
+
+\ \ \ \ \ \ \ \ \ \ i.e., if you think that the 10YR 4/3 chip best matches the soil sample, also check the 7.5YR 4/3 (one page redder) and 2.5Y 4/3 (one page yellower) chips to make sure you have the right hue.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Sample <- c("A", "B", "C", "D")
+Munsell <- c("", "", "", "")
+Color <- c("", "", "", "")
+
+samplemunsell <- data.frame(Sample, Munsell, Color)
+colnames(samplemunsell) = c("Sample", "Color: Munsell notation", "Color: color name from book")
+
+col.num = 3
+row.num = 5 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+samplemunsell_ht <- as_hux(samplemunsell)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = samplemunsell_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      set_top_padding(row = 2:row.num, col = 1:col.num, 12) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+## INVESTIGATION E: Soil Structure
+
+You know about soil *texture* (the proportion of sand, silt, and clay particles). Now you will look at soil *structure*, or the ways in which soil particles (sand, silt, and clay) are held together. Soil particles are bound together into aggregates (or peds) by cementing agents (things that hold the individual sand, silt and clay particles together into larger aggregates) such as microbial gums and other kinds of organic matter, iron oxides, and clay. Additionally, some structures can result from compaction or water movement (i.e., horizontal movement or freeze-thaw).
+
+In some cases, the soil is classified as having no structure (i.e. the individual grains are not cemented together in any natural way).
+
+Complete the chart using lecture notes and the structural examples provided.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Structure <- c("Granular", "Platy", "Angular Blocky", "Subangular Blocky", "Prismatic")
+Horizon <- c("A", "E", "B", "B", "B")
+Characteristics <- c("", "", "", "", "")
+Cementing <- c("", "", "", "", "")
+
+structurehorizon <- data.frame(Structure, Horizon, Characteristics, Cementing)
+colnames(structurehorizon) = c("Structure", "Common Master Horizon", "Characteristics", "Possible cementing agent or process")
+
+col.num = 4
+row.num = 6 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+structurehorizon_ht <- as_hux(structurehorizon)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = structurehorizon_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      set_top_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Structureless <- c("Single-grained (coarse particles)", "Massive (fine particles)")
+Horizon <- c("C", "C")
+Characteristics <- c("", "")
+
+structurelesshorizon <- data.frame(Structureless, Horizon, Characteristics)
+colnames(structurelesshorizon) = c("Structureless", "Common Horizon", "Characteristics")
+
+col.num = 3
+row.num = 3 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+structurelesshorizon_ht <- as_hux(structurelesshorizon)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = structurelesshorizon_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      set_top_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
+
+Identify 3 unknown structures and the Master Horizon that they most likely came from.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(huxtable)
+library(dplyr)
+
+################
+## BUILD TABLE
+################
+Sample <- c("1", "2", "3")
+Structure <- c("", "", "")
+MasterHorizon <- c("", "", "")
+
+samplestructure <- data.frame(Sample, Structure, MasterHorizon)
+colnames(samplestructure) = c("Sample", "Structure", "Probable Master Horizon")
+
+col.num = 3
+row.num = 4 #including header
+
+################
+## SET AS HUXTABLE TYPE
+################
+samplestructure_ht <- as_hux(samplestructure)
+
+################
+## SET FORMATTING
+################
+#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
+
+tab1.1 = samplestructure_ht %>% 
+      set_all_padding(4) %>% 
+      set_outer_padding(0) %>% 
+      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_bold(row = 1, col = everywhere) %>% #make header row bold
+      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
+      set_width(0.9) %>% #; 1 == full width
+      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
+      #set_col_width(c(0.3, 0.6)) %>%
+      set_latex_float(value = "h!") %>%
+      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
+      set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      set_top_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      #set_row_height(c(0.02, 0.2, 0.2)) %>%
+      set_all_borders(brdr(1, "solid", "black"))
+      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
+
+tab1.1
+```
