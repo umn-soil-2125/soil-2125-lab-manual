@@ -22,6 +22,8 @@
 
 Collect approximately 1 cup of soil from a garden or farm. Make sure to sample only to a 0-3 inch depth. **Optional**: Determine the texture of your soil sample using the ribbon method and record it.
 
+\ 
+
 ## INVESTIGATION A: Macronutrient Cycles
 
 For this investigation, we will consider N-P-K, three essential plant macronutrients. You may recognize these letters from bags of fertilizer in the hardware store or garden centers. We have gone over the Nitrogen cycle in detail as Nitrogen is ubiquitously the most limiting nutrient for plant growth. Phosphorus and Potassium undergo their own cycles which are unique processes. The following exercise will provide an opportunity to understand the characteristics and movement of these three major macronutrients.
@@ -41,7 +43,7 @@ SoilOrganicMatter <- c("", "", "")
 PlantAvailableForm <- c("", "", "")
 
 nutrientmineral <- data.frame(NutrientCycle, MineralWeathering, SoilOrganicMatter, PlantAvailableForm)
-colnames(nutrientmineral) = c("Nutrient Cycle", "Is Mineral Weathering a Factor? (Yes/No)", "Is Soil Organic Matter a Factor? (Yes/No)", "What is the PLant Available Form?")
+colnames(nutrientmineral) = c("Nutrient Cycle", "Is Mineral Weathering a Factor? (Yes/No)", "Is Soil Organic Matter a Factor? (Yes/No)", "What is the Plant Available Form?")
 
 col.num = 4
 row.num = 4 #including header
@@ -78,19 +80,62 @@ tab1.1 = nutrientmineral_ht %>%
 tab1.1
 ```
 
-1.  The plant available form of phosphorus PO43- is an anion. Yet phosphorus is not generally susceptible to leaching, unlike nitrogen. Why?
+1.  The plant available form of phosphorus PO43- is an anion, yet phosphorus is not generally susceptible to leaching, unlike nitrogen. Why?
+
+\ 
+\ 
+\ 
 
 2.  How is potassium (K) availability controlled by mineral weathering?
 
+\ 
+\ 
+\ 
+
 3.  In Minnesota, what is the best time to soil test for an accurate understanding of plant available nitrogen (N)?
+
+\ 
+\ 
+\ 
 
 ## INVESTIGATION B: Measuring Soil pH and Nitrate Levels with Test Strips
 
 Below are instructions for prepping two different set ups for soil analysis using pH and nitrate strips. **Preparing them in advance will be helpful to you as they need 10 mins before reading.** We are using test strips in the lab to provide a rapid indication of the pH and nitrate in your soil sample. However, note that for making detailed decisions regarding soil management and plant growth, you would want a more accurate, laboratory measurement of pH and nitrate.
 
-Soil pH: 1. Locate your soil (check-in with TA on duty to provide your sample to you), 50 ml tube, DI water, pH strips. 2. Fill the 50 ml tube with 10 ml of your soil. 3. Saturate the soil with DI water and fill up to the 20 mL line. This makes a 1:1 ratio of soil/water. 4. Shake vigorously for roughly 30 sec and let sit for 10 mins. 5. When ready to read, take a pH strip and dip into the tube. Try not to dip directly in the soil. 6. The pH paper will react; line it up with the color chart to what closely matches the strip. Record your result.
+**Soil pH**
 
-Nitrate: 1. Locate your soil (soil from same sample as for your pH reading), filter paper, funnel, catch receptacle, DI water, nitrate strip. 2. Fold the filter paper into a cone shape. You can do this by folding it in half and then in half once more (making it into a quarter). Open the filter up to make a cone shape and place it in a funnel. 3. Pre wet the paper by squirting DI water around it. It doesn't need to be saturated but wetting it will help the filtering go faster. 4. Put a scoop of your soil (approximately one spoonful/scoop) into the filter and add water to the top of the filter line. It is very important that no soil overflows into the catch. It will make reading your result difficult. 5. Allow to sit for \~10 mins. 6. Use the bottom square of the nitrate strip to read result. It is very important that no soil gets on the strip, as you will not be able to see the color otherwise. Dip the strip into the clear liquid, wait 30 sec and record the range.
+1. Locate your soil (check-in with TA on duty to provide your sample to you), 50 ml tube, DI water, pH strips. 
+2. Fill the 50 ml tube with 10 ml of your soil. 
+
+3. Saturate the soil with DI water and fill up to the 20 mL line. This makes a 1:1 ratio of soil/water. 
+
+4. Shake vigorously for roughly 30 sec and let sit for 10 mins. 
+
+5. When ready to read, take a pH strip and dip into the tube. Try not to dip directly in the soil. 
+
+6. The pH paper will react; line it up with the color chart to what closely matches the strip. Record your result.
+
+**Nitrate** 
+
+1. Locate your soil (soil from same sample as for your pH reading), filter paper, funnel, catch receptacle, DI water, nitrate strip. 
+
+2. Fold the filter paper into a cone shape. You can do this by folding it in half and then in half once more (making it into a quarter). Open the filter up to make a cone shape and place it in a funnel. 
+
+3. Pre wet the paper by squirting DI water around it. It doesn't need to be saturated but wetting it will help the filtering go faster. 
+
+4. Put a scoop of your soil (approximately one spoonful/scoop) into the filter and add water to the top of the filter line. It is very important that no soil overflows into the catch. It will make reading your result difficult. 
+
+5. Allow to sit for \~10 mins. 
+
+6. Use the bottom square of the nitrate strip to read result. It is very important that no soil gets on the strip, as you will not be able to see the color otherwise. Dip the strip into the clear liquid, wait 30 sec and record the range.
+
+Estimated Nitrate-Nitrogen (NO3 -- N) in lbs /acre = 
+
+Assume a bulk density of 1. Refer to the Pre-Lab Prep for depth.
+
+$$
+NO\ {3}-N\ (lbs/ac) = \frac{(ppm\ extract\ NO_{3}-N)\ *\ (depth\ of\ soil\ sampled\ in\ cm)\ *\ (bulk\ density)\ *\ 0.89}{10}
+$$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -141,13 +186,9 @@ tab1.1 = approximatepHnitrate_ht %>%
 tab1.1
 ```
 
-Estimated Nitrate-Nitrogen (NO3 -- N) in lbs /acre = Assume a bulk density of 1. Refer to the Pre-Lab Prep for depth.
-
-NO\ {3}-N\ (lbs/ac) = \frac{(ppm\ extract\ NO_{3}-N)\ *\ (depth\ of\ soil\ sampled\ in\ cm)\ *\ (bulk\ density)\ *\ 0.89}{10}
-
 ## INVESTIGATION C: Soil pH and Nutrient Availability
 
-Recall soil pH has a profound impact on plant uptake of nutrients. Soils which are too acidic and too basic will result in difficulty accessing certain nutrients for plants. Use the nutrient availability diagram to identify ideal pH ranges for each plant nutrient.
+Recall that soil pH has a profound impact on plant uptake of nutrients. Soils which are too acidic and too basic will result in difficulty accessing certain nutrients for plants. Use the nutrient availability diagram to identify ideal pH ranges for each plant nutrient.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -189,8 +230,8 @@ tab1.1 = phrangemostleast_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:6, col= 1:3, 20) %>%
-      set_top_padding(row = 2:6, col = 1:3, 20) %>%
+      set_bottom_padding(row = 2:7, col= 1:3, 20) %>%
+      set_top_padding(row = 2:7, col = 1:3, 20) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -200,9 +241,17 @@ tab1.1
 
 What are your thoughts on potential issues or nonissues with plant growth in your soil after measuring your soil’s pH?
 
+\ 
+\ 
+\ 
+
 ![Nitrogen Requirements of Vegetables](nitrogen-requirements-veg.png){#fig-nitrogen}
+
 Using your soil’s nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen? 
 
+\ 
+\ 
+\ 
 
 ## INVESTIGATION D: Liming and Base Saturation
 
@@ -210,8 +259,16 @@ In the field, quick lime or elemental sulfur is used to adjust pH to a desired r
 Before recoding the diagram provided in lab, answer the following questions.
 
 How do you think the quick lime will impact the Low B.S. sample?
- 
+
+\ 
+\ 
+\ 
+
 How will the addition of acid affect the pH in soil with High B.S.?
+
+\ 
+\ 
+\ 
 
 **Record the pH of each solution here.**
 
@@ -265,6 +322,9 @@ tab1.1
 
 Explain the impact on the pH of each soil after the different solutions were added. Did the results surprise you?
 
+\ 
+\ 
+\ 
 
 ## INVESTIGATION E: Observation of Plant Nutrient Deficiencies
 
@@ -279,7 +339,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-UnknownPlant <- c("1", "2")
+UnknownPlant <- c("1", "2", "3")
 SuspectedDeficiency <- c("", "", "")
 
 plantdeficiency <- data.frame(UnknownPlant, SuspectedDeficiency)
@@ -323,6 +383,7 @@ tab1.1
 ## INVESTIGATION F: Common Fertilizer Materials
 
 **Inorganic Fertilizers**
+
 Plant roots absorb the majority of their nutrients from the soil solution as simple, inorganic ions (charged atoms or molecules). Larger molecules can also be absorbed, but their rate of absorption is slow. Most inorganic fertilizers dissolve readily in water and are immediately available to plants for uptake. When used according to recommendations, these types of fertilizers efficiently supply the required nutrients for plant growth and are safe for the environment. However, excessive rates can injure plant roots due to high salts and potentially lead to environmental degradation. 
 
 Review the inorganic fertilizers and complete the following table.
@@ -376,6 +437,7 @@ tab1.1
 ```
 
 **Organic Fertilizers**
+
 Organic fertilizers are comprised of a diverse mixture of organic molecules and usually contain more complex chemical substances that take time to be broken down into forms usable by plants. These are usually considered slow-release type fertilizers, compared to the quick-release characteristics of most inorganic fertilizers. It is important to apply these organic fertilizers well before periods of rapid plant growth. Organic fertilizers usually have a low salt index, so larger amounts can be applied at one time without causing injury to plant roots. With organic nitrogen sources (except urea), one application can be made without having to be concerned about losing most of the nitrogen to leaching. However, even organic fertilizers applied at excessive rates can cause environmental degradation due to nitrate leaching or runoff of soluble organic compounds. The cost of organic fertilizers at garden centers on a per-pound of nutrient basis is usually higher than quick-release inorganic fertilizers. Manure, compost, and many other materials used as organic fertilizers add considerable quantities of organic matter to the soil. Organic matter can increase soil drainage, aeration, water holding capacity, and the ability of the soil to hold nutrients. The beneficial effects of organic matter on soil structure can have a greater effect on plant growth than the fertilizer value of some of these organic materials. Most organic fertilizers also provide a variety of macronutrients (besides NPK) as well as many micronutrients. 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}

@@ -41,8 +41,7 @@ demonstrate other ways to determine the bulk density of soil materials.
 
 $$
 D_{b,clod}=\frac{(weight\ of\ clod\ in\ air)\ g}{(weight\ of\ clod\ in\ air\ -\ weight\ of\ clod\ in\ water)\ g*1cm^{3}/1g}
-$$
-Bulk density is defined as mass (oven dry weight) divided by total
+$$ Bulk density is defined as mass (oven dry weight) divided by total
 volume. Measuring the mass of the clod is straightforward; measuring the
 volume is not. We can use Archimedes' Principle to measure the volume of
 any solid, regardless of its shape. Simply stated, if a 50g clod weighs
@@ -50,25 +49,30 @@ any solid, regardless of its shape. Simply stated, if a 50g clod weighs
 cm3 of water weighs 1 gram, the 30g of water is equivalent to 30 cm3 of
 water. The volume of the clod, therefore, is 30 cm3. A general
 mathematical expression for the above statement is:
-\
-volume of clod (in cm3) = [(weight of clod in air) -- (weight of clod in water)] g × 1cm3/1 g. 
-\
-This formula represents the denominator in the Db,clod
-formula above, giving the result of your calculation in units of g/cm3
-(also written as g cm-3), which is bulk density.
 
-**WATCH VIDEO TUTORIAL ON IPADS!!** 1. Take one clod from the counter, a
-small tag will be attached indicating the clod ID (take note of this
-when filling out the chart on page 2). 2. Measure the weight of the clod
-**in air** by attaching the paperclip to the hook *hanging from the
-bottom* of the scale. Slide the weights along the scale from left to
-right, starting with the largest weights first. Ask a TA for help if you
-need any assistance. 3. Place the water bucket beneath the clod,
-allowing it to be submerged in the water while hanging from the paper
-clip and take the weight a second time. This will be the weight of the
-clod when **submerged in water**. 4. Determine the volume (recall the
-formula provided on page 1). 5. Place the clod back on the counter, and
-set the scale back to 0 for the next student.
+Volume of clod (in cm3) = \[(weight of clod in air) -- (weight of clod
+in water)\] g × 1cm3/1 g
+
+This formula represents the denominator in the Db,clod formula above,
+giving the result of your calculation in units of g/cm3 (also written as
+g cm-3), which is bulk density.
+
+**WATCH VIDEO TUTORIAL ON IPADS!!**
+
+1.  Take one clod from the counter, a small tag will be attached
+    indicating the clod ID (take note of this when filling out the chart
+    on page 2).
+2.  Measure the weight of the clod **in air** by attaching the paperclip
+    to the hook hanging from the bottom of the scale. Slide the weights
+    along the scale from left to right, starting with the largest
+    weights first. Ask a TA for help if you need any assistance.
+3.  Place the water bucket beneath the clod, allowing it to be submerged
+    in the water while hanging from the paper clip and take the weight a
+    second time. This will be the weight of the clod when **submerged in
+    water**.
+4.  Determine the volume (recall the formula provided above).
+5.  Place the clod back on the counter, and set the scale back to 0 for
+    the next student.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -77,12 +81,12 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-"" <- c("Weight of clod in air", "Weight of clod submerged in water", "Volume of water displaced by clod", "Volume of clod", "Volume of soil")
-Clod__ <- c("grams","grams", "cm3", "cm3", "grams/cm3")
-Clod__ <- c("grams","grams", "cm3", "cm3", "grams/cm3")
+Measurement <- c("Weight of clod in air", "Weight of clod submerged in water", "Volume of water displaced by clod", "Volume of clod", "Volume of soil")
+ClodA <- c("grams","grams", "cm3", "cm3", "grams/cm3")
+ClodB <- c("grams","grams", "cm3", "cm3", "grams/cm3")
 
-clodclod <- data.frame("", Clod__, Clod__)
-colnames(claydrawing) = c("", "Clod __", "Clod __")
+clodclod <- data.frame(Measurement, ClodA, ClodB)
+colnames(clodclod) = c("", "Clod __", "Clod __")
 
 col.num = 3
 row.num = 6 #including header
@@ -104,7 +108,9 @@ tab1.1 = clodclod_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_align(row = 1, col = 1:2, value = 'center') %>%
+      set_align(row = 1:row.num, col = 1, value = 'center') %>%
+      set_align(row = 2:row.num, col = 2:3, value = 'right') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
@@ -135,10 +141,10 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-"" <- c("Soil core #", "Core weight (empty core provided)", "Weight of core and soil", "Weight of soil", "Core volume", "Bulk density of soil")
-Measurements <- c("","grams", "grams", "grams", "cm3", "grams/cm3")
+Measurement <- c("Soil core #", "Core weight (empty core provided)", "Weight of core and soil", "Weight of soil", "Core volume", "Bulk density of soil")
+Mass <- c("","grams", "grams", "grams", "cm3", "grams/cm3")
 
-measurements <- data.frame("", Measurements)
+measurements <- data.frame(Measurement, Mass)
 colnames(measurements) = c("", "Measurements")
 
 col.num = 2
@@ -161,7 +167,9 @@ tab1.1 = measurements_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_align(row = 1, col = 1:2, value = 'center') %>%
+      set_align(row = 1:row.num, col = 1, value = 'center') %>%
+      set_align(row = 2:row.num, col = 2, value = 'right') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
@@ -189,10 +197,10 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-"" <- c("Weight of clean, dry 100 mL graduated cylinder", "Weight of clean, dry 100 ml graduated cylinder filled with 100 ml of fine sand", "Weight of soil", "Volume of soil (1 ml in cylinder = 1 cm3)", "Bulk density of soil")
-Measurements <- c("grams","grams", "grams", "cm3", "grams/cm3")
+Measurement <- c("Weight of clean, dry 100 mL graduated cylinder", "Weight of clean, dry 100 ml graduated cylinder filled with 100 ml of fine sand", "Weight of soil", "Volume of soil (1 ml in cylinder = 1 cm3)", "Bulk density of soil")
+Mass <- c("grams","grams", "grams", "cm3", "grams/cm3")
 
-measurementsgradcyl <- data.frame("", Measurements)
+measurementsgradcyl <- data.frame(Measurement, Mass)
 colnames(measurementsgradcyl) = c("", "Measurements")
 
 col.num = 2
@@ -215,7 +223,9 @@ tab1.1 = measurementsgradcyl_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_align(row = 1, col = 1, value = 'center') %>%
+      set_align(row = 1:row.num, col = 1, value = 'center') %>%
+      set_align(row = 2:row.num, col = 2, value = 'right') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
@@ -262,9 +272,9 @@ $$
     more water. Repeat this step as necessary.
 3.  Determine the amount of water used to fill the pore space in the 100
     cm3 of soil by subtracting the volume of water in the graduated
-    cylinder from the original 100 ml volume. Note: We are *assuming*
-    that the water poured into the soil exactly filled the pore space
-    and thus equals the total pore volume.
+    cylinder from the original 100 ml volume. Note: We are assuming that
+    the water poured into the soil exactly filled the pore space and
+    thus equals the total pore volume.
 4.  Dispose of wet soil in the bucket labeled "For Wet Soil Only"
 5.  Record your results in the table below and make the necessary
     calculations.
@@ -278,10 +288,10 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-"" <- c("Initial volume of water", "Volume of water remaining in cylinder after all soil pores are filled", "Volume of water filling soil pores (initial – remaining)", "Total volume of soil (1 cm3 = 1 ml)", "Porosity = (volume of water filling pores / total volume) × 100%")
-Measurements <- c("100 mL","mL", "mL", "100 mL", "%")
+Measurement <- c("Initial volume of water", "Volume of water remaining in cylinder after all soil pores are filled", "Volume of water filling soil pores (initial – remaining)", "Total volume of soil (1 cm3 = 1 ml)", "Porosity = (volume of water filling pores / total volume) × 100%")
+Volume <- c("100 mL","mL", "mL", "100 mL", "%")
 
-measurementsporositydirect <- data.frame("", Measurements)
+measurementsporositydirect <- data.frame(Measurement, Volume)
 colnames(measurementsporositydirect) = c("", "Measurements")
 
 col.num = 2
@@ -304,7 +314,11 @@ tab1.1 = measurementsporositydirect_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
+      set_align(row = 1:row.num, col = 1, value = 'center') %>%
+      set_align(row = 1:2, col = 2, value = 'center') %>%
+      set_align(row = 3:4, col = 2, value = 'right') %>%
+      set_align(row = 5, col = 2, value = 'center') %>%
+      set_align(row = 6, col = 2, value = 'right') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
@@ -328,14 +342,17 @@ density of 2.65 g/cm3* (the same density as quartz, a major constituent
 of mineral soils).
 
 $$
-Porosity(P)_{indirect} =\ {1 - (\frac{(D_{b}\ by\ graduated\ cylinder\ method)\ \frac{g}{cm^{3}}}{(particle\ density)\ \frac{g}{cm^{3}}})}\ *\ 100%
+Porosity(P)_{indirect} =\ ({1 - (\frac{(D_{b}\ by\ graduated\ cylinder\ method)\ \frac{g}{cm^{3}}}{(particle\ density)\ \frac{g}{cm^{3}}})})\ *\ 100%
 $$
 
 Depending on accuracy in collecting your porosity data, your
 calculations of porosity by the direct method and the indirect method
 should be similar. Record your results.
 
-Direct method:  
+Direct method:
+
+ 
+
 Indirect method:
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
@@ -347,8 +364,6 @@ density is also highly correlated with soil texture. Compare and rank
 the bulk densities for the soil materials within each box from low to
 high bulk density:
 
-Low ------------------------------------------------------------\> High
-
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
 library(dplyr)
@@ -356,13 +371,14 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-"" <- c("", "", "", "", "", "", "")
+Rankings <- c("Lowest", "|", "|", "|", "|", "|", "Highest")
+BoxNumber <- c("", "", "", "", "", "", "")
 
-bulkdensityranked <- data.frame("", "", "", "", "", "", "")
-colnames(bulkdensityranked) = c("")
+bulkdensityranked <- data.frame(Rankings, BoxNumber)
+colnames(bulkdensityranked) = c("Rank", "Box Number")
 
-col.num = 7
-row.num = 1 #including header
+col.num = 2
+row.num = 8 #including header
 
 ################
 ## SET AS HUXTABLE TYPE
@@ -387,8 +403,8 @@ tab1.1 = bulkdensityranked_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 1, col= 1:7, 60) %>%
-      set_top_padding(row = 1, col = 1:7, 60) %>%
+      #set_bottom_padding(row = 1:row.num, col= 1:2, 60) %>%
+      #set_top_padding(row = 1:row.num, col = 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -396,12 +412,15 @@ tab1.1 = bulkdensityranked_ht %>%
 tab1.1
 ```
 
-
-Give a general description of why the soil materials are ranked that way. Using your lecture notes, recall what factors influence bulk density.
+Give a general description of why the soil materials are ranked that
+way. Using your lecture notes, recall what factors influence bulk
+density.
 
 ## INVESTIGATION D: Soil Color and Soil Organic Matter
 
-You can use soil color to estimate the amount of organic matter within a soil. Use the Munsell color charts and the estimation cards to determine soil color and the subsequent amount of soil organic matter.
+You can use soil color to estimate the amount of organic matter within a
+soil. Use the Munsell color charts and the estimation cards to determine
+soil color and the subsequent amount of soil organic matter.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -443,8 +462,8 @@ tab1.1 = soilnamecolor_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:4, col= 1:3, 40) %>%
-      set_top_padding(row = 2:4, col = 1:3, 40) %>%
+      #set_bottom_padding(row = 2:4, col= 1:3, 40) %>%
+      #set_top_padding(row = 2:4, col = 1:3, 40) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -454,7 +473,8 @@ tab1.1
 
 ## INVESTIGATION E: Organic Soil Types and Experiential Observation
 
-Examine the three different examples organic soils and classify the three unknowns as sapric, hemic, or fibric.
+Examine the three different examples organic soils and classify the
+three unknowns as sapric, hemic, or fibric.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -495,8 +515,8 @@ tab1.1 = dishclassification_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:4, col= 1:2, 40) %>%
-      set_top_padding(row = 2:4, col = 1:2, 40) %>%
+      #set_bottom_padding(row = 2:4, col= 1:2, 40) %>%
+      #set_top_padding(row = 2:4, col = 1:2, 40) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -504,26 +524,55 @@ tab1.1 = dishclassification_ht %>%
 tab1.1
 ```
 
-Pick up a chunk of the moist organic soil in the bucket. This soil is a decomposed peat from northern Minnesota. Rub the material between your fingers and notice how most of it rubs away or disappears. In a mineral soil, you would feel the mineral grains (sand, silt or clay).
+Pick up a chunk of the moist organic soil in the bucket. This soil is a
+decomposed peat from northern Minnesota. Rub the material between your
+fingers and notice how most of it rubs away or disappears. In a mineral
+soil, you would feel the mineral grains (sand, silt or clay).
 
 What is the definition of soil texture?
 
+   
+
 Does this soil fit into any of our textural classes?
+
+   
 
 ## INVESTIGATION F: Ranges and Estimation of Bulk Soil Physical Properties
 
-*There is no lab station*; find a spot near the lab and answer the following questions. Use your lecture notes (in particular, **Lecture 1.4**)!
+*There is no lab station*; find a spot near the lab and answer the
+following questions. Use your lecture notes (in particular, **Lecture
+1.4**)!
 
-1. What is the common Db range (g/cm3) for typical cultivated topsoils?
+1.  What is the common Db range (g/cm3) for typical cultivated topsoils?
 
-2. What is the Db range (g/cm3) for typical uncultivated topsoils?
+   
 
-3. I have two soils. Soil 1 is a clay with a Db of 1.4 g/cm3. Soil 2 is a loamy sand with a Db of 1.4 g/cm3. Will root penetration likely be inhibited in either of these soils? Why or why not?
+2.  What is the Db range (g/cm3) for typical uncultivated topsoils?
 
-4. Someone tells you they calculated a Db of 2.7 g/cm3 from a soil core they took. Should you believe them? Why or why not?
+   
 
-5. In general, what is a reasonable value to guess for WFPS (i.e., if you don’t know anything else about a soil)?
+3.  I have two soils. Soil 1 is a clay with a Db of 1.4 g/cm3. Soil 2 is
+    a loamy sand with a Db of 1.4 g/cm3. Will root penetration likely be
+    inhibited in either of these soils? Why or why not?
 
-6. Soil A has a porosity of 52% and a WFPS of 92%. Soil B has a porosity of 23% and a WFPS of 92%. Which one contains more water?
+   
 
-7. Without doing any calculations, which soil has the higher bulk density? Why?
+4.  Someone tells you they calculated a Db of 2.7 g/cm3 from a soil core
+    they took. Should you believe them? Why or why not?
+
+   
+
+5.  In general, what is a reasonable value to guess for WFPS (i.e., if
+    you don't know anything else about a soil)?
+
+   
+
+6.  Soil A has a porosity of 52% and a WFPS of 92%. Soil B has a
+    porosity of 23% and a WFPS of 92%. Which one contains more water?
+
+   
+
+7.  Without doing any calculations, which soil has the higher bulk
+    density? Why?
+
+   

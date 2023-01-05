@@ -11,7 +11,7 @@
 
 -   Residuum
 -   Catena
--   Soil “age”
+-   Soil "age"
 -   Lacustrine
 -   Alluvial
 -   Till
@@ -40,17 +40,15 @@
 
 ## INVESTIGATION A: Residual Parent Materials
 
-Soils develop in many different kinds of parent materials. Parent material, in some cases, can be the bedrock under the soil and this non-transported parent material is called residuum. The soils that develop in residuum can be shallow if the rock is hard and difficult to weather, or deep if the rock is soft or has weathered for a long time. In Minnesota, four types of bedrock can be located that are only thinly or not covered by glacial drift and thus can become residual parent material— limestone, sandstone, basalt, and granite. Use the depth to bedrock map and simplified geological map to describe the most likely rock type for residual soils at points A, B and C.
-
-A:
-B:
-C:
+Soils develop in many different kinds of parent materials. Parent material, in some cases, can be the bedrock under the soil and this non-transported parent material is called residuum. The soils that develop in residuum can be shallow if the rock is hard and difficult to weather, or deep if the rock is soft or has weathered for a long time. In Minnesota, four types of bedrock can be located that are only thinly or not covered by glacial drift and thus can become residual parent material--- limestone, sandstone, basalt, and granite. Use the depth to bedrock map and simplified geological map to describe the most likely rock type for residual soils at points A, B and C.
 
 ![Minnesota](residual-parent-materials-Picture1.png){#fig-residual}
 
+A: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ B: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ C:
+
 ## INVESTIGATION B: Clay Mineral Block Structures
 
-In Minnesota, most soils are formed in a parent material that was transported by ice, wind or water. Ice deposited glacial till, water deposited glacial outwash, glacial lacustrine and alluvium, and wind deposited eolian sand and loess. Observe the samples of transported parent materials and note characteristics for each sample.  These characteristics (particularly color and texture) are very useful for identifying the parent material of many Minnesota soils.
+In Minnesota, most soils are formed in a parent material that was transported by ice, wind or water. Ice deposited glacial till, water deposited glacial outwash, glacial lacustrine and alluvium, and wind deposited eolian sand and loess. Observe the samples of transported parent materials and note characteristics for each sample. These characteristics (particularly color and texture) are very useful for identifying the parent material of many Minnesota soils.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -198,19 +196,23 @@ tab1.1
 
 ## INVESTIGATION C: Climatic Factors
 
-Climate refers to the amount of precipitation (rain, snow, humidity) and the temperature in a given locale. The hotter and more humid a climate, the faster and more completely it is going to weather into soil. If a climate is cool and or dry, the weathering process proceeds more slowly.
-Below are temperature and precipitation maps for Minnesota. The difference in temperature will not change the weathering of rocks in Minnesota. However, the precipitation and temperature together will influence the leaching and horizon formation. Calcium carbonate will occur closer to the surface in soils with less leaching as in western Minnesota. NOTE: The diagram below shows the general pattern but DOES NOT correspond to the exact depth of leaching for any one particular profile.
+Climate refers to the amount of precipitation (rain, snow, humidity) and the temperature in a given locale. The hotter and more humid a climate, the faster and more completely it is going to weather into soil. If a climate is cool and or dry, the weathering process proceeds more slowly. Below are temperature and precipitation maps for Minnesota. The difference in temperature will not change the weathering of rocks in Minnesota. However, the precipitation and temperature together will influence the leaching and horizon formation. Calcium carbonate will occur closer to the surface in soils with less leaching as in western Minnesota. NOTE: The diagram below shows the general pattern but DOES NOT correspond to the exact depth of leaching for any one particular profile.
 
-1. Match each soil profile with its location in Minnesota by the depth to CaCO3 (Bk or Ck). Use HCl to determine depths to carbonates.
+1.  Match each soil profile with its location in Minnesota by the depth to CaCO3 (Bk or Ck). Use HCl to determine depths to carbonates.
 
-!["](depth-to-carbonates.png){#fig-carbonates}
-!["](mn-precip-evap.png){#fig-precipevap}
+![\"](depth-to-carbonates.png){#fig-carbonates} ![\"](mn-precip-evap.png){#fig-precipevap}
 
-2. 2.	For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which two of the other four soil forming factors contribute the most to these patterns, and why?
+2.  For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which two of the other four soil forming factors contribute the most to these patterns, and why?
+
+\ 
+\ 
+\ 
+\ 
+\ 
 
 ## INVESTIGATION D: Biotic Factors (Vegetation)
 
-One of the most obvious biotic factors is the effect that vegetation has on soil formation. The most common pre-European settlement vegetative types (this is the vegetation the soil formed under for ~ 10,000 – 13,000 years after glaciation – the native vegetation in many areas has been replaced by agriculture or other land uses, but only very recently) in Minnesota are forest, grassland (prairie), and a transitional zone between forest and grassland prairie (called savannah). Using the six micro-monoliths(1/4 scale), determine the vegetation that the following soils were formed under, and briefly explain your answer.
+One of the most obvious biotic factors is the effect that vegetation has on soil formation. The most common pre-European settlement vegetative types (this is the vegetation the soil formed under for \~ 10,000 -- 13,000 years after glaciation -- the native vegetation in many areas has been replaced by agriculture or other land uses, but only very recently) in Minnesota are forest, grassland (prairie), and a transitional zone between forest and grassland prairie (called savannah). Using the six micro-monoliths(1/4 scale), determine the vegetation that the following soils were formed under, and briefly explain your answer.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -252,8 +254,8 @@ tab1.1 = soilhistoricveg_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:6, col= 1:2, 40) %>%
-      set_top_padding(row = 2:6, col = 1:2, 40) %>%
+      set_bottom_padding(row = 2:7, col= 1:2, 40) %>%
+      set_top_padding(row = 2:7, col = 1:2, 40) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -316,7 +318,7 @@ tab1.1
 
 ## INVESTIGATION F: Time Factors
 
-Soil “age” is measured in geologic terms (Minnesota soils are quite young due to glacial deposits that happened only 10,000 – 13,000 years ago), as well as measured in terms of development (soils in colder climates develop slower and therefore show “young” morphology). For practical purposes, the number and type of horizons and the depth of soil development (pedogenic processes or A, E & B horizons) is a decent starting indicator of a soil’s age. Determine the “age” sequence the three micro-monoliths on display.
+Soil "age" is measured in geologic terms (Minnesota soils are quite young due to glacial deposits that happened only 10,000 -- 13,000 years ago), as well as measured in terms of development (soils in colder climates develop slower and therefore show "young" morphology). For practical purposes, the number and type of horizons and the depth of soil development (pedogenic processes or A, E & B horizons) is a decent starting indicator of a soil's age. Determine the "age" sequence the three micro-monoliths on display.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -327,12 +329,11 @@ library(dplyr)
 ################
 Age <- c("Youngest", "Middle", "Oldest")
 SoilName <- c("", "", "")
-Explanation <- c("", "", "")
 
-agesoilname <- data.frame(Age, SoilName, Explanation)
-colnames(agesoilname) = c("Age", "Soil Name (Soil series: Moody, Ontonagon, or Menahga)")
+agesoilname <- data.frame(Age, SoilName)
+colnames(agesoilname) = c("Age", "Soil Name (Soil series: Moody, Ontonagon, or Menahga) and Reasoning")
 
-col.num = 3
+col.num = 2
 row.num = 4 #including header
 
 ################
@@ -358,8 +359,8 @@ tab1.1 = agesoilname_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 1:4, col= 1:3, 40) %>%
-      set_top_padding(row = 1:4, col = 1:3, 40) %>%
+      set_bottom_padding(row = 1:4, col= 1:2, 40) %>%
+      set_top_padding(row = 1:4, col = 1:2, 40) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -369,20 +370,27 @@ tab1.1
 
 ## INVESTIGATION G: Clay Eluviation/Illuviation and the Soil Forming Factors
 
-Graph the % clay for each profile with depth. When we graph the clay % with depth we can easily identify whether or not there is a peak in clay percentage in the B horizon which is indicative of the eluviation of clay from the top of the profile and its illuviation lower in the profile.
-(Note: these are micro-monoliths at 1:4 scale, or 1 inch on monolith = 4 inches on the graph).
+**Graph** the % clay for each profile with depth. When we graph the clay % with depth we can easily identify whether or not there is a peak in clay percentage in the B horizon which is indicative of the eluviation of clay from the top of the profile and its illuviation lower in the profile. (Note: these are micro-monoliths at 1:4 scale, or 1 inch on monolith = 4 inches on the graph).
 
-!["](clay-eluviation-illuviation-graph.png){#fig-clay}
+![](clay-eluviation-illuviation-graph.png){#fig-clay}
 
 All three of these soils developed under a similar climate in central-eastern Minnesota. The Zimmerman soil is formed in outwash under forest vegetation. The Port Byron soil is formed in loess under grassland vegetation. The Hayden soil is formed in glacial till under forest vegetation. REMEMBER: Soils developed under grasslands typically have more organic matter and organic matter is an excellent binding agent of mineral particles (remember the pictures of granular structure and the clay particles bound by OM).
 
-1.	Which of these soils exhibits a clear peak in clay with depth?
+1.  Which of these soils exhibits a clear peak in clay with depth?
 
-2.	Knowing what you know about the soil forming factors and their effect on soil development and soil morphology, explain why the soil listed in your answer to question 1 has a peak in clay due to eluviation/illuviation while the other soils do not.
+\ 
+\ 
+\ 
+
+2.  Knowing what you know about the soil forming factors and their effect on soil development and soil morphology, explain why the soil listed in your answer to question 1 has a peak in clay due to eluviation/illuviation while the other soils do not.
+
+\ 
+\ 
+\ 
 
 ## INVESTIGATION H: Properties from Factors and Factors from Properties
 
-Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the “Soil Forming Factors” and  “Soil Properties” tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils.
+Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the "Soil Forming Factors" and "Soil Properties" tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -428,7 +436,7 @@ tab1.1 = soilseriesparent_ht %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
       #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
-      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
+      #set_top_padding(row = 6, col = 1:col.num, 20) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -480,7 +488,7 @@ tab1.1 = soilseriestexture_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
+      set_bottom_padding(row = 6, col= 1:col.num, 20) %>%
       #set_top_padding(row = 2:3, col = 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
