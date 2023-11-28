@@ -44,7 +44,7 @@ Soils develop in many different kinds of parent materials. Parent material, in s
 
 ![Minnesota](residual-parent-materials-Picture1.png){#fig-residual}
 
-A: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ B: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ C:
+A:                                                         B:                                                        C:
 
 ## INVESTIGATION B: Clay Mineral Block Structures
 
@@ -200,15 +200,11 @@ Climate refers to the amount of precipitation (rain, snow, humidity) and the tem
 
 1.  Match each soil profile with its location in Minnesota by the depth to CaCO3 (Bk or Ck). Use HCl to determine depths to carbonates.
 
-![\"](depth-to-carbonates.png){#fig-carbonates} ![\"](mn-precip-evap.png){#fig-precipevap}
+!["](depth-to-carbonates.png){#fig-carbonates} !["](mn-precip-evap.png){#fig-precipevap}
 
 2.  For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which two of the other four soil forming factors contribute the most to these patterns, and why?
 
-\ 
-\ 
-\ 
-\ 
-\ 
+         
 
 ## INVESTIGATION D: Biotic Factors (Vegetation)
 
@@ -378,15 +374,11 @@ All three of these soils developed under a similar climate in central-eastern Mi
 
 1.  Which of these soils exhibits a clear peak in clay with depth?
 
-\ 
-\ 
-\ 
+     
 
 2.  Knowing what you know about the soil forming factors and their effect on soil development and soil morphology, explain why the soil listed in your answer to question 1 has a peak in clay due to eluviation/illuviation while the other soils do not.
 
-\ 
-\ 
-\ 
+     
 
 ## INVESTIGATION H: Properties from Factors and Factors from Properties
 

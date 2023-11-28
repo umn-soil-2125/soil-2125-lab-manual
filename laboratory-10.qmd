@@ -125,15 +125,15 @@ To assess the property, an inventory of soil map units was done. Now the usefuln
 
 Use the properties and interpretations from each of the map units given in Web Soil Survey to fill in the following table. The following information shows you where to find that piece of information in Web Soil Survey menus:
 
-**Suborder**: >Suitability & Limitations for Use >Land Classification >Soil Taxonomy Classification
+**Suborder**: \>Suitability & Limitations for Use \>Land Classification \>Soil Taxonomy Classification
 
-**Small Commercial Buildings**: >Suitability & Limitations for Use >Building Site Development >Small Commercial Building
+**Small Commercial Buildings**: \>Suitability & Limitations for Use \>Building Site Development \>Small Commercial Building
 
-**Paths and Trails**: >Suitability & Limitations for Use >Recreational Development >Paths and Trails
+**Paths and Trails**: \>Suitability & Limitations for Use \>Recreational Development \>Paths and Trails
 
-**At-Grade Septic**: >Suitability and Limitations for Use >Sanitary Facilities >Septic Tank Absorption Fields >At-Grade (MN)
+**At-Grade Septic**: \>Suitability and Limitations for Use \>Sanitary Facilities \>Septic Tank Absorption Fields \>At-Grade (MN)
 
-**Farmland of Statewide Importance**: >Suitability and Limitations for Use >Land Classifications >Farmland Classifications
+**Farmland of Statewide Importance**: \>Suitability and Limitations for Use \>Land Classifications \>Farmland Classifications
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -199,7 +199,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Facility <- c("PLant, Animal, and Environmental Science Building (small commercial)", "Septic system for whole unit (At-Grade Septic)", "Restored wetland (Aquic Suborders and/or Histosols", "Permanent soil pit displayed Farmland of Statewide Importance", "Nature and bike trail (Paths and Trails)")
+Facility <- c("Plant, Animal, and Environmental Science Building (small commercial)", "Septic system for whole unit (At-Grade Septic)", "Restored wetland (Aquic Suborders and/or Histosols", "Permanent soil pit displayed Farmland of Statewide Importance", "Nature and bike trail (Paths and Trails)")
 Mostsuitable <- c("", "", "", "", "")
 
 facilitysuitable <- data.frame(Facility, Mostsuitable)

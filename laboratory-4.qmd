@@ -133,6 +133,13 @@ tab1.1
 
 You are encouraged to work in groups for this portion of the lab.
 
+1.  Use the pH meter to determine the pH of each soil provided slurry.
+2.  Measure the slurries in order. Measure the pH first to check the pH meter is calibrated.
+3.  Wash the electrode thoroughly with deionized water between every sample into the rinse bottle.
+4.  If the pH value has not stabilized after 2 minutes, record the value to one decimal place and move on to the next sample.
+5.  When you are finished, place the electrode in the de-ionized water.
+
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
 library(dplyr)
@@ -181,16 +188,9 @@ tab1.1 = soilnumber_ht %>%
 tab1.1
 ```
 
-1.  Use the pH meter to determine the pH of each soil provided slurry.
-2.  Measure the slurries in order. Measure the pH first to check the pH meter is calibrated.
-3.  Wash the electrode thoroughly with deionized water between every sample into the rinse bottle.
-4.  If the pH value has not stabilized after 2 minutes, record the value to one decimal place and move on to the next sample.
-5.  When you are finished, place the electrode in the de-ionized water.
-
 Very generally, compare these values to your pH predictions in the pre-investigation exercise:
 
-\ 
-\ 
+   
 
 ## INVESTIGATION B: Calcareous Soils
 
@@ -252,9 +252,10 @@ tab1.1
 
 Explain the predominant color observed in the leachate after the solution filtered through the soil into the flask. What color do you see? What is the reason for this?
 
-\ 
-\ 
-\ 
+<br>
+<br>
+<br>
+<br>
 
 **PART 2:** 1. Place a small amount of soil into each of two tubes - one labelled "H2O" and the other labelled "MgCl2". 2. Add 20 ml of H2O or MgCl2 to each of the appropriate tubes with the wash bottles. 3. Shake, let the slurries sit for 2 minutes. 4. Shake again and measure the pH of each -- record them in the table below. Please avoid jamming the fragile pH probe into the sediment. NOTES: This soil is Fe and Al-rich sandy material. MgCl2 in solution dissolves completely to Mg2+ and Cl- ions. The Cl- ions are anions which do not interact with soil particles (i.e. you can ignore them).
 
@@ -308,19 +309,17 @@ tab1.1
 
 Explain why adding a concentrated salt (which contains no H+ ions) would decrease the pH (increase the number of H+ ions in solution). HINT: Cation exchange plays a huge role!
 
-\ 
-\ 
-\ 
+     
 
 ## INVESTIGATION D: Saline Soils
 
-Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not. **READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), divide the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m. 
+Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not. **READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), divide the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m.
 
-1. Use the meter to determine the electrical conductivity of each soil provided slurry. MAKE SURE THE CAP IS OFF THE PROBE. 
-2. Measure the slurries in order. 
-3. WASH THE ELECTRODE THOROUGHLY WITH DEIONIZED WATER BETWEEN EVERY SAMPLE INTO THE RINSE BOTTLE. 
-4. If the value has not stabilized after 2 minutes, record the value and move on to the next sample. 
-5. When you are finished, place the electrode in the deionized water.
+1.  Use the meter to determine the electrical conductivity of each soil provided slurry. MAKE SURE THE CAP IS OFF THE PROBE.
+2.  Measure the slurries in order.
+3.  WASH THE ELECTRODE THOROUGHLY WITH DEIONIZED WATER BETWEEN EVERY SAMPLE INTO THE RINSE BOTTLE.
+4.  If the value has not stabilized after 2 minutes, record the value and move on to the next sample.
+5.  When you are finished, place the electrode in the deionized water.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -373,9 +372,10 @@ tab1.1
 
 6.  Very generally, compare these values to your predictions in the pre-investigation exercise:
 
-\ 
-\ 
-\ 
+<br>
+<br>
+<br>
+<br>
 
 ## INVESTIGATION E: Calculation and Interpretation of CEC, pH and Salinity
 
@@ -383,68 +383,44 @@ The same 8 soils that you have working with in this laboratory were also tested 
 
 1.  First **focus on soils 4, 5, 7, and 8,** which have specific exchange phase ion composition data reported on the data sheet. Calculate the CEC from the sum of exchange phase cations given for each soil. Do these numbers match the whole soil CEC reported in the table?
 
-\ 
-\ 
-\ 
-\ 
+       
 
 2.  Calculate the Base Saturation percentage (BS%) for soils 4, 5, 7 and 8.
 
-\ 
-\ 
-\ 
-\ 
+       
 
 3.  Look at the pH and exchange phase composition of Soil 4. What major problems might you expect with plant growth on this soil?
 
-\ 
-\ 
-\ 
-\ 
+       
 
-4.  Which of the 8 soils would be classified as Saline soils based on the analytical data reported on the sheet? (Saline soils are soils that have EC \> 4 dS/m).
+4.  Which of the 8 soils would be classified as Saline soils based on the analytical data reported on the sheet? (Saline soils are soils that have EC > 4 dS/m).
 
-\ 
-\ 
-\ 
-\ 
+       
 
 5.  Calculate the Exchangable Sodium Percentage (ESP%) for the soils you identified as saline in Question 4.
 
-\ 
-\ 
-\ 
-\ 
+       
 
-6.  Which of these soils would be classified as Sodic soils? (Sodic soils have an ESP% \> 15%).
+6.  Which of these soils would be classified as Sodic soils? (Sodic soils have an ESP% > 15%).
 
-\ 
-\ 
-\ 
-\ 
+       
 
 7.  What major problems for plant growth would you expect to encounter in Sodic soils?
 
-\ 
-\ 
-\ 
-\ 
+       
 
 Now, consider the geographic location and climate of all 8 soil samples you investigated (from the table on page 1):
 
 8.  Soils 5 and 6 both occur in a temperate/humid climate and in relatively close proximity (Soil 5 is from East-Central MN and Soil 6 is from West-Central MN). They were both formed in parent material that dropped out of glacial ice (termed glacial till). However, their CECs, mineralogies, calcareous status, and pHs are very different. What "tale" did we talk about in class (see the end of lecture 1.8 -- soil pH) that would account for these differences?
 
-\ 
-\ 
-\ 
-\ 
+       
 
 9.  Sodium carbonate salts (Na2CO3) are more soluble than calcium carbonate salts (CaCO3). This means that when sodium carbonates are dissolved, more OH- is released. Sodium carbonates also increase Na+ concentrations. Both soil 7 and 8 are saline, but differ in their sodicity status and pH. Briefly explain how the different solubilities of Na and Ca carbonate salts mean that sodic soils would be (1) found in drier climates and (2) have higher pHs than other non-sodic (but still saline) soils.
 
-\ 
-\ 
-\ 
-\ 
+<br>
+<br>
+<br>
+<br>
 
 ## Soil Water Data Preparation for Next Week's Lab (THIS IS IMPORTANT!)
 

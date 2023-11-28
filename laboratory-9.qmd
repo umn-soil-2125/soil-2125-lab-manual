@@ -10,7 +10,7 @@
 
 ## INVESTIGATION A: Soil Classification
 
-**READ THESE INSTRUCTIONS COMPLETELY!** 
+**READ THESE INSTRUCTIONS COMPLETELY!**
 
 For all eight monoliths, determine the correct order of horizons from the choices given, epipedon, diagnostic subsurface horizon, and soil order/suborder. All monoliths are from Minnesota, except for the Cecil, which is from North Carolina. The most important take-aways are horizon nomenclatures and classifying a soil based on morphology. Characteristics are given to assist you with your classifications -- use your 1 page cheat sheet!
 
@@ -18,7 +18,7 @@ For all eight monoliths, determine the correct order of horizons from the choice
 
 ## SOIL 1: CROMWELL
 
-HORIZON CHOICES: Bw1, A, Bw2, BA, 2C 
+HORIZON CHOICES: Bw1, A, Bw2, BA, 2C
 
 NOTES: B.S. = 62%
 
@@ -72,17 +72,17 @@ tab1.1 = cromwellhorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 2: WEBSTER
 
-HORIZON CHOICES: Cg, Ap, AC, A2, A1 
+HORIZON CHOICES: Cg, Ap, AC, A2, A1
 
 NOTES: BS = 68%
 
@@ -136,13 +136,13 @@ tab1.1 = websterhorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 3: RIFLE
 
@@ -198,17 +198,17 @@ tab1.1 = riflehorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 4: FARGO
 
-HORIZON CHOICES: Cg, Bss, Bg1, Bg2, Bg3, Ap 
+HORIZON CHOICES: Cg, Bss, Bg1, Bg2, Bg3, Ap
 
 NOTES: BS = 100%; large cracks open during the dry season; all horizons \> 55% clay
 
@@ -262,17 +262,17 @@ tab1.1 = fargohorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 5: KALKASKA
 
-HORIZON CHOICES: BC, A, E, Bhs, C, Bs 
+HORIZON CHOICES: BC, A, E, Bhs, C, Bs
 
 NOTES: BS = 42%
 
@@ -326,17 +326,17 @@ tab1.1 = kalkaskahorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 6: ZIMMERMAN
 
-HORIZON CHOICES: Bw2, A, Bw1, C 
+HORIZON CHOICES: Bw2, A, Bw1, C
 
 NOTES: BS = 41%
 
@@ -390,17 +390,17 @@ tab1.1 = zimmermanhorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## SOIL 7: LESTER
 
-HORIZON CHOICES: EB, Bt2, C, Ap, Bt1 
+HORIZON CHOICES: EB, Bt2, C, Ap, Bt1
 
 NOTES: BS = 78%, Udic moisture regime
 
@@ -454,17 +454,23 @@ tab1.1 = lesterhorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
+
+<br>
+<br>
+<br>
+
+Note, the suborder for Cecil is not in course handouts - make a guess! Combine the moisture regime and order.
 
 ## SOIL 8: CECIL
 
-HORIZON CHOICES: Bt2, A, Bt1, C 
+HORIZON CHOICES: Bt2, A, Bt1, C
 
 NOTES: BS = 18%, Udic moisture regime
 
@@ -518,13 +524,13 @@ tab1.1 = cecilhorizon_ht %>%
 tab1.1
 ```
 
-Epipedon: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Epipedon:                                                                     Explain:
 
-Diagnostic Subsurface: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Diagnostic Subsurface:                                              Explain:
 
-Soil Order: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Order:                                                                    Explain:
 
-Soil Suborder: \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explain:
+Soil Suborder:                                                              Explain:
 
 ## INVESTIGATION B: Location of Soil Orders
 
@@ -582,7 +588,7 @@ tab1.1
 
 ## INVESTIGATION C: Nomenclature
 
-There are twelve soil orders at the highest hierarchical level of soil taxonomy. The names for these orders relate to Greek, Latin, or other root words that reveal something about the soil. Fifty-four suborders are recognized at the next level of classification. There are over 200 great groups and more than 1,100 subgroups. Soil families have similar physical and chemical properties that affect their response to management. The lowest category -- soil series -- is usually named after a geographic feature in the region in which it was originally found and described. The taxonomic class includes the prefix plus all the following syllables, e.g., a Great Group would be "Haplosaprists", not just the prefix "Haplo-". To help you recognize syllables, remember familiar descriptive terms like sapric, hemic, mesic, ustic, udic, aquic. In addition, look for the prefixes hapl- (simple), orth- (central), epi- (above), argi- (clay) and psamm- (sandy). 
+There are twelve soil orders at the highest hierarchical level of soil taxonomy. The names for these orders relate to Greek, Latin, or other root words that reveal something about the soil. Fifty-four suborders are recognized at the next level of classification. There are over 200 great groups and more than 1,100 subgroups. Soil families have similar physical and chemical properties that affect their response to management. The lowest category -- soil series -- is usually named after a geographic feature in the region in which it was originally found and described. The taxonomic class includes the prefix plus all the following syllables, e.g., a Great Group would be "Haplosaprists", not just the prefix "Haplo-". To help you recognize syllables, remember familiar descriptive terms like sapric, hemic, mesic, ustic, udic, aquic. In addition, look for the prefixes hapl- (simple), orth- (central), epi- (above), argi- (clay) and psamm- (sandy).
 
 Answer the following questions about soil names. #1 is already answered for you.
 
@@ -596,72 +602,48 @@ a.  List two characteristics of the Okeechobee based on the suborder name.
 
 2.  Name the family for the Clarion soil (Fine-loamy, mixed, mesic, Typic Hapludolls).
 
-\ 
-\ 
-\ 
+     
 
 3.  Name the order and suborder for the Fargo soil (Fine, smectitic, frigid, Typic Epiaquerts).
 
-\ 
-\ 
-\ 
+     
 
 3a. Name one characteristic of the Fargo based on the suborder name.
 
-\ 
-\ 
-\ 
+     
 
 3b. Look at the family name -- what property of this soil might you predict based on the properties of the dominant mineral?
 
-\ 
-\ 
-\ 
+     
 
 4.  Name the order and suborder for the Lester soil (Fine-loamy, mixed, mesic, Mollic Hapludalfs).
 
-\ 
-\ 
-\ 
+     
 
 4a. Name one characteristic of the Lester based on the suborder name.
 
-\ 
-\ 
-\ 
+     
 
 5.  Name the order and suborder for the Hubbard soil (Sandy, mixed, frigid, Entic Hapludolls).
 
-\ 
-\ 
-\ 
+     
 
 5a. List two characteristics of the Hubbard based on the suborder name.
 
-\ 
-\ 
-\ 
+     
 
 6.  Name the order and suborder for the Omega soil (Sandy, mixed, frigid, Typic Haplorthods).
 
-\ 
-\ 
-\ 
+     
 
 7.  Name the suborder for the Rifle soil (Euic, frigid, Typic Haplohemists).
 
-\ 
-\ 
-\ 
+     
 
 8.  Name the soil order for the Ves soil (Fine-loamy, mixed, mesic, Calcic Hapludolls).
 
-\ 
-\ 
-\ 
+     
 
 9.  Name the soil order for the Valentine soil (Mixed, mesic, Typic Ustipsamments).
 
-\ 
-\ 
-\ 
+     

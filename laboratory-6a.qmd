@@ -86,11 +86,7 @@ Observe the roots of the live alfalfa and soybean plants (both uninoculated (no 
 
 Draw a diagram of a nodule and a root:
 
-\ 
-\ 
-\ 
-\ 
-\ 
+         
 
 ## INVESTIGATION B2: Dissecting Nodules
 
@@ -261,8 +257,8 @@ Soils are literally teeming with microbiota and it is very easy to culture them 
 
 IMPORTANT! WHEN AND IF POSSIBLE, DO THIS SET-UP IN GROUPS OF 2-3. **WATCH VIDEO TUTORIAL ON IPADS!** Ask a TA if you need help!
 
-1. Take a plate of PDA (Potato Dextrose Agar Media). Without opening it, flip it over and with a permanent marker draw 2 perpendicular lines to divide the plate into 4 quadrants, label the quadrants as shown in the example plate, and put your names and today's date on the bottom of the plate.
-2. Put on a pair of gloves (this is not a sterile environment!). 
-3. Using the sterilized toothpicks provided (use a different toothpick or set of toothpicks for each soil material provided!), inoculate each labelled quadrant of the plate. Inoculate by swishing a sterile toothpick through them and gently wiping the proper quadrant with the toothpick, leaving small bits of soil should be sufficient. 
-4. There are 4 materials to inoculate with: 1. Autoclaved --Sterilized sand, 2. Topsoil from the campus experimental fields, 3. Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, 4. A saturated wetland soil. 
-5. Seal your plate with parafilm and place in the tray provided. 
+1.  Take a plate of PDA (Potato Dextrose Agar Media). Without opening it, flip it over and with a permanent marker draw 2 perpendicular lines to divide the plate into 4 quadrants, label the quadrants as shown in the example plate, and put your names and today's date on the bottom of the plate.
+2.  Put on a pair of gloves (this is not a sterile environment!).
+3.  Using the sterilized toothpicks provided (use a different toothpick or set of toothpicks for each soil material provided!), inoculate each labelled quadrant of the plate. Inoculate by swishing a sterile toothpick through them and gently wiping the proper quadrant with the toothpick, leaving small bits of soil should be sufficient.
+4.  There are 4 materials to inoculate with: 1. Autoclaved --Sterilized sand, 2. Topsoil from the campus experimental fields, 3. Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, 4. A saturated wetland soil.
+5.  Seal your plate with parafilm and place in the tray provided.
