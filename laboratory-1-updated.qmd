@@ -77,7 +77,7 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 **Calculations**: correct readings before calculating sand, silt, and clay!
 
 $$
-Sand (\%) = \frac{M_{sample,ovendry} - 40s reading}{M_{sample,ovendry}} x 100%
+Sand (\%) = \frac{M_{sample,ovendry} - 40s\ reading}{M_{sample,ovendry}} x 100%
 $$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -509,7 +509,7 @@ You know about soil *texture* (the proportion of sand, silt, and clay particles)
 
 In some cases, the soil is classified as having no structure (i.e. the individual grains are not cemented together in any natural way).
 
-Complete the chart using lecture notes and the structural examples provided.
+Complete the charts below using lecture notes and the structural examples provided. For possible cementing agents and processes, review the lecture slides.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -560,8 +560,6 @@ tab1.1 = structurehorizon_ht %>%
 
 tab1.1
 ```
-
-For possible cementing agents and processes above, review the lecture slides.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

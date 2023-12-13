@@ -86,11 +86,12 @@ Observe the roots of the live alfalfa and soybean plants (both uninoculated (no 
 
 Draw a diagram of a nodule and a root:
 
-         
+<br>
+<br>
 
 ## INVESTIGATION B2: Dissecting Nodules
 
-Pluck a nodule off of either a soybean or alfalfa root and cut it open with a razor blade under the dissecting scopes. When you cut open an active nitrogen-fixing nodule, a significant portion of the nodule should be pink or red in color. This color is due to the presence of a hemoglobin similar to that found in blood (known as "leghemoglobin" in legumes), and regulates oxygen supply, in this case, to the bacteria. The amount of hemoglobin present is usually closely correlated to amount of nitrogen fixed, with white or green-colored nodules usually very limited in their ability to fix nitrogen. Remember though that nodules have a finite life span (in the case of soybean estimated at 50-60 days) so that toward the end of the growing season many of the initial nodules will have already begun to senesce, and are brown or green in color, while the more active nitrogen-fixing nodules may now be located on lateral roots (see *Rhizobium* Research Laboratory at www.rhizobium.umn.edu). Cut open a nodule from the samples provided, view under the microscope, and complete the following table.
+Pluck a nodule off of either a soybean or alfalfa root and cut it open with a razor blade under the dissecting scopes. When you cut open an active nitrogen-fixing nodule, a significant portion of the nodule should be pink or red in color. This color is due to the presence of a hemoglobin similar to that found in blood (known as "leghemoglobin" in legumes), and regulates oxygen supply, in this case, to the bacteria. The amount of hemoglobin present is usually closely correlated to amount of nitrogen fixed, with white or green-colored nodules usually very limited in their ability to fix nitrogen. Remember though that nodules have a finite life span (in the case of soybean estimated at 50-60 days) so that toward the end of the growing season many of the initial nodules will have already begun to senesce, and are brown or green in color, while the more active nitrogen-fixing nodules may now be located on lateral roots. **Cut open a nodule from the samples provided, view under the microscope, and complete the following table.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -255,10 +256,14 @@ NOTE: See the list of organisms. Lots are possible!
 
 Soils are literally teeming with microbiota and it is very easy to culture them on many different types of media. Because soil microorganisms are highly diverse, we can only ever culture a small portion of the total in the lab. However, this exercise will show you that (unsterilized) soil materials are literally bursting at the seams with life.
 
-IMPORTANT! WHEN AND IF POSSIBLE, DO THIS SET-UP IN GROUPS OF 2-3. **WATCH VIDEO TUTORIAL ON IPADS!** Ask a TA if you need help!
+IMPORTANT! WHEN AND IF POSSIBLE, DO THIS SET-UP IN GROUPS OF 2-3. **WATCH VIDEO TUTORIAL ON IPADS!** Ask a TA if you need help.
 
-1.  Take a plate of PDA (Potato Dextrose Agar Media). Without opening it, flip it over and with a permanent marker draw 2 perpendicular lines to divide the plate into 4 quadrants, label the quadrants as shown in the example plate, and put your names and today's date on the bottom of the plate.
+1.  Take a plate of PDA (Potato Dextrose Agar). Without opening it, flip it over and with a permanent marker, draw 2 perpendicular lines to divide the plate into 4 quadrants, label the quadrants as shown in the example plate, and put your names and today's date on the bottom of the plate.
 2.  Put on a pair of gloves (this is not a sterile environment!).
 3.  Using the sterilized toothpicks provided (use a different toothpick or set of toothpicks for each soil material provided!), inoculate each labelled quadrant of the plate. Inoculate by swishing a sterile toothpick through them and gently wiping the proper quadrant with the toothpick, leaving small bits of soil should be sufficient.
-4.  There are 4 materials to inoculate with: 1. Autoclaved --Sterilized sand, 2. Topsoil from the campus experimental fields, 3. Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, 4. A saturated wetland soil.
+4.  There are 4 materials to inoculate with: 
+    1. Autoclaved --Sterilized sand, 
+    2. Topsoil from the campus experimental fields, 
+    3. Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, and
+    4. A saturated wetland soil.
 5.  Seal your plate with parafilm and place in the tray provided.

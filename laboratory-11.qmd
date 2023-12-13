@@ -82,15 +82,18 @@ tab1.1
 
 1.  The plant available form of phosphorus PO43- is an anion, yet phosphorus is not generally susceptible to leaching, unlike nitrogen. Why?
 
-     
+<br>
+<br>
 
 2.  How is potassium (K) availability controlled by mineral weathering?
 
-     
+<br>
+<br>
 
 3.  In Minnesota, what is the best time to soil test for an accurate understanding of plant available nitrogen (N)?
 
-     
+<br>
+<br>
 
 ## INVESTIGATION B: Measuring Soil pH and Nitrate Levels with Test Strips
 
@@ -126,7 +129,7 @@ Below are instructions for prepping two different set ups for soil analysis usin
 
 **Estimated Nitrate-Nitrogen (NO3 -- N) in lbs /acre formula below.**
 
-Note that NO3 -- N does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip.
+Note that "NO3 -- N" does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip.
 
 Assume a bulk density of 1. Refer to the Pre-Lab Prep for depth.
 
@@ -238,13 +241,16 @@ tab1.1
 
 What are your thoughts on potential issues or nonissues with plant growth in your soil after measuring your soil's pH?
 
-     
+<br>
+<br>
+
+Using your soil's nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen? Use the table below.
+
+<br>
+<br>
 
 ![Nitrogen Requirements of Vegetables](nitrogen-requirements-veg.png){#fig-nitrogen}
 
-Using your soil's nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen?
-
-     
 
 ## INVESTIGATION D: Liming and Base Saturation
 
@@ -252,11 +258,13 @@ In the field, quick lime or elemental sulfur is used to adjust pH to a desired r
 
 How do you think the quick lime will impact the Low B.S. sample?
 
-     
+<br>
+<br>
 
 How will the addition of acid affect the pH in soil with High B.S.?
 
-     
+<br>
+<br>
 
 **Record the pH of each solution here.**
 
@@ -310,7 +318,8 @@ tab1.1
 
 Explain the impact on the pH of each soil after the different solutions were added. Did the results surprise you?
 
-     
+<br>
+<br>
 
 ## INVESTIGATION E: Observation of Plant Nutrient Deficiencies
 

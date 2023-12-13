@@ -9,7 +9,7 @@
 
 Note that the laboratory portion of this course is self-paced. The lab has open hours and is self-paced so you can return as often as needed to complete the lab exercises (Laboratory TA's will be in the lab during all open hours to help you). **Make sure you sign in and out**.
 
-Labs take approximately 1-2 hrs to complete. You will sign up for a timeslot of your choice. Open times: W 9:00 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM *241 Borlaug Hall*
+Labs take approximately 1-2 hrs to complete. You will sign up for a timeslot of your choice. Open times: W 9:00 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM in 241 Borlaug Hall
 :::
 
 ## Lab Teaching Team {#sec-team}
@@ -26,13 +26,13 @@ M 9:35-10:25AM, and by appointment
 
 **Laboratory TAs**
 
-XXXXX
+Ava McCune
 
-XXXXX
+Sandy Nguyen
 
-## Logitstics and Laboratory Philosophy
+## Logistics and Laboratory Philosophy
 
-###Whys is this lab self-paced and what does that even mean?
+###Why is this lab self-paced and what does that even mean?
 
 Something here about pedagogy
 

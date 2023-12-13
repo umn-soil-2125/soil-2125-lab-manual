@@ -55,7 +55,7 @@ chips or flakes. Quartz is highly resistant to weathering, which
 accounts for its predominance in the sand fraction of most soils and as
 the major component of many sand beaches.
 
-□ **Orthoclase** (KAlSi3O8) is an important member of the **Feldspar**
+□ **Orthoclase** (KAlSi~3~O~8~) is an important member of the **Feldspar**
 family. It is also known as potassium feldspar and is a good source of
 potassium in the soil. The Feldspars are also framework silicates and
 are more susceptible to weathering than quartz because they contain
@@ -77,7 +77,7 @@ ago.
 minerals that vary slightly in composition. Apatite is present at low
 concentrations in many igneous rocks and can also be formed as secondary
 minerals in sedimentary rocks. The most common form is fluorapatite,
-(Ca5PO4)3F. The color of apatite varies. As apatite weathers, it
+(Ca~5~PO~4~)3F. The color of apatite varies. As apatite weathers, it
 releases phosphorus and calcium into the soil. Large deposits are an
 important source of commercial phosphorus fertilizer.
 
@@ -88,7 +88,7 @@ only present as primary minerals in some soils. They tend to be dark in
 color, unlike quartz, feldspar and the phyllosilicates, which are grey
 to colorless.
 
-**SECONDARY MINE RALS** are formed in the process of weathering and
+**SECONDARY MINERALS** are formed in the process of weathering and
 transformation of primary minerals. They are present only in sedimentary
 and metamorphic rocks.
 
@@ -102,15 +102,14 @@ stable and resistant to weathering (no isomorphous substitution, so no
 charge imbalance = a stable structure) and formed from the weathering of
 the other phyllosilicates.
 
-□ **Calcite** (CaCO3) occurs in limestone or similarly as dolomite
-(Ca,Mg)CO3 in sedimentary rocks (it can be precipitated from ocean water
-by organisms such as Foraminifera and corals). It can also be
+□ **Calcite** (CaCO~3~) occurs in limestone or similarly as dolomite
+(Ca,Mg)CO~3~ in sedimentary rocks (it can be precipitated from ocean water by organisms such as *Foraminifera* and corals). It can also be
 precipitated in arid regions where soil water containing ions and
 carbonates is drawn to the surface and evaporated, leaving carbonate
 salt residues. It often appears slightly chalky and white, whether as
 consolidated rock or as small nodules in the soils of dry regions. Their
 presence in soils can buffer soil pH from the effects of acid producing
-processes. Used as an amendment to raise pH.
+processes. It is used as an amendment to raise pH.
 
 □ **Goethite** (FeOOH) (pronounced GUR-tite) is an oxidized iron mineral
 (iron oxide) that gives many Minnesota soils their brown color. In
@@ -120,7 +119,7 @@ weathering of other primary minerals such as basalt. The example given
 is from a large geologic deposit of Goethite -- we would never observe
 such a large accumulation of pure Goethite in soils.
 
-□ **Hematite** (Fe2O3) is another iron oxide mineral that gives other
+□ **Hematite** (Fe~2~O~3~) is another iron oxide mineral that gives other
 Minnesota soils a reddish color, especially those in northeast
 Minnesota. Hematite is the iron oxide mineral that made the Iron Range
 of Minnesota famous. Like goethite, it is found as thin coatings on soil
@@ -150,8 +149,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Rock <- c("Granite is a common intrusive igneous rock of varying color and composition.", "Basalt is a common extrusive igneous rock that often “rusts” due to its high iron content (sometimes referred to as “mafic” because of its high magnesium and iron
-content).")
+Rock <- c("Granite is a common intrusive igneous rock of varying color and composition.", "Basalt is a common extrusive igneous rock that often “rusts” due to its high iron content (sometimes referred to as “mafic” because of its high magnesium and iron content).")
 PrincipleMinerals <- c("Quartz, Feldspar, Micas, Phosphates (Apatite)", "Fe and Mg-rich silicates (Amphiboles & Pyroxenes)")
 MajorElements <- c("Si, Al, O, K, Ca, P", "Al, O, K, Fe, Ca, Mg, some Si")
 DominantCharacteristics <- c("", "")
@@ -307,9 +305,13 @@ tab1.1
 
 ## INVESTIGATION C: Mineral Identification in the Sand Fraction
 
-Minerals, even of the same type, can vary in color and physical properties making visual four soil samples have been washed and sieved to remove the silt and clay leaving only the larger sand grains. Sand grains can range in size from 0.05 to 2 mm in diameter. Observe the four samples under the microscope. Fill out the Soil Mineral Observations table below. Record the presence of any quartz, feldspars,amphiboles/pyroxenes, shale, limestone, and organic matter. Use your findings from Investigations A and B and other examples provided to help with identification. Record the quantity of each fragment as "N," "F," "C," or "M" in the square under the corresponding mineral or mineral color. Consult the table legend and two other tables below. Describe the color of any coatings and state which minerals have coatings. Coatings usually only partially cover the grain.
+Minerals, even of the same type, can vary in color and physical properties making visual four soil samples have been washed and sieved to remove the silt and clay leaving only the larger sand grains. Sand grains can range in size from 0.05 to 2 mm in diameter. 
 
-**SOIL MINERAL OBSERVATIONS**
+Observe the four samples under the microscope. Fill out the Soil Mineral Observations table below. Record the presence of any quartz, feldspars, amphiboles/pyroxenes, shale, limestone, and organic matter.
+
+Use your findings from Investigations A and B and other examples provided to help with identification. Record the quantity of each fragment as "N," "F," "C," or "M" in the square under the corresponding mineral or mineral color. Consult the table legend and two other tables below. Describe the color of any coatings and state which minerals have coatings. Coatings usually only partially cover the grain.
+
+**Soil Mineral Observations**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -447,8 +449,7 @@ involved in chemical weathering.
 
 -   **Freezing and thawing**: When water is trapped in the rock (or in
     cracks) repeated freezing and thawing results in forces of expansion
-    and contraction (when water freezes, its volume increases by about 9
-    %).
+    and contraction (when water freezes, its volume increases by about 9%).
 
 -   **Heating and cooling**: Each different mineral in the rock will
     expand and contract by a different amount and at a different rate
@@ -526,16 +527,16 @@ crystallinity, or are removed from the rock.
     weathering happens in arid environments where salts are present.
 
 -   **Hydrolysis**: Water molecules at the rock's mineral surface
-    dissociate into H+ and OH-- and the mobile H+ ions penetrate the
+    dissociate into H^+^ and OH^-^ and the mobile H^+^ ions penetrate the
     rock's crystal lattice. This creates a charge imbalance that causes
-    cations (e.g. Ca2+, Mg2+, K+ and Na+) to diffuse out.
+    cations (e.g. Ca^2+^, Mg^2+^, K^+^ and Na^+^) to diffuse out.
 
--   **Oxidation-Reduction**: Several primary minerals contain Fe2+ and
-    Mn2+. In an oxidizing environment, Fe2+ is oxidized to Fe3+. The
+-   **Oxidation-Reduction**: Several primary minerals contain Fe^2+^ and
+    Mn^2+^. In an oxidizing environment, Fe^2+^ is oxidized to Fe^3+^. The
     change in oxidation state changes the size of the ion resulting in
-    internal stresses and accelerated weathering. Reduced iron (Fe2+) is
+    internal stresses and accelerated weathering. Reduced iron (Fe^2+^) is
     soluble and can be removed from the rock or mineral, while oxidized
-    iron (Fe3+) is insoluble and remains in place.
+    iron (Fe^3+^) is insoluble and remains in place.
 
 -   **Dissolution**: Occurs when the component minerals of rocks are
     dissolved by water. The dissolved material is transported away
@@ -675,43 +676,36 @@ tab1.1
 1.  Using an eye dropper, apply a drop of 10% hydrochloric acid to the
     limestone rock located in the test plates.
 
-<!-- -->
+<br>
+    a. Describe what you see when the acid makes contact with the limestone rock.
+    
+<br>
+    b. Describe what happens to the rock.
 
-a.  Describe what you see when the acid makes contact with the limestone
-    rock.
+<br>
+    c. What type of weathering does this represent?
 
-     
+<br>
 
-b.  Describe what happens to the rock.
-
-     
-
-c.  What type of weathering does this represent?
-
-     
-
-2.  These two salt samples (NaCl crystals; common table salt) were equal
+2. These two salt samples (NaCl crystals; common table salt) were equal
     in size at the beginning of this experiment. Using the squirt
     bottle, apply a stream of water to an edge or corner of the salt
     block on the left.
 
-<!-- -->
+<br>
+    a. Describe what you see when the water makes contact with the salt.
 
-a.  Describe what you see when the water makes contact with the salt.
+<br>
+    b. Describe what happens to the salt block.
 
-     
+<br>
+    c. What type of weathering does this represent?
 
-b.  Describe what happens to the salt block.
+<br>
 
-     
-
-c.  What type of weathering does this represent?
-
-     
-
-3.  How might physical weathering help promote chemical weathering?
-
-     
+3. How might physical weathering help promote chemical weathering?
+<br>
+<br>
 
 ## INVESTIGATION F: Naming Master Horizons - Review
 

@@ -31,23 +31,25 @@ The plates you inoculated with various soil materials last week are on display. 
 
 1.  Are you surprised at the amount and diversity of organisms that grew in only one week from your soil inoculants?
 
-     
+<br>
 
 2.  Some of the plates have been completely overgrown. However, find one that wasn't. Does it appear that anything grew from the autoclaved (sterilized) soil material?
 
-     
+<br>
+<br>
+<br>
 
 3.  *Estimate* the total number of distinct colonies or organisms on your plate. If you were going to study soil microorganisms, does it make sense why you would need to do a soil dilution of 1,000 to 10,000 times in order to get individual countable colonies that you could work with in a lab?
 
-     
+<br>
 
 4.  *Estimate* the total number of different organisms on your plate (that look different to the naked eye).
 
-     
+<br>
 
 5.  Finally, under the microscope, look at the small aggregate of air-dried soil (Soil 3) that you placed on the plate. Do see fungal hyphae growing out of it? Does it surprise you how many organisms are still alive and viable in soil that has been sitting air-dried for over 10 years?
 
-     
+<br>
 
 ## INVESTIGATION B: Observation of Redoximorphic Features in Mini-Monoliths
 
@@ -57,9 +59,14 @@ Because redoximorphic features only form where the soil is saturated for a signi
 
 Therefore, in general, *well-drained* (aerobic) soils will have continuous coatings of iron-oxides on all the mineral grains and will appear the typical Fe-oxide colors throughout (brown, red, orange, yellow), while *poorly drained* soils will exhibit redoximorphic features in the form of iron concentrations and depletions (mottles), or a completely grey color if iron has been reduced (solubilized) and removed by moving groundwater.
 
-1.  Based on the colors you see in the *poorly drained* mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year? Tip: 1 cm on the mini-monolith = 3 cm in the actual soil it was taken from; so multiply your depth measurement on the mini-monolith x 3 to get the actual depth.
+1.  Based on the colors you see in the *poorly drained* mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year? 
 
-     
+::: callout-tip
+1 cm on the mini-monolith = 3 cm in the actual soil it was taken from; so multiply your depth measurement on the mini-monolith x 3 to get the actual depth.
+:::
+
+<br>
+<br>
 
 ## INVESTIGATION C: Observation of Redox Features in Vials
 
@@ -67,7 +74,7 @@ Three weeks ago, you filled two vials with a orangish-colored soil material from
 
 You will also notice that your demo vial probably smells terrible. That is from the reduction of SO42- (sulfate) to H2S (hydrogen sulfide gas) and CO2 (carbon dioxide) to CH4 (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.
 
-Describe the differences you see between the vials. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
+Describe the differences you see between the vials in the table below. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -119,12 +126,9 @@ tab1.1 = treatmentrefridgerated_ht %>%
 tab1.1
 ```
 
-1.  Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials. Look at the blackboard for help.
+1.  Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials. Look at the chalkboard for help.
 
-<br>
-<br>
-<br>
-
+<br> <br> <br> <br>
 
 ## INVESTIGATION D: Earthworm Activity
 

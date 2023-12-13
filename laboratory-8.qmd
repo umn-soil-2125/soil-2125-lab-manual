@@ -198,17 +198,19 @@ tab1.1
 
 Climate refers to the amount of precipitation (rain, snow, humidity) and the temperature in a given locale. The hotter and more humid a climate, the faster and more completely it is going to weather into soil. If a climate is cool and or dry, the weathering process proceeds more slowly. Below are temperature and precipitation maps for Minnesota. The difference in temperature will not change the weathering of rocks in Minnesota. However, the precipitation and temperature together will influence the leaching and horizon formation. Calcium carbonate will occur closer to the surface in soils with less leaching as in western Minnesota. NOTE: The diagram below shows the general pattern but DOES NOT correspond to the exact depth of leaching for any one particular profile.
 
-1.  Match each soil profile with its location in Minnesota by the depth to CaCO3 (Bk or Ck). Use HCl to determine depths to carbonates.
+1.  Match each soil profile with its location in Minnesota by the depth to CaCO~3~ (Bk or Ck). Use HCl to determine depths to carbonates.
 
-!["](depth-to-carbonates.png){#fig-carbonates} !["](mn-precip-evap.png){#fig-precipevap}
+![\"](depth-to-carbonates.png){#fig-carbonates} ![\"](mn-precip-evap.png){#fig-precipevap}
 
 2.  For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which two of the other four soil forming factors contribute the most to these patterns, and why?
 
-         
+<br>
+<br>
+<br>
 
 ## INVESTIGATION D: Biotic Factors (Vegetation)
 
-One of the most obvious biotic factors is the effect that vegetation has on soil formation. The most common pre-European settlement vegetative types (this is the vegetation the soil formed under for \~ 10,000 -- 13,000 years after glaciation -- the native vegetation in many areas has been replaced by agriculture or other land uses, but only very recently) in Minnesota are forest, grassland (prairie), and a transitional zone between forest and grassland prairie (called savannah). Using the six micro-monoliths(1/4 scale), determine the vegetation that the following soils were formed under, and briefly explain your answer.
+One of the most obvious biotic factors is the effect that vegetation has on soil formation. The most common pre-European settlement vegetative types (this is the vegetation the soil formed under for ~ 10,000 -- 13,000 years after glaciation -- the native vegetation in many areas has been replaced by agriculture or other land uses, but only very recently) in Minnesota are forest, grassland (prairie), and a transitional zone between forest and grassland prairie (called savannah). Using the six micro-monoliths (1/4 scale), determine the vegetation that the following soils were formed under, and briefly explain your answer.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -314,7 +316,7 @@ tab1.1
 
 ## INVESTIGATION F: Time Factors
 
-Soil "age" is measured in geologic terms (Minnesota soils are quite young due to glacial deposits that happened only 10,000 -- 13,000 years ago), as well as measured in terms of development (soils in colder climates develop slower and therefore show "young" morphology). For practical purposes, the number and type of horizons and the depth of soil development (pedogenic processes or A, E & B horizons) is a decent starting indicator of a soil's age. Determine the "age" sequence the three micro-monoliths on display.
+Soil "age" is measured in geologic terms (Minnesota soils are quite young due to glacial deposits that happened only 10,000 -- 13,000 years ago), as well as measured in terms of development (soils in colder climates develop slower and therefore show "young" morphology). For practical purposes, the number and type of horizons and the depth of soil development (pedogenic processes or A, E, & B horizons) is a decent starting indicator of a soil's age. Determine the "age" sequence the three micro-monoliths on display.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -374,11 +376,15 @@ All three of these soils developed under a similar climate in central-eastern Mi
 
 1.  Which of these soils exhibits a clear peak in clay with depth?
 
-     
+<br>
 
 2.  Knowing what you know about the soil forming factors and their effect on soil development and soil morphology, explain why the soil listed in your answer to question 1 has a peak in clay due to eluviation/illuviation while the other soils do not.
 
-     
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## INVESTIGATION H: Properties from Factors and Factors from Properties
 
@@ -444,7 +450,7 @@ library(dplyr)
 ## BUILD TABLE
 ################
 SoilSeriesName <- c("Hayden", "Port Byron", "Zimmerman", "Cecil", "Rifle", "Balaton", "Kingsley")
-DominantTexture <- c("Clay Loam/Silty Clay Loam", "Silt/Silt Loam", "Sand/Loamy Sand", "Clay Loam/Clay", "N/A", "Clay Loam/Silty Clay Loam", "Sandy Clay Loam/Loam")
+DominantTexture <- c("Clay Loam/Silty Clay Loam", "Silt/ Silt Loam", "Sand/Loamy Sand", "Clay Loam/Clay", "N/A", "Clay Loam/Silty Clay Loam", "Sandy Clay Loam/Loam")
 SubsoilColor <- c("2.5Y", "10YR", "10YR", "2.5R", "10YR", "", "")
 DrainageClass <- c("Well Drained", "", "Well Drained", "Well Drained", "", "Well Drained", "Well Drained")
 TopsoilOM <- c("", "10%", "5%", "5%", "", "10%", "8%")

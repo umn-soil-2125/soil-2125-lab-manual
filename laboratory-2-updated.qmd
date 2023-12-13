@@ -52,7 +52,7 @@ Answer the following questions from your observation and reading of the models i
 
      
 
-7.  Are there any other atoms besides Si in the tetrahedral sheets of a Mica or Illite? If so what element?
+7.  Are there any other atoms besides Si in the tetrahedral sheets of a Mica or Illite? If so, what element?
 
      
 
@@ -112,18 +112,11 @@ tab1.1
 
 Explain why Kaolinite does not expand and Smectite does expand.
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br> <br>
 
 Draw a picture to aid your explanation.
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br> <br>
 
 ## INVESTIGATION C: Clay Mineral Charges
 
@@ -174,7 +167,7 @@ slurryion_ht <- as_hux(slurryion)
 ################
 
 tab1.1 = slurryion_ht %>% 
-      set_all_padding(4) %>% 
+      set_all_padding(12) %>% 
       set_outer_padding(0) %>% 
       set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
@@ -197,7 +190,9 @@ tab1.1
 
 **Interpret the results of Investigation D based on what you know about the charge on clays and the ionic potential of cations. What accounts for the differences observed?** Hint: Look at the lecture slides on clay mineralogy. The answer has to do with the charge on clay particles and the strength of the charge on the cation in solution.
 
-     
+<br>
+<br>
+<br>
 
 ## INVESTIGATION E: Shrink/Swell Observation
 
@@ -207,11 +202,15 @@ tab1.1
 
 Describe what happens to each of the clays. How much water (ml) could you add to each before there was excess water?
 
-     
+<br>
+<br>
+<br>
 
 Explain this below using what you know about the properties of the major clay mineral groups and the difference between Kaolinites and Smectites.
 
-     
+<br>
+<br>
+<br>
 
 ## INVESTIGATION F: Clay Soils
 
@@ -273,3 +272,7 @@ tab1.1
 ## INVESTIGATION G: Article
 
 Read the short article provided. What was one of the clay minerals that solved the double murder mystery?
+
+<br>
+<br>
+<br>

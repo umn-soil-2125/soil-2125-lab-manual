@@ -74,11 +74,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 2: WEBSTER
 
@@ -138,11 +145,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 3: RIFLE
 
@@ -200,11 +214,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 4: FARGO
 
@@ -264,11 +285,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 5: KALKASKA
 
@@ -328,11 +356,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 6: ZIMMERMAN
 
@@ -392,11 +427,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## SOIL 7: LESTER
 
@@ -456,15 +498,19 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 Note, the suborder for Cecil is not in course handouts - make a guess! Combine the moisture regime and order.
 
@@ -526,11 +572,18 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
+<br>
+
 Diagnostic Subsurface:                                              Explain:
+
+<br>
 
 Soil Order:                                                                    Explain:
 
+<br>
+
 Soil Suborder:                                                              Explain:
+
 
 ## INVESTIGATION B: Location of Soil Orders
 

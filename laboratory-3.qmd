@@ -46,16 +46,14 @@ volume. Measuring the mass of the clod is straightforward; measuring the
 volume is not. We can use Archimedes' Principle to measure the volume of
 any solid, regardless of its shape. Simply stated, if a 50g clod weighs
 20g when immersed in water, it must have displaced 30g of water. Since 1
-cm3 of water weighs 1 gram, the 30g of water is equivalent to 30 cm3 of
-water. The volume of the clod, therefore, is 30 cm3. A general
+cm^3^ of water weighs 1 gram, the 30g of water is equivalent to 30 cm^3^
+of water. The volume of the clod, therefore, is 30 cm^3^. A general
 mathematical expression for the above statement is:
 
-Volume of clod (in cm3) = \[(weight of clod in air) -- (weight of clod
-in water)\] g × 1cm3/1 g
+Volume of clod (in cm^3^) = \[(weight of clod in air) -- (weight of clod
+in water)\] g × 1cm^3^/1 g
 
-This formula represents the denominator in the Db,clod formula above,
-giving the result of your calculation in units of g/cm3 (also written as
-g cm-3), which is bulk density.
+This formula represents the denominator in the Db~clod~ formula above, giving the result of your calculation in units of g/cm^3^ (also written as g cm-3), which is bulk density.
 
 **WATCH VIDEO TUTORIAL ON IPADS!!**
 
@@ -132,7 +130,8 @@ D_{b,core}=\frac{(weight\ of\ core\ and\ soil\ -\ weight\ of\ core)\ g}{(volume\
 $$
 
 *Volume of a cylinder (the soil core) = (π × r^2^ × h)* For r (radius),
-measure the *inside* diameter of the core in centimeters (**not inches**).
+measure the *inside* diameter of the core in centimeters (**not
+inches**).
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -271,7 +270,7 @@ $$
     into the very small pores. After the water soaks in, add a little
     more water. Repeat this step as necessary.
 3.  Determine the amount of water used to fill the pore space in the 100
-    cm3 of soil by subtracting the volume of water in the graduated
+    cm^3^ of soil by subtracting the volume of water in the graduated
     cylinder from the original 100 ml volume. Note: We are assuming that
     the water poured into the soil exactly filled the pore space and
     thus equals the total pore volume.
@@ -351,9 +350,13 @@ should be similar. Record your results.
 
 Direct method:
 
- 
+<br>
 
 Indirect method:
+
+<br>
+<br>
+<br>
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
 
@@ -415,6 +418,10 @@ tab1.1
 Give a general description of why the soil materials are ranked that
 way. Using your lecture notes, recall what factors influence bulk
 density.
+
+<br>
+<br>
+<br>
 
 ## INVESTIGATION D: Soil Color and Soil Organic Matter
 
@@ -531,11 +538,13 @@ soil, you would feel the mineral grains (sand, silt or clay).
 
 What is the definition of soil texture?
 
-   
+<br>
+<br>
+<br>
 
 Does this soil fit into any of our textural classes?
 
-   
+<br>
 
 ## INVESTIGATION F: Ranges and Estimation of Bulk Soil Physical Properties
 
@@ -555,15 +564,19 @@ following questions. Use your lecture notes (in particular, **Lecture
     a loamy sand with a Db of 1.4 g/cm3. Will root penetration likely be
     inhibited in either of these soils? Why or why not?
 
-   
+<br>
+<br>
+<br>
 
 4.  Someone tells you they calculated a Db of 2.7 g/cm3 from a soil core
     they took. Should you believe them? Why or why not?
 
-   
+<br>
+<br>
+<br>
 
 5.  In general, what is a reasonable value to guess for WFPS (i.e., if
-    you don't know anything else about a soil)?
+    you don't know anything else about a soil)? Think about our pie chart from lecture 1-1.
 
    
 
@@ -575,4 +588,6 @@ following questions. Use your lecture notes (in particular, **Lecture
 7.  Without doing any calculations, which soil has the higher bulk
     density? Why?
 
-   
+<br>
+<br>
+<br>

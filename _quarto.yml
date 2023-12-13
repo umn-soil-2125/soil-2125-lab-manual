@@ -6,7 +6,7 @@ project:
 book:
   title: "Soil 2125 Laboratory Manual - pdf edition"
   author: "Nic Jelinski and Nora Pearson"
-  date: "22DEC2022"
+  date: "13DEC2023"
   chapters:
     - index.qmd
     - laboratory-1-updated.qmd
@@ -22,7 +22,6 @@ book:
     - laboratory-10.qmd
     - laboratory-11.qmd
     - laboratory-12.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
