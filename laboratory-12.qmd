@@ -28,13 +28,13 @@ Spread a thin layer of each soil on separate pieces of paper. Hold the water dro
 
 1.  What effect does the impact of the water have on each soil (explain any differences that you observe)?
 
-<br>
-<br>
+<br> <br>
 
 2.  How would the presence of plant cover change this?
 
-<br>
-<br>
+<br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Soil Water Erosion: Residue Cover and Runoff
 
@@ -49,15 +49,15 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Soil <- c("Uncovered", "Covered")
-Rate <- c("", "")
-Explanation <- c("", "")
+Soil <- c("Bare", "Crop, no residue", "100% residue cover", "Grass cover")
+Rate <- c("", "", "", "")
+Explanation <- c("", "", "", "")
 
 soilrate <- data.frame(Soil, Rate, Explanation)
-colnames(soilrate) = c("Soil", "Rate (High/Low)", "Explanation")
+colnames(soilrate) = c("Soil", "Rate (High/Moderate/Low)", "Explanation")
 
 col.num = 3
-row.num = 3 #including header
+row.num = 5 #including header
 
 ################
 ## SET AS HUXTABLE TYPE
@@ -82,14 +82,16 @@ tab1.1 = soilrate_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:3, col= 1:col.num, 30) %>%
-      set_top_padding(row = 2:3, col = 1:col.num, 30) %>%
+      set_bottom_padding(row = 2:row.num, col= 1:col.num, 30) %>%
+      set_top_padding(row = 2:row.num, col = 1:col.num, 30) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
 
 tab1.1
 ```
+
+{{< pagebreak >}}
 
 ## INVESTIGATION C: Predicting Erosion with the Universal Soil Loss Equation
 
@@ -181,6 +183,19 @@ tab1.1
 
      c. Read the slope in degrees off the dial on the side of the clinometer (Figure 1) at each sampling location on the plaster model (the white lines). Some of the sampling sites on the model are not are not flat so the clinometer will tend to rock back and forth. Try to average the variation by finding a middle point. Record your reading in Table 2.
 
+::: callout-note
+## Watch this video on use of the clinometer
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/5nmhc9xm")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
+
      d. Divide the measured slope obtained in Step 3c by 2 to correct for the vertical exaggeration of the model. For example, if you obtain a clinometer reading of 16° on the model, the corrected slope is 8° (16° ÷ 2 = 8°). Record your calculation in Table 2.
 
      e. Using the Extended LS Factor Table on the next page, find the slope in degrees in Column 1 corresponding to the corrected value obtained in Step 3d. Record the corresponding slope in percent from Column 2 in Table 2. You will need percent slope to determine P. f. Continue moving across the row to the column that corresponds to the slope length in feet found in Step 3b and read the LS factor from the body of the table. There is no need to interpolate. Record the LS factor in Tables 1 and 2.
@@ -230,7 +245,7 @@ tab1.1 = sitelength_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -244,7 +259,11 @@ tab1.1 = sitelength_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ![Extended LS Factor Table. Use values from steps 3b and 3d.](extended-ls-factor-table.png){#fig-ls}
+
+{{< pagebreak >}}
 
 ## INVESTIGATION D: Modifying Soil Loss
 
@@ -349,7 +368,7 @@ tab1.1 = uslenew_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -362,6 +381,8 @@ tab1.1 = uslenew_ht %>%
 
 tab1.1
 ```
+
+{{< pagebreak >}}
 
 Crop management factor, **C**.
 
@@ -394,7 +415,7 @@ cmanagement_ht <- as_hux(cmanagement)
 tab1.1 = cmanagement_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(2) %>% #this tells it how many decimals to print after any numbers
+      set_number_format(3) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -452,7 +473,7 @@ tab1.1 = slopepractice_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%

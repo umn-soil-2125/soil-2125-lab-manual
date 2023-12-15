@@ -1,15 +1,15 @@
 # Preface {.unnumbered}
 
-> **"Tell me an I forget, teach me and I may remember, involve me and I learn."**
+> **"Tell me and I forget, teach me and I may remember, involve me and I learn."**
 >
 > *- Benjamin Franklin*
 
 ::: callout-note
 ## Laboratory Schedule
 
-Note that the laboratory portion of this course is self-paced. The lab has open hours and is self-paced so you can return as often as needed to complete the lab exercises (Laboratory TA's will be in the lab during all open hours to help you). **Make sure you sign in and out**.
+Note that the laboratory portion of this course is self-paced. The lab has open hours and you can return as often as needed to complete the lab exercises (Laboratory TA's will be in the lab during all open hours to help you). **Make sure you sign in and out by using the posted QR code, reading the pre-lab instructions, and submitting the pre-lab Google Form.**
 
-Labs take approximately 1-2 hrs to complete. You will sign up for a timeslot of your choice. Open times: W 9:00 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM in 241 Borlaug Hall
+Labs take approximately 1-2 hrs to complete. You will sign up for a primary timeslot of your choice during the first week of class. Open times: W 8:30 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM *241 Borlaug Hall*
 :::
 
 ## Lab Teaching Team {#sec-team}
@@ -22,24 +22,8 @@ pear0747\@umn.edu
 
 Office Hours (Zoom):
 
-M 9:35-10:25AM, and by appointment
+F 9:35-10:25AM, and by appointment
 
-**Laboratory TAs**
+## Logistics and Laboratory Philosophy - Why is this lab self-paced and what does that even mean?
 
-Ava McCune
-
-Sandy Nguyen
-
-## Logistics and Laboratory Philosophy
-
-###Why is this lab self-paced and what does that even mean?
-
-Something here about pedagogy
-
-### How will I fit the lab into my schedule?
-
-details here
-
-### Anything else?
-
-dunno
+This laboratory is self-paced to allow you to complete laboratory exercises in as much or as little time as you need for your learning style. During each weekly lab, you will work your way through a series of exercises that will be set up for you - you will use this laboratory manual to complete those exercises, which the TA will then evaluate for completeness and effort. Following evaluation of your lab manual for the week, you will take a short quiz before you leave the lab. The quiz is open book/open note, and you have two attempts on the quiz. The TA will grade your first attempt, after which you will know which questions (if any) you have gotten incorrect. You can then change or modify your answers during the second attempt. The two components (the laboratory exercises completed in the workbook + the lab quiz) make up the points you will earn for the laboratory component of this course.

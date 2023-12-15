@@ -20,9 +20,11 @@
 -   Sodic
 :::
 
+{{< pagebreak >}}
+
 ## PRE-INVESTIGATION
 
-In this laboratory exercise, you will be working with a set of 8 soils that vary in their CEC, base saturation, pH, and salinity. Material from lectures 1.8 and 2.2 will help you. To predict CEC, focus on the mineralogy, texture and OM% (soils with high OM, more clay, and 2:1 minerals will have higher CEC). To predict pH, calcareous status, and salinity, think about the climate that these soils come from (soils in wetter climates typically have lower pH, and are not calcareous -- only soils in the driest climates are usually saline because water dissolves salts). Fill out the table on page 2 before you begin; **you are strongly encouraged to work in groups!** When you have completed the pre-exercise, have the TA check it over and proceed with the lab exercises.
+In this laboratory exercise, you will be working with a set of 8 soils that vary in their CEC, base saturation, pH, and salinity. Material from lectures 1.8 and 2.2 will help you. To predict CEC, focus on the mineralogy, texture and OM% (soils with high OM, more clay, and 2:1 minerals will have higher CEC). To predict pH, calcareous status, and salinity, think about the climate that these soils come from (soils in wetter climates typically have lower pH, and are not calcareous -- only soils in the driest climates are usually saline because water dissolves salts). Fill out the table on the next page before you begin; **you are strongly encouraged to work in groups!** When you have completed the pre-exercise, have the TA check it over and proceed with the lab exercises.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -32,7 +34,7 @@ library(dplyr)
 ## BUILD TABLE
 ################
 Sample <- c("1", "2", "3", "4", "5", "6", "7", "8")
-Climate <- c("Cold/Humid","Temperate/Humid", "Temperate/Humid", "Tropical/Wet", "Temperate/Humid", "Temperate/Humid", "Temperate/Dry", "Temperate/Very Dry")
+Climate <- c("Cold/Humid","Temperate/ \ Humid", "Temperate/ \ Humid", "Tropical/Wet", "Temperate/ \ Humid", "Temperate/ \ Humid", "Temperate/ \ Dry", "Temperate/ \ Very Dry")
 LocationofOrigin <- c("Northern Minnesota","Anoka County, MN", "Anoka County, MN", "Puerto Rico", "East Central Minnesota", "West Central Minnesota", "Far Western Minnesota", "South Dakota")
 DominantMineralogy <- c("N/A","Quartz", "Quartz", "Fe/Al Oxides", "Mixed 2:1 and 1:1, Fe Oxides", "Predominantely 2:1, some 1:1", "Predominantely 2:1, some 1:1", "Predominantely 2:1")
 Texture <- c("N/A","Loamy Sand", "Loamy Sand", "Clay", "Sandy Clay Loam", "Clay Loam", "Clay Loam", "Clay Loam")
@@ -62,7 +64,7 @@ tab1.1 = sampleclimate_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -76,7 +78,9 @@ tab1.1 = sampleclimate_ht %>%
 tab1.1
 ```
 
-Fill in the table below with predictions based on your lecture notes.
+Fill in the table on the next page with predictions based on your lecture notes.
+
+{{< pagebreak >}}
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -129,9 +133,24 @@ tab1.1 = samplecec_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION A: Soil pH
 
 You are encouraged to work in groups for this portion of the lab.
+
+::: callout-note
+## **Watch brief video on how to use pH meter. If you have any questions, please ask the TA for assistance.**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/3a5edtte")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
 
 1.  Use the pH meter to determine the pH of each soil provided slurry.
 2.  Measure the slurries in order. Measure the pH first to check the pH meter is calibrated.
@@ -173,7 +192,7 @@ tab1.1 = soilnumber_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -189,15 +208,15 @@ tab1.1
 
 Very generally, compare these values to your pH predictions in the pre-investigation exercise:
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Calcareous Soils
 
 1.  Place a small quantity of each soil on a spot plate.
 2.  Add two drops of 10% HCl.
-3.  Check for effervescence. "Effervescence," or bubbling, indicates the evolution of CO2 from neutralization reactions between carbonate salts -- CaCO3 and Na2CO3 -- and the HCl. Calcareous soils contain carbonate salts that react with acid (HCl in this case).
+3.  Check for effervescence. "*Effervescence*," or bubbling, indicates the evolution of CO~2~ from neutralization reactions between carbonate salts -- CaCO~3~ and Na~2~CO~3~ -- and the HCl. Calcareous soils contain carbonate salts that react with acid (HCl in this case).
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -210,7 +229,7 @@ Soil <- c("1", "2", "3", "4", "5", "6", "7", "8")
 IsthesoilCalcareous <- c("", "", "", "", "", "", "", "")
 
 soilcalcareous <- data.frame(Soil, IsthesoilCalcareous)
-colnames(soilcalcareous) = c("Soil", "Is the Soil Calcareous (Yes/No)?")
+colnames(soilcalcareous) = c("Soil Number", "Is the Soil Calcareous (Yes/No)?")
 
 col.num = 2
 row.num = 9 #including header
@@ -233,7 +252,7 @@ tab1.1 = soilcalcareous_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -249,20 +268,11 @@ tab1.1
 
 ## INVESTIGATION C: Cation Exchange Observation
 
-**PART 1:** Solutions of two dyes (Eosin red: negatively charged (-); and Methylene blue: positively charged (+)) were added to the soil in the filter and the leachate was collected in the flask.
+Solutions of two dyes (Eosin red: negatively charged (-); and Methylene blue: positively charged (+)) were added to the soil in the filter and the leachate was collected in the flask.
 
 Explain the predominant color observed in the leachate after the solution filtered through the soil into the flask. What color do you see? What is the reason for this?
 
 <br> <br> <br> <br>
-
-**PART 2:** 
-
-1. Place a small amount of soil into each of two tubes - one labelled "H2O" and the other labelled "MgCl2". 
-2. Add 20 ml of H2O or MgCl2 to each of the appropriate tubes with the wash bottles. 
-3. Shake, let the slurries sit for 2 minutes. 
-4. Shake again and measure the pH of each -- record them in the table below. Please avoid jamming the fragile pH probe into the sediment.
-
-NOTES: This soil is Fe and Al-rich sandy material. MgCl2 in solution dissolves completely to Mg2+ and Cl- ions. The Cl- ions are anions which do not interact with soil particles (i.e. you can ignore them).
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -314,13 +324,26 @@ tab1.1
 
 Explain why adding a concentrated salt (which contains no H+ ions) would decrease the pH (increase the number of H+ ions in solution). HINT: Cation exchange plays a huge role!
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION D: Saline Soils
 
-Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not. **READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), divide the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m.
+Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not. **READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), *divide* the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m.
+
+::: callout-note
+## **Watch brief video on how to use electrical conductivity meter. If you have any questions, please ask the TA for assistance.**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "15%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/3esxtkuj")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
 
 1.  Use the meter to determine the electrical conductivity of each soil provided slurry. MAKE SURE THE CAP IS OFF THE PROBE.
 2.  Measure the slurries in order.
@@ -381,61 +404,45 @@ tab1.1
 
 <br> <br> <br> <br>
 
+{{< pagebreak >}}
+
 ## INVESTIGATION E: Calculation and Interpretation of CEC, pH and Salinity
 
 The same 8 soils that you have working with in this laboratory were also tested by the University of Minnesota Soil Testing Laboratory, which provides analytical testing to clients who need to know detailed information about the properties of their soils. There is no lab station for this investigation; find a spot near the lab and answer the following questions. *Use your findings in investigations A-D and soil testing results to answer the following questions; ask a TA for a data sheet.*
 
 1.  First **focus on soils 4, 5, 7, and 8,** which have specific exchange phase ion composition data reported on the data sheet. Calculate the CEC from the sum of exchange phase cations given for each soil. Do these numbers match the whole soil CEC reported in the table?
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br>
 
 2.  Calculate the Base Saturation percentage (BS%) for soils 4, 5, 7 and 8.
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br>
 
 3.  Look at the pH and exchange phase composition of Soil 4. What major problems might you expect with plant growth on this soil?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 4.  Which of the 8 soils would be classified as Saline soils based on the analytical data reported on the sheet? (Saline soils are soils that have EC \> 4 dS/m).
 
-<br>
-<br>
+<br> <br>
 
 5.  Calculate the Exchangable Sodium Percentage (ESP%) for the soils you identified as saline in Question 4.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 6.  Which of these soils would be classified as Sodic soils? (Sodic soils have an ESP% \> 15%).
 
-<br>
-<br>
+<br> <br>
 
 7.  What major problems for plant growth would you expect to encounter in Sodic soils?
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br>
 
-Now, consider the geographic location and climate of all 8 soil samples you investigated (from the table on page 1):
+Now, consider the geographic location and climate of all 8 soil samples you investigated (from the table on the first page of this lab):
 
 8.  Soils 5 and 6 both occur in a temperate/humid climate and in relatively close proximity (Soil 5 is from East-Central MN and Soil 6 is from West-Central MN). They were both formed in parent material that dropped out of glacial ice (termed glacial till). However, their CECs, mineralogies, calcareous status, and pHs are very different. What "tale" did we talk about in class (see the end of lecture 1.8 -- soil pH) that would account for these differences?
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br>
 
 9.  Sodium carbonate salts (Na2CO3) are more soluble than calcium carbonate salts (CaCO3). This means that when sodium carbonates are dissolved, more OH- is released. Sodium carbonates also increase Na+ concentrations. Both soil 7 and 8 are saline, but differ in their sodicity status and pH. Briefly explain how the different solubilities of Na and Ca carbonate salts mean that sodic soils would be (1) found in drier climates and (2) have higher pHs than other non-sodic (but still saline) soils.
 

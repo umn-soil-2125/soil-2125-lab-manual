@@ -25,7 +25,18 @@ On the bench, you will see six plants. Three of these are growing in a silt loam
 
 Using a moisture meter, you will construct a water retention curve for each of these soils. You will use the moisture meter to measure the volumetric water content and the tensiometer to measure the matric potential in bars.
 
-**NOTE: WATCH VIDEO TUTORIAL ON IPADS!! If you have any questions, please ask the TA for assistance.**
+::: callout-note
+## **Watch brief video on how to use moisture meter. If you have any questions, please ask the TA for assistance.**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/36wzhwvf")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
 
 Fill out the following table:
 
@@ -36,8 +47,8 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-WaterTreatment <- c("Sand (@ Saturation)", "Sand (~FC))", "Sand (@ WP)", "Silt Loam (@ Saturation)", "Silt Loam (~FC)", "Silt Loam (@ WP)")
-MatricPotential <- c("0", "", "-15", "0", "", "-15")
+WaterTreatment <- c("Sand (@ Saturation)", "Sand (~FC)", "Sand (@ WP)", "Silt Loam (@ Saturation)", "Silt Loam (~FC)", "Silt Loam (@ WP)")
+MatricPotential <- c("0", "-0.33", "-15", "0", "-0.33", "-15")
 VolumetricH2OContent <- c("", "", "", "", "", "")
 
 matricvolumetric <- data.frame(WaterTreatment, MatricPotential, VolumetricH2OContent)
@@ -59,12 +70,12 @@ matricvolumetric_ht <- as_hux(matricvolumetric)
 tab1.1 = matricvolumetric_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -78,33 +89,42 @@ tab1.1 = matricvolumetric_ht %>%
 tab1.1
 ```
 
-Use the data from the table on the previous page to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure) note that the scale is logarithmic) for each of these soils on the table below and answer the following questions:
+Use the data from the table on the previous page to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure) note that the scale is logarithmic) for each of these soils on the table on the next page and answer the following questions:
 
 ![Water Retention Curve](water-retention-curve-Picture1.png){#fig-waterretention}
 
 1.  Using the graph above, estimate the total plant available water (in % by volume) for each of these soils. FC is defined as -0.33 bars and wilting point is defined as -15 bars.
 
-       
+<br> <br> <br>
 
 2.  Which soil will hold more plant available water when at field capacity? WHY?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
-3.  Describe the plant responses to these different treatments (i.e. field capacity and wilting point).
+3.  Describe the plant responses to these different treatments (i.e. field capacity and wilting point) - what do the plants look like?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
-4.  Using what you know about soil at this point in the class, describe the processes that are driving the plant response in each treatment. For example, think about why the saturated treatment looks the way it does? Why does the wilting point treatment look the way it does?
+4.  Using what you know about soil at this point in the class, describe the processes that are driving the plant response in each treatment. For example, think about why plants experiencing the saturated treatment look the way they do? Why do the plants experiencing the wilting point treatment look the way they do?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Determining Field Capacity
+
+::: callout-note
+## **Watch brief video on how to do this exercise. If you have any questions, please ask the TA for assistance.**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "15%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/3vdb7t99")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
 
 **Preparation**
 
@@ -116,17 +136,12 @@ Use the data from the table on the previous page to construct water retention cu
 6.  Carefully fill one of the graduated cylinders (BLUE base) with 25 mL of water.
 7.  Place the funnel with the filter paper and soil on top of one of the 100 mL graduated cylinder.
 8.  Carefully pour all 25 mL of water on top of the soil. Add about a third of the water, wait for it to be absorbed into the soil. Then slowly add the remainder. Do not add so much water at one time that it overtops the filter paper. *The silt loam may take 10 minutes or so to add all of the water.*
-9.  Record the amount of water (in mL) that has passed through the soil sample and has collected in the graduated clynder. Assume 2mL of water is absorbed by the filter paper.
+9.  Record the amount of water (in mL) that has passed through the soil sample and has collected in the graduated clynder. Assume that 2 mL of water is absorbed by the filter paper.
+10. Repeat this process for the soils labeled Sand and Silt Loam and record your results in the table below.
 
-Repeat this process for the soils labeled Sand and Silt Loam and record your results in the table below.
+**Volume retained in the soil** = (25mL) - (Volume retained on filter paper) - (Volume passed through the soil). This is an estimate of field capacity.
 
-**Volume retained in the soil** = (25mL) - (Volume retained on filter paper) - (Volume passed through the soil).
-
-This is an estimate of field capacity.
-
-**θg at Field Capacity** = (mL H~2~O retained) / (g dry soil), because 1 mL H~2~O = 1 g H~2~O.
-
-Assume your 20 g of soil was oven dry.
+**θg at Field Capacity** = (mL H~2~O retained) / (g dry soil), because 1 mL H~2~O = 1 g H~2~O. Assume your 20 g of soil was oven dry.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -165,7 +180,7 @@ tab1.1 = volumeretainedpassed_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -181,19 +196,17 @@ tab1.1
 
 1.  Explain why the different soil textures retained differing amounts of water.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 2.  Which of these textures has the highest water content at field capacity?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION C: Tensiometer Observation
 
-In this investigation, you can observe the use of a tensiometer to measure matric potential (the tension at which water is pulled by the soil) for two different soils at different water contents. The tensiometer is essentially a water column with a porous ceramic tip at the bottom. The pores in the ceramic are so small that water will not move through the ceramic under the influence of gravity alone (i.e. the force of gravity does not pull down hard enough for the water to move through). However, you now know that due to adhesion, cohesion, and capillary action that soils can exert a tension on water and pull it against gravity. The vacuum gauge readings show the relative amount of tension that the soil is exerting on the water. 
+In this investigation, you can observe the use of a tensiometer to measure matric potential (the tension at which water is pulled by the soil) for two different soils at different water contents. The tensiometer is essentially a water column with a porous ceramic tip at the bottom. The pores in the ceramic are so small that water will not move through the ceramic under the influence of gravity alone (i.e. the force of gravity does not pull down hard enough for the water to move through). However, you now know that due to adhesion, cohesion, and capillary action that soils can exert a tension on water and pull it against gravity. The vacuum gauge readings show the relative amount of tension that the soil is exerting on the water.
 
 To make the gauges reasonable for the general public to use, scales are usually from 0-100 in positive numbers -- a high reading on the gauge is caused by a dry soil that has a high tension. Note that this is different than what we discussed in lecture in that the values are positive rather than negative -- these are designed for consumer use and are scaled and calibrated based on convenient numbers, not fundamental principles, but the concepts are exactly the same. These types of tensiometers are commonly used for irrigation scheduling to let the land managers know when to turn on the sprinklers, such as at a golf course.
 
@@ -203,27 +216,25 @@ Read the tension gauge. The units are in centibars of tension (if you put a nega
 
 Loamy Sand: \_\_\_\_\_\_\_\_\_\_\_\_\_                                Silt Loam: \_\_\_\_\_\_\_\_\_\_\_\_\_
 
+{{< pagebreak >}}
+
 ## INVESTIGATION D: Observations of Capillary Action
 
 Capillary action enables soil moisture to move in any direction within the soil as water moves from wetter areas to drier areas. Observe the different sized capillary tubes and the height at which the water reaches in each tube.
 
 1.  Explain the relationship between the height of the water in the capillary tubes and the tube diameter using the terms adhesion, cohesion and gravity.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 2.  Now observe the two soil columns -- one is fine sand (particles \~ 200um in diameter) and the other a coarse sand (particles \~ 750um in diameter) and observe the height of water rise in each column. Explain the differences in the height of rise based on what you know about soil textural class, particle size, and pore size.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 3.  The zone between the totally saturated soil material below the water surface in the tub and the highest height of rise due to matric potential is sometimes called the "capillary fringe" -- it represents the height at which water has been pulled up from a saturated zone against gravity by capillary action or matric potential. Would you expect a silty clay or a sandy clay loam to have a larger capillary fringe (you might want to reference your textural triangle)? Why?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION E: Determining Soil Moisture by Weight and Volume
 
@@ -282,9 +293,9 @@ tab1.1
 
 The bulk density of the moist soil in the bucket last week was 1.3 g/cm3. Calculate the volumetric water content (θv):
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION F: Soil Water Problems
 
@@ -302,8 +313,7 @@ Weight of soil core at present sampling time = **395 g**
 
 Weight of Oven dry soil core = **300 g**
 
-<br>
-1.  What is the **bulk density**?
+1. What is the **bulk density**?
 
      
 
@@ -315,7 +325,7 @@ Weight of Oven dry soil core = **300 g**
 
 <br> <br> <br> <br>
 
-4.  What is the total possible plant available water by volume? Remember, total possible plant available water (PAW) for a given soil texture is the difference between the volumetric water content at field capacity (FC) and the wilting point (WP): **θv(FC) -- θv(WP)**?
+4.  What is the total possible plant available water by volume? Remember, total possible plant available water (PAW) for a given soil texture is the difference between the volumetric water content at field capacity (FC) and the wilting point (WP): **θv(FC) -- θv(WP)**? (*Use your results from question 3 above*)
 
 <br> <br> <br>
 

@@ -16,6 +16,8 @@ For all eight monoliths, determine the correct order of horizons from the choice
 
 **Note**: Mollic epipedons are darker than 3/3 (no matter what the hue) and must be at least 25cm (\~10 inches) thick. If the epipedon is not mollic, it must be ochric or histic. None of these soils have an umbric epipedon. Bw = cambic (except for Bw that have sand/loamy sand textures -- these are not considered as any diagnostic horizon for the purposes of classification); Bt = argillic; Bs, Bhs, Bhsm, etc. = spodic; Bo = oxic
 
+{{< pagebreak >}}
+
 ## SOIL 1: CROMWELL
 
 HORIZON CHOICES: Bw1, A, Bw2, BA, 2C
@@ -53,7 +55,7 @@ cromwellhorizon_ht <- as_hux(cromwellhorizon)
 tab1.1 = cromwellhorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -86,6 +88,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 2: WEBSTER
 
@@ -124,7 +127,7 @@ websterhorizon_ht <- as_hux(websterhorizon)
 tab1.1 = websterhorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -157,6 +160,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 3: RIFLE
 
@@ -193,7 +197,7 @@ riflehorizon_ht <- as_hux(riflehorizon)
 tab1.1 = riflehorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -226,6 +230,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 4: FARGO
 
@@ -264,7 +269,7 @@ fargohorizon_ht <- as_hux(fargohorizon)
 tab1.1 = fargohorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -297,6 +302,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 5: KALKASKA
 
@@ -335,7 +341,7 @@ kalkaskahorizon_ht <- as_hux(kalkaskahorizon)
 tab1.1 = kalkaskahorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -368,6 +374,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 6: ZIMMERMAN
 
@@ -406,7 +413,7 @@ zimmermanhorizon_ht <- as_hux(zimmermanhorizon)
 tab1.1 = zimmermanhorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -439,6 +446,7 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
+{{< pagebreak >}}
 
 ## SOIL 7: LESTER
 
@@ -477,7 +485,7 @@ lesterhorizon_ht <- as_hux(lesterhorizon)
 tab1.1 = lesterhorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -512,9 +520,12 @@ Soil Suborder:                                 �
 
 <br> <br> <br>
 
-Note, the suborder for Cecil is not in course handouts - make a guess! Combine the moisture regime and order.
+{{< pagebreak >}}
 
 ## SOIL 8: CECIL
+
+Note, the suborder for Cecil is not in course handouts - make a guess!
+
 
 HORIZON CHOICES: Bt2, A, Bt1, C
 
@@ -551,7 +562,7 @@ cecilhorizon_ht <- as_hux(cecilhorizon)
 tab1.1 = cecilhorizon_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -584,10 +595,9 @@ Soil Order:                                   
 
 Soil Suborder:                                                              Explain:
 
-
 ## INVESTIGATION B: Location of Soil Orders
 
-Use large map in the lab to label the major soil order (using the numbers below) present at each boxed location in the U.S. There may be more than one location for some Orders and some locations may have more than one dominant Order -- just pick the most obvious one.
+Use the large map in the lab to label the major soil order present at each boxed location in the U.S. (i.e. put the best choice of a soil order - using the numbers below - at that location in the box). There may be more than one location for some Orders and some locations may have more than one dominant Order -- just pick the most obvious one.
 
 ![Soil Orders in the USA](usa-soil-orders.png){#fig-usa}
 
@@ -620,7 +630,7 @@ alfisolinceptisol_ht <- as_hux(alfisolinceptisol)
 tab1.1 = alfisolinceptisol_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      #set_number_format(0) %>% #this tells it how many decimals to print after any numbers
       #set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
@@ -630,7 +640,7 @@ tab1.1 = alfisolinceptisol_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 1:6, col= 1:2, 20) %>%
+      #set_bottom_padding(row = 1:6, col= 1:2, 20) %>%
       #set_top_padding(row = 2:3, col = 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(0, "solid", "black"))
@@ -639,64 +649,78 @@ tab1.1 = alfisolinceptisol_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION C: Nomenclature
 
 There are twelve soil orders at the highest hierarchical level of soil taxonomy. The names for these orders relate to Greek, Latin, or other root words that reveal something about the soil. Fifty-four suborders are recognized at the next level of classification. There are over 200 great groups and more than 1,100 subgroups. Soil families have similar physical and chemical properties that affect their response to management. The lowest category -- soil series -- is usually named after a geographic feature in the region in which it was originally found and described. The taxonomic class includes the prefix plus all the following syllables, e.g., a Great Group would be "Haplosaprists", not just the prefix "Haplo-". To help you recognize syllables, remember familiar descriptive terms like sapric, hemic, mesic, ustic, udic, aquic. In addition, look for the prefixes hapl- (simple), orth- (central), epi- (above), argi- (clay) and psamm- (sandy).
 
 Answer the following questions about soil names. #1 is already answered for you.
 
-1.  **(EXAMPLE)** Name the order and suborder for the Okeechobee soil (Euic, hyperthermic, Hemic Haplosaprists).
+1a. **(EXAMPLE)** Name the order and suborder for the Okeechobee soil (Euic, hyperthermic, Hemic Haplosaprists).
 
 Order - **Histosol**; Suborder: **Saprist**
 
-a.  List two characteristics of the Okeechobee based on the suborder name.
+1b. List two characteristics of the Okeechobee based on the suborder name.
 
 **Large accumulation of organic materials Sapric organic materials (well decomposed)**
 
-2.  Name the family for the Clarion soil (Fine-loamy, mixed, mesic, Typic Hapludolls).
+2. Name the family for the Clarion soil (Fine-loamy, mixed, mesic, Typic Hapludolls).
 
-     
+<br>
+<br>
 
-3.  Name the order and suborder for the Fargo soil (Fine, smectitic, frigid, Typic Epiaquerts).
+3a. Name the order and suborder for the Fargo soil (Fine, smectitic, frigid, Typic Epiaquerts).
 
-     
+<br>
+<br>
 
-3a. Name one characteristic of the Fargo based on the suborder name.
+3b. Name one characteristic of the Fargo based on the suborder name.
 
-     
+<br>
+<br>
 
-3b. Look at the family name -- what property of this soil might you predict based on the properties of the dominant mineral?
+3c. Look at the *family* name of the Fargo -- what property of this soil might you predict based on the properties of the dominant mineral?
 
-     
+<br>
+<br>
 
-4.  Name the order and suborder for the Lester soil (Fine-loamy, mixed, mesic, Mollic Hapludalfs).
+4a. Name the order and suborder for the Lester soil (Fine-loamy, mixed, mesic, Mollic Hapludalfs).
 
-     
+<br>
+<br>
 
-4a. Name one characteristic of the Lester based on the suborder name.
+4b. Name one characteristic of the Lester based on the suborder name.
 
-     
+<br>
+<br>
 
-5.  Name the order and suborder for the Hubbard soil (Sandy, mixed, frigid, Entic Hapludolls).
+5a. Name the order and suborder for the Hubbard soil (Sandy, mixed, frigid, Entic Hapludolls).
 
-     
+<br>
+<br>
 
-5a. List two characteristics of the Hubbard based on the suborder name.
+5b. List two characteristics of the Hubbard based on the suborder name.
 
-     
+<br>
+<br>
 
-6.  Name the order and suborder for the Omega soil (Sandy, mixed, frigid, Typic Haplorthods).
+6. Name the order and suborder for the Omega soil (Sandy, mixed, frigid, Typic Haplorthods).
 
-     
+<br>
+<br>
 
-7.  Name the suborder for the Rifle soil (Euic, frigid, Typic Haplohemists).
+7. Name the suborder for the Rifle soil (Euic, frigid, Typic Haplohemists).
 
-     
+<br>
+<br>
 
-8.  Name the soil order for the Ves soil (Fine-loamy, mixed, mesic, Calcic Hapludolls).
+8. Name the soil order for the Ves soil (Fine-loamy, mixed, mesic, Calcic Hapludolls).
 
-     
+<br>
+<br>
 
-9.  Name the soil order for the Valentine soil (Mixed, mesic, Typic Ustipsamments).
+9. Name the soil order for the Valentine soil (Mixed, mesic, Typic Ustipsamments).
 
-     
+<br>
+<br>

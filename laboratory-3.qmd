@@ -37,27 +37,34 @@ the most familiar with, given appropriate information on a test. The
 clod method and graduated cylinder method are done in this lab purely to
 demonstrate other ways to determine the bulk density of soil materials.
 
-### 1. Bulk Density: Clod Method
+### Bulk Density: Clod Method
 
 $$
 D_{b,clod}=\frac{(weight\ of\ clod\ in\ air)\ g}{(weight\ of\ clod\ in\ air\ -\ weight\ of\ clod\ in\ water)\ g*1cm^{3}/1g}
-$$ Bulk density is defined as mass (oven dry weight) divided by total
-volume. Measuring the mass of the clod is straightforward; measuring the
-volume is not. We can use Archimedes' Principle to measure the volume of
-any solid, regardless of its shape. Simply stated, if a 50g clod weighs
-20g when immersed in water, it must have displaced 30g of water. Since 1
-cm^3^ of water weighs 1 gram, the 30g of water is equivalent to 30 cm^3^
-of water. The volume of the clod, therefore, is 30 cm^3^. A general
-mathematical expression for the above statement is:
+$$ 
 
-Volume of clod (in cm^3^) = \[(weight of clod in air) -- (weight of clod
-in water)\] g × 1cm^3^/1 g
+Bulk density is defined as mass (oven dry weight) divided by total volume. Measuring the mass of the clod is straightforward; measuring the volume is not. We can use Archimedes' Principle to measure the volume of any solid, regardless of its shape. Simply stated, if a 50g clod weighs 20g when immersed in water, it must have displaced 30g of water. Since 1 cm^3^ of water weighs 1 gram, the 30g of water is equivalent to 30 cm^3^ of water. The volume of the clod, therefore, is 30 cm^3^. A general mathematical expression for the above statement is:
 
-This formula represents the denominator in the Db~clod~ formula above, giving the result of your calculation in units of g/cm^3^ (also written as g cm-3), which is bulk density.
+Volume of clod (in cm^3^) = [(weight of clod in air) -- (weight of clod in water)] g × 1 cm^3^/1 g
 
-**WATCH VIDEO TUTORIAL ON IPADS!!**
+This formula represents the denominator in the Db~clod~ formula above,
+giving the result of your calculation in units of g/cm^3^ (also written
+as g cm-3), which is bulk density.
 
-1.  Take one clod from the counter, a small tag will be attached
+::: callout-note
+## **Watch brief video on the clod method. If you have any questions, please ask the TA for assistance.**
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/bdzvu7fe")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
+
+1.  Take one clod from the counter; a small tag will be attached
     indicating the clod ID (take note of this when filling out the chart
     on page 2).
 2.  Measure the weight of the clod **in air** by attaching the paperclip
@@ -106,7 +113,7 @@ tab1.1 = clodclod_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1, col = 1:2, value = 'center') %>%
+      set_align(row = 1, col = 1:3, value = 'center') %>%
       set_align(row = 1:row.num, col = 1, value = 'center') %>%
       set_align(row = 2:row.num, col = 2:3, value = 'right') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
@@ -123,15 +130,15 @@ tab1.1 = clodclod_ht %>%
 tab1.1
 ```
 
-### 2. Bulk Density: Soil Core Method
+### Bulk Density: Soil Core Method
 
 $$
 D_{b,core}=\frac{(weight\ of\ core\ and\ soil\ -\ weight\ of\ core)\ g}{(volume\ of\ soil)\ cm^{3}}
 $$
 
-*Volume of a cylinder (the soil core) = (π × r^2^ × h)* For r (radius),
-measure the *inside* diameter of the core in centimeters (**not
-inches**).
+Volume of a cylinder (the soil core) = *(π × r^2^ × h)* For r (radius),
+measure the *inside* diameter of the core in centimeters (not
+inches).
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -183,7 +190,7 @@ tab1.1 = measurements_ht %>%
 tab1.1
 ```
 
-### 3. Bulk Density: Graduated Cylinder Method
+### Bulk Density: Graduated Cylinder Method
 
 $$
 D_{b,cyl}=\frac{(mass\ of\ cylinder\ and\ soil\ -\ mass\ of\ cylinder)\ g}{(volume\ of\ soil)\ cm^{3}}
@@ -248,7 +255,7 @@ Soil porosity is the amount of pore space in a soil. Pore spaces are
 found between soil particles and are filled with either air or water.
 Soil porosity can be measured directly and indirectly.
 
-### 1. Soil Porosity: Direct Method
+### Soil Porosity: Direct Method
 
 This method measures the amount of water it takes to fill the soil pores
 (percent porosity). This method only works for sands where the pores are
@@ -260,7 +267,7 @@ $$
 Porosity(P)_{direct}=\frac{(volume\ of\ all\ pores)\ cm^{3}}{(total\ volume\ of\ soil)\ cm^{3}}\ *\ 100%
 $$
 
-1.  Fill a 100 ml graduated cylinder to the 100 ml mark with tap water.
+1.  Fill a 100 mL graduated cylinder to the 100 mL mark with tap water.
     Tilt the beaker with the fine sandy soil (from Investigation A,
     Method 2) to a 15˚ angle. Pour the water very slowly into the
     soil-filled beaker until the water is **just at** the surface of the
@@ -271,10 +278,10 @@ $$
     more water. Repeat this step as necessary.
 3.  Determine the amount of water used to fill the pore space in the 100
     cm^3^ of soil by subtracting the volume of water in the graduated
-    cylinder from the original 100 ml volume. Note: We are assuming that
+    cylinder from the original 100 mL volume. Note: We are assuming that
     the water poured into the soil exactly filled the pore space and
     thus equals the total pore volume.
-4.  Dispose of wet soil in the bucket labeled "For Wet Soil Only"
+4.  Dispose of wet soil in the bucket labeled "For Wet Soil Only."
 5.  Record your results in the table below and make the necessary
     calculations.
 6.  Rinse the beaker in the bucket provided and wipe it out with a
@@ -332,21 +339,21 @@ tab1.1 = measurementsporositydirect_ht %>%
 tab1.1
 ```
 
-### 2. Soil Porosity: Indirect Method
+### Soil Porosity: Indirect Method
 
 This method uses bulk density and particle density to determine porosity
 (percent pore space). Most mineral soils have a particle density of
-about 2.6 to 2.7 grams/cm3. *For this exercise, assume a particle
-density of 2.65 g/cm3* (the same density as quartz, a major constituent
+about 2.6 to 2.7 grams/cm^3^. *For this exercise, assume a particle
+density of 2.65 g/cm^3^* (the same density as quartz, a major constituent
 of mineral soils).
 
 $$
-Porosity(P)_{indirect} =\ ({1 - (\frac{(D_{b}\ by\ graduated\ cylinder\ method)\ \frac{g}{cm^{3}}}{(particle\ density)\ \frac{g}{cm^{3}}})})\ *\ 100%
+Porosity(P)_{indirect} =\ [{1 - (\frac{(D_{b}\ by\ graduated\ cylinder\ method)\ \frac{g}{cm^{3}}}{(2.65 \ \frac{g}{cm^{3}})})}]\ *\ 100%
 $$
 
 Depending on accuracy in collecting your porosity data, your
 calculations of porosity by the direct method and the indirect method
-should be similar. Record your results.
+should be similar. Record and compare your results.
 
 Direct method:
 
@@ -354,9 +361,9 @@ Direct method:
 
 Indirect method:
 
-<br>
-<br>
-<br>
+<br> <br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
 
@@ -419,9 +426,7 @@ Give a general description of why the soil materials are ranked that
 way. Using your lecture notes, recall what factors influence bulk
 density.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 ## INVESTIGATION D: Soil Color and Soil Organic Matter
 
@@ -478,9 +483,11 @@ tab1.1 = soilnamecolor_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION E: Organic Soil Types and Experiential Observation
 
-Examine the three different examples organic soils and classify the
+Examine the three different examples of organic soils and classify the
 three unknowns as sapric, hemic, or fibric.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -517,7 +524,7 @@ tab1.1 = dishclassification_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -538,9 +545,7 @@ soil, you would feel the mineral grains (sand, silt or clay).
 
 What is the definition of soil texture?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 Does this soil fit into any of our textural classes?
 
@@ -564,19 +569,16 @@ following questions. Use your lecture notes (in particular, **Lecture
     a loamy sand with a Db of 1.4 g/cm3. Will root penetration likely be
     inhibited in either of these soils? Why or why not?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 4.  Someone tells you they calculated a Db of 2.7 g/cm3 from a soil core
     they took. Should you believe them? Why or why not?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 5.  In general, what is a reasonable value to guess for WFPS (i.e., if
-    you don't know anything else about a soil)? Think about our pie chart from lecture 1-1.
+    you don't know anything else about a soil)? Think about our pie
+    chart from lecture 1-1.
 
    
 
@@ -585,9 +587,7 @@ following questions. Use your lecture notes (in particular, **Lecture
 
    
 
-7.  Without doing any calculations, which soil has the higher bulk
-    density? Why?
+7.  Without doing any calculations, which soil in the previous question
+    (A or B) has the higher bulk density? Why?
 
-<br>
-<br>
-<br>
+<br> <br> <br>

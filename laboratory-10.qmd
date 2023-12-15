@@ -19,6 +19,8 @@
 -   Geographic information systems
 :::
 
+{{< pagebreak >}}
+
 ## INVESTIGATION A: Legal Land Descriptions
 
 A legal description/land description is the method of locating and describing land in relation to the public land survey system. Land is broken down into areas called townships. Townships are approximately 6 square miles and are divided into 36 sections (each section being approximately 640 acres). Townships have two designators:
@@ -49,7 +51,7 @@ Additionally, sections may be broken into any number of parcels or divisions. Wh
 
 ![Labeling Areas Within a Section](labeling-sections.png){#fig-practice}
 
-Practice writing legal land descriptions by describing areas A through F below. Make sure you include Township, Range, and Section designators shown by the X's on the maps above.
+Practice writing legal land descriptions by describing areas A through F in the table below the images. Make sure you include Township, Range, and Section designators shown by the X's on the maps above.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -89,7 +91,7 @@ tab1.1 = labelsubdivision_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -102,6 +104,8 @@ tab1.1 = labelsubdivision_ht %>%
 
 tab1.1
 ```
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Using Web Soil Survey to Make Land-use Recommendations
 
@@ -122,6 +126,8 @@ tab1.1
 To assess the property, an inventory of soil map units was done. Now the usefulness of these soils for proposed construction and other uses and activities is needed. Double check you have the right location with this figure:
 
 ![Soil Map](inventory-of-soil.png){#fig-inventory}
+
+{{< pagebreak >}}
 
 Use the properties and interpretations from each of the map units given in Web Soil Survey to fill in the following table. The following information shows you where to find that piece of information in Web Soil Survey menus:
 
@@ -199,7 +205,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Facility <- c("Plant, Animal, and Environmental Science Building (small commercial)", "Septic system for whole unit (At-Grade Septic)", "Restored wetland (Aquic Suborders and/or Histosols", "Permanent soil pit displayed Farmland of Statewide Importance", "Nature and bike trail (Paths and Trails)")
+Facility <- c("Plant, Animal, and Environmental Science Building (small commercial)", "Septic system for whole unit (At-Grade Septic)", "Restored wetland (Aquic Suborders and/or Histosols", "Permanent soil pit displaying Farmland of Statewide Importance", "Nature and bike trail (Paths and Trails)")
 Mostsuitable <- c("", "", "", "", "")
 
 facilitysuitable <- data.frame(Facility, Mostsuitable)

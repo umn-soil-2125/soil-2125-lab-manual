@@ -20,9 +20,9 @@
 
 ## PRE-LAB PREP
 
-Collect approximately 1 cup of soil from a garden or farm. Make sure to sample only to a 0-3 inch depth. **Optional**: Determine the texture of your soil sample using the ribbon method and record it in this week's texture contest.
+Collect approximately 1 cup of soil from anywhere! A garden or farm, park, boulevard, or yard are all good places, but anywhere else is fine too! Make sure to sample only to a 0-3 inch depth. **Optional**: Determine the texture of your soil sample using the ribbon method and record it.
 
- 
+{{< pagebreak >}}
 
 ## INVESTIGATION A: Macronutrient Cycles
 
@@ -82,22 +82,21 @@ tab1.1
 
 1.  The plant available form of phosphorus PO43- is an anion, yet phosphorus is not generally susceptible to leaching, unlike nitrogen. Why?
 
-<br>
-<br>
+<br> <br>
 
 2.  How is potassium (K) availability controlled by mineral weathering?
 
-<br>
-<br>
+<br> <br>
 
 3.  In Minnesota, what is the best time to soil test for an accurate understanding of plant available nitrogen (N)?
 
-<br>
-<br>
+<br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Measuring Soil pH and Nitrate Levels with Test Strips
 
-Below are instructions for prepping two different set ups for soil analysis using pH and nitrate strips. **Preparing them in advance will be helpful to you as they need 10 mins before reading.** We are using test strips in the lab to provide a rapid indication of the pH and nitrate in your soil sample. However, note that for making detailed decisions regarding soil management and plant growth, you would want a more accurate, laboratory measurement of pH and nitrate.
+Below are instructions for prepping two different setups for soil analysis using pH and nitrate strips. **Preparing them in advance will be helpful to you as they need 10 mins before reading.** We are using test strips in the lab to provide a rapid indication of the pH and nitrate in your soil sample. However, note that for making detailed decisions regarding soil management and plant growth, you would want a more accurate, laboratory measurement of pH and nitrate.
 
 **Soil pH**
 
@@ -123,7 +122,7 @@ Below are instructions for prepping two different set ups for soil analysis usin
 
 4.  Put a scoop of your soil (approximately one spoonful/scoop) into the filter and add water to the top of the filter line. It is very important that no soil overflows into the catch. It will make reading your result difficult.
 
-5.  Allow to sit for ~10 mins.
+5.  Allow to sit for \~10 mins.
 
 6.  Use the bottom square of the nitrate strip to read result. It is very important that no soil gets on the strip, as you will not be able to see the color otherwise. Dip the strip into the clear liquid, wait 30 sec and record the range.
 
@@ -186,6 +185,8 @@ tab1.1 = approximatepHnitrate_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION C: Soil pH and Nutrient Availability
 
 Recall that soil pH has a profound impact on plant uptake of nutrients. Soils which are too acidic and too basic will result in difficulty accessing certain nutrients for plants. Use the nutrient availability diagram to identify ideal pH ranges for each plant nutrient.
@@ -241,16 +242,15 @@ tab1.1
 
 What are your thoughts on potential issues or nonissues with plant growth in your soil after measuring your soil's pH?
 
-<br>
-<br>
+<br> <br>
 
-Using your soil's nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen? Use the table below.
+Using your soil's nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen? Use the table on the next page.
 
-<br>
-<br>
+<br> <br>
 
 ![Nitrogen Requirements of Vegetables](nitrogen-requirements-veg.png){#fig-nitrogen}
 
+{{< pagebreak >}}
 
 ## INVESTIGATION D: Liming and Base Saturation
 
@@ -258,13 +258,11 @@ In the field, quick lime or elemental sulfur is used to adjust pH to a desired r
 
 How do you think the quick lime will impact the Low B.S. sample?
 
-<br>
-<br>
+<br> <br>
 
 How will the addition of acid affect the pH in soil with High B.S.?
 
-<br>
-<br>
+<br> <br>
 
 **Record the pH of each solution here.**
 
@@ -318,8 +316,9 @@ tab1.1
 
 Explain the impact on the pH of each soil after the different solutions were added. Did the results surprise you?
 
-<br>
-<br>
+<br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION E: Observation of Plant Nutrient Deficiencies
 
@@ -375,6 +374,8 @@ tab1.1 = plantdeficiency_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}
+
 ## INVESTIGATION F: Common Fertilizer Materials
 
 **Inorganic Fertilizers**
@@ -412,12 +413,12 @@ inorganicanalysis_ht <- as_hux(inorganicanalysis)
 tab1.1 = inorganicanalysis_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
+      set_number_format(1) %>% #this tells it how many decimals to print after any numbers
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -431,9 +432,11 @@ tab1.1 = inorganicanalysis_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 **Organic Fertilizers**
 
-Organic fertilizers are comprised of a diverse mixture of organic molecules and usually contain more complex chemical substances that take time to be broken down into forms usable by plants. These are usually considered slow-release type fertilizers, compared to the quick-release characteristics of most inorganic fertilizers. It is important to apply these organic fertilizers well before periods of rapid plant growth. Organic fertilizers usually have a low salt index, so larger amounts can be applied at one time without causing injury to plant roots. With organic nitrogen sources (except urea), one application can be made without having to be concerned about losing most of the nitrogen to leaching. However, even organic fertilizers applied at excessive rates can cause environmental degradation due to nitrate leaching or runoff of soluble organic compounds. The cost of organic fertilizers at garden centers on a per-pound of nutrient basis is usually higher than quick-release inorganic fertilizers. Manure, compost, and many other materials used as organic fertilizers add considerable quantities of organic matter to the soil. Organic matter can increase soil drainage, aeration, water holding capacity, and the ability of the soil to hold nutrients. The beneficial effects of organic matter on soil structure can have a greater effect on plant growth than the fertilizer value of some of these organic materials. Most organic fertilizers also provide a variety of macronutrients (besides NPK) as well as many micronutrients.
+Organic fertilizers are comprised of a diverse mixture of organic molecules and usually contain more complex chemical substances that take time to be broken down into forms usable by plants. These are usually considered slow-release type fertilizers, compared to the quick-release characteristics of most inorganic fertilizers. It is important to apply these organic fertilizers well before periods of rapid plant growth. Organic fertilizers usually have a low salt index, so larger amounts can be applied at one time without causing injury to plant roots. However, even organic fertilizers applied at excessive rates can cause environmental degradation due to nitrate leaching or runoff of soluble organic compounds. The cost of organic fertilizers on a per-pound of nutrient basis is usually higher than quick-release inorganic fertilizers. Manure, compost, and many other materials used as organic fertilizers add considerable quantities of organic matter to the soil. The beneficial effects of organic matter on soil structure can have a greater effect on plant growth than the fertilizer value of some of these organic materials. Most organic fertilizers also provide a variety of macronutrients (besides NPK) as well as many micronutrients.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -534,6 +537,8 @@ tab1.1 = situationpreferred_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION G: Reading and Using a Soil Test Report
 
 Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil reports from the soil we observed in the field last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain.
@@ -545,7 +550,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-4 slide 7)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
+Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-3 slide 7)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
 LawnGarden <- c("", "", "", "", "", "lb N/1000 sq ft", "lb P2O5 /1000 sq ft", "lb K2O/1000 sq ft")
 FarmField <- c("", "", "", "", "", "lb N/acre", "lb P2O5/acre", "lb K2O/acre")
 

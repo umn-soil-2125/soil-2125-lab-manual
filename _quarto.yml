@@ -31,7 +31,7 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrbook
-    classoption: [twocolumn, portrait]
+    #classoption: [twocolumn, portrait]
     fontfamily: libertinus
     geometry:
       - top=25.4mm

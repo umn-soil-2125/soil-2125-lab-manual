@@ -64,20 +64,18 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 
 3.  After 40 seconds, read the number (at liquid level) on the hydrometer.
 
-4.  This reading must be corrected for temperature. Add 0.4 g/L for each degree above 20ºCelcius or subtract 0.4 g/L for each degree below 20ºCelcius.
+4.  This reading must be corrected for temperature. Add 0.4 g/L for each degree above 20º Celcius or subtract 0.4 g/L for each degree below 20º Celcius.
 
 **2 Hour Measurement**
 
 1.  Due to time constraints, two hour readings will be provided in lab.
 
-![Hydrometer Process](hydrometer-Picture1.png){#fig-hydrometer}
-
-(Note: The soil in the diagram has (60-30)/60 x 100= 50% Sand; 10/60 x100= 17% Clay; 100-50-17=33% Silt)
+![The soil in the diagram above would have: (60-30)/60 x 100= 50% Sand; 10/60 x100= 17% Clay; 100-50-17=33% Silt)](hydrometer-Picture1.png){#fig-hydrometer}
 
 **Calculations**: correct readings before calculating sand, silt, and clay!
 
 $$
-Sand (\%) = \frac{M_{sample,ovendry} - 40s\ reading}{M_{sample,ovendry}} x 100%
+Sand (\%) = \frac{M_{sample,oven\ dry} - 40s \ reading}{M_{sample,oven\ dry}} x 100\ ;\  Clay (\%) = \frac{2hr\ reading}{M_{sample,oven\ dry}} x 100\ ;\ Silt (\%) = 100 - (\% Sand + \% Clay)
 $$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -122,7 +120,7 @@ tab1.1 = measurementsample_ht %>%
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1, col = 1:col.num, value = 'center') %>%
       set_align(row = 2:11, col = 2:3, value = 'right') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -171,7 +169,7 @@ tab1.1 = summarysample_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
@@ -187,7 +185,7 @@ tab1.1
 
 ## INVESTIGATION B: Using the Texture Triangle
 
-A soil's textural class is determined by that soil's respective content of sand, silt, and clay. The USDA textural triangle is used to classify the texture class of a soil. The sides of the soil textural triangle are scaled for the percentages of sand, silt, and clay (0-100%). Clay percentages are read along the lines from left to right across the triangle. Silt is read along the lines from the upper right to lower left. Sand along the lines from lower right to the upper left portion of the triangle. The intersections of the three sides on the triangle give the texture class name. For instance, if you have a soil with 20% clay, 45% silt, and 35% sand, it would fall in the "loam" textural class name.
+The USDA textural triangle is used to classify the texture class of a soil. The sides of the soil textural triangle are scaled for the percentages of sand, silt, and clay (0-100%). Clay percentages are read along the lines from left to right across the triangle. Silt is read along the lines from the upper right to lower left. Sand along the lines from lower right to the upper left portion of the triangle. The intersections of the three sides on the triangle give the texture class name. For instance, if you have a soil with 20% clay, 45% silt, and 35% sand, it would fall in the "loam" textural class name.
 
 ![USDA Soil Texture Triangle](texture-triangle-Picture1.png){#fig-triangle}
 
@@ -232,13 +230,13 @@ tab1.1 = samplesand_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:3, col= 1:5, 20) %>%
-      set_top_padding(row = 2:3, col = 1:5, 20) %>%
+      #set_bottom_padding(row = 2:3, col= 1:5, 20) %>%
+      #set_top_padding(row = 2:3, col = 1:5, 20) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
@@ -250,56 +248,18 @@ tab1.1
 
 Determining texture by feel takes practice (professional soil scientists can texture soil by feel and determine the texture within five percent clay content!). The following table, chart provided in lab, and text will help you learn how to texture by feel.
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-library(huxtable)
-library(dplyr)
+::: callout-note
+## Watch this video before you start Investigation C
 
-################
-## BUILD TABLE
-################
-Texture <- c("Coarse sand", "Fine sand", "Silt", "Clay")
-Feel <- c("Feels sharp, rasping, gritty, individual grains easily distinguished.","Gritty but very fine. Individual grains only just visible. Rasping sound between finger and thumb heard when placed close to the ear.", "Dry pellets will crush between the fingers, yielding a floury dust with a smooth silky feel. When wet, the silkiness persists and the cast is slightly plastic (not
-very sticky). Particles are not quite visible to the naked eye.", "Dry pellets feel very hard, and it is difficult or impossible to crush them between the finger and thumb. When moistened, it is very sticky (plastic-like consistency).")
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
 
-texturefeel <- data.frame(Texture, Feel)
-colnames(texturefeel) = c("Texture", "Feel")
-
-col.num = 2
-row.num = 5 #including header
-
-################
-## SET AS HUXTABLE TYPE
-################
-texturefeel_ht <- as_hux(texturefeel)
-
-################
-## SET FORMATTING
-################
-#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
-
-tab1.1 = texturefeel_ht %>% 
-      set_all_padding(4) %>% 
-      set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
-      set_bold(row = 1, col = everywhere) %>% #make header row bold
-      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
-      set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
-      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
-      #set_col_width(c(0.3, 0.6)) %>%
-      set_latex_float(value = "h!") %>%
-      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
-      #set_top_padding(row = 2:3, col = 1:2, 60) %>%
-      #set_row_height(c(0.02, 0.2, 0.2)) %>%
-      set_all_borders(brdr(1, "solid", "black"))
-      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
-
-tab1.1
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/yw9nm4tj")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
 ```
-
-**WATCH VIDEO TUTORIAL ON IPADS!**
+:::
 
 1.  To determine the soil texture by feel, the soil must be moistened. Add a small amount of water to the soil if needed to give it a putty-like (play-doh) consistency. Not too wet - not too dry!
 
@@ -312,6 +272,8 @@ tab1.1
 5.  Use the provided flow chart and suggested order below to assist in calibrating yourself.
 
 **Practicing -- WASH YOUR HANDS BETWEEN EVERY SAMPLE!!!!!!!** Use the known texture samples to practice texturing soil with the "feel" method.
+
+<br>
 
 Here is a suggested method of practicing (Nic's method to the madness):
 
@@ -384,6 +346,8 @@ tab1.1 = texturegritty_ht %>%
 tab1.1
 ```
 
+<br>
+
 Texture the following unknown soils and complete the table.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -401,7 +365,7 @@ RibbonLength <- c("", "", "")
 TexturalClass <- c("", "", "")
 
 texturegrittysmooth <- data.frame(Texture, Gritty, Smooth, Equal, RibbonLength, TexturalClass)
-colnames(texturegrittysmooth) = c("Texture", "Dominated by gritty feel", "Dominated by smooth feel", "Equally gritty/smooth", "Ribbon length", "Textural Class Name")
+colnames(texturegrittysmooth) = c("Texture", "Dominated by gritty feel (Y/N)", "Dominated by smooth feel (Y/N)", "Equally gritty/smooth (Y/N)", "Ribbon length", "Textural Class Name")
 
 col.num = 6
 row.num = 4 #including header
@@ -424,12 +388,12 @@ tab1.1 = texturegrittysmooth_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:4, col= 1:6, 20) %>%
+      #set_bottom_padding(row = 2:4, col= 1:6, 20) %>%
       #set_top_padding(row = 2:3, col = 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
@@ -489,13 +453,13 @@ tab1.1 = samplemunsell_ht %>%
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
+      #set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
-      set_top_padding(row = 2:row.num, col = 1:col.num, 12) %>%
+      #set_bottom_padding(row = 2:row.num, col= 1:col.num, 12) %>%
+      #set_top_padding(row = 2:row.num, col = 1:col.num, 12) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
       #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case

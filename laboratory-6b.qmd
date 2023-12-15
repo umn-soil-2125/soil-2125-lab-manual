@@ -21,6 +21,8 @@
 -   Concentration
 :::
 
+{{< pagebreak >}}
+
 ## INVESTIGATION A: Observation of Inoculated Plates
 
 The plates you inoculated with various soil materials last week are on display. Find and look at your plate and many others to see the diversity of microorganisms that have grown from your soil inoculants. Take a look at some of the plates under the microscopes provided and look at even the seemingly "empty" parts of the dish -- you might be surprised at what you see growing there.
@@ -35,9 +37,7 @@ The plates you inoculated with various soil materials last week are on display. 
 
 2.  Some of the plates have been completely overgrown. However, find one that wasn't. Does it appear that anything grew from the autoclaved (sterilized) soil material?
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 3.  *Estimate* the total number of distinct colonies or organisms on your plate. If you were going to study soil microorganisms, does it make sense why you would need to do a soil dilution of 1,000 to 10,000 times in order to get individual countable colonies that you could work with in a lab?
 
@@ -51,6 +51,8 @@ The plates you inoculated with various soil materials last week are on display. 
 
 <br>
 
+{{< pagebreak >}}
+
 ## INVESTIGATION B: Observation of Redoximorphic Features in Mini-Monoliths
 
 Observe the mini-monolith labelled "Mottles" to see redoximorphic features (one kind of mottling in soils) that are zones of iron depletion and iron concentrations. These zones are formed when the soil is saturated for a period of time (the iron oxides (Fe3+) coating the mineral grains are reduced by anaerobic bacteria which use the Fe3+ as an electron acceptor, reducing it to Fe2+, which is colorless, soluble and mobile in the soil solution). If the soil is then dried out during a drier part of the year, the iron reoxidizes into concentrations, but the zones in between the concentrations where the Fe was depleted will still appear grey because they won't have iron oxide coatings.
@@ -59,14 +61,15 @@ Because redoximorphic features only form where the soil is saturated for a signi
 
 Therefore, in general, *well-drained* (aerobic) soils will have continuous coatings of iron-oxides on all the mineral grains and will appear the typical Fe-oxide colors throughout (brown, red, orange, yellow), while *poorly drained* soils will exhibit redoximorphic features in the form of iron concentrations and depletions (mottles), or a completely grey color if iron has been reduced (solubilized) and removed by moving groundwater.
 
-1.  Based on the colors you see in the *poorly drained* mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year? 
+**Question:** Based on the colors you see in the *poorly drained* mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year?
 
 ::: callout-tip
 1 cm on the mini-monolith = 3 cm in the actual soil it was taken from; so multiply your depth measurement on the mini-monolith x 3 to get the actual depth.
 :::
 
-<br>
-<br>
+<br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION C: Observation of Redox Features in Vials
 
@@ -74,7 +77,7 @@ Three weeks ago, you filled two vials with a orangish-colored soil material from
 
 You will also notice that your demo vial probably smells terrible. That is from the reduction of SO42- (sulfate) to H2S (hydrogen sulfide gas) and CO2 (carbon dioxide) to CH4 (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.
 
-Describe the differences you see between the vials in the table below. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
+Describe the differences you see between the vials. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -126,13 +129,15 @@ tab1.1 = treatmentrefridgerated_ht %>%
 tab1.1
 ```
 
-1.  Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials. Look at the chalkboard for help.
+**Question:** Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials. Look at the chalkboard for help.
 
 <br> <br> <br> <br>
 
+{{< pagebreak >}}
+
 ## INVESTIGATION D: Earthworm Activity
 
-Earthworms play a significant role in mixing the soil. Observe the differences in the three columns and, based on your observations, provide four examples of how earthworm activity changes soil properties. Many of these changes are positive from a plant growth perspective, but can have other ecological effects as well. Please refer to Lecture 3.2 for assistance in answering the questions below.
+Earthworms play a significant role in mixing the soil. Observe the differences in the three columns and, based on your observations, provide four examples of how earthworm activity changes soil properties. Many of these changes are positive from a plant growth perspective, but can have other ecological effects as well. Please refer to Lecture 2-7 for assistance in answering the questions below.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

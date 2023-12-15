@@ -25,6 +25,8 @@
 -   *Rhizobium*
 :::
 
+{{< pagebreak >}}
+
 ## INVESTIGATION A: Forms of Nitrogen
 
 You will probably come across many complex and confusing representations of the nitrogen cycle in other venues. Use your knowledge of the simplified representation of the nitrogen cycle that we discussed in class to fill in the blanks in the appropriate places on the diagram below (which I note is also incomplete).
@@ -80,18 +82,21 @@ tab1.1 = fillinwordbank_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION B1: Observing Nodules
 
 Observe the roots of the live alfalfa and soybean plants (both uninoculated (no nodules) and inoculated (nodules)) which have been provided for you to look at. Don't be afraid to pull a plant out and look at the roots! Put it in the container of soil when finished. Rhizobia is the common name given to a group of small, rod- shaped, Gram negative bacteria, which collectively have the ability to induce nodule production on the roots of leguminous plants. Observe the nodules on the plants in the jars.
 
 Draw a diagram of a nodule and a root:
 
-<br>
-<br>
+<br> <br>
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B2: Dissecting Nodules
 
-Pluck a nodule off of either a soybean or alfalfa root and cut it open with a razor blade under the dissecting scopes. When you cut open an active nitrogen-fixing nodule, a significant portion of the nodule should be pink or red in color. This color is due to the presence of a hemoglobin similar to that found in blood (known as "leghemoglobin" in legumes), and regulates oxygen supply, in this case, to the bacteria. The amount of hemoglobin present is usually closely correlated to amount of nitrogen fixed, with white or green-colored nodules usually very limited in their ability to fix nitrogen. Remember though that nodules have a finite life span (in the case of soybean estimated at 50-60 days) so that toward the end of the growing season many of the initial nodules will have already begun to senesce, and are brown or green in color, while the more active nitrogen-fixing nodules may now be located on lateral roots. **Cut open a nodule from the samples provided, view under the microscope, and complete the following table.**
+Pluck a nodule off of either a soybean or alfalfa root and cut it open with a razor blade under the dissecting scopes. When you cut open an active nitrogen-fixing nodule, a significant portion of the nodule should be pink or red in color. This color is due to the presence of a hemoglobin similar to that found in blood (known as "leghemoglobin" in legumes), and regulates oxygen supply, in this case, to the bacteria. The amount of hemoglobin present is usually closely correlated to amount of nitrogen fixed, with white or green-colored nodules usually very limited in their ability to fix nitrogen. Remember though that nodules have a finite life span (in the case of soybean estimated at 50-60 days) so that toward the end of the growing season many of the initial nodules will have already begun to senesce, and are brown or green in color, while the more active nitrogen-fixing nodules may now be located on lateral roots. Cut open a nodule from the samples provided, view under the microscope, and complete the following table.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -140,6 +145,8 @@ tab1.1 = nodulecolorexplanation_ht %>%
 
 tab1.1
 ```
+
+{{< pagebreak >}}
 
 ## INVESTIGATION C: Aggregate Stability
 
@@ -198,6 +205,8 @@ tab1.1 = horizonobservation_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ## INVESTIGATION D: Soil Organism Observation
 
 We have placed some soil from the field in a funnel which has a screen at the bottom. At the top is a heat lamp. Mobile organisms in the soil (like microarthropods) move downwards away from the heat and fall into the petri dish full of water. Observe the organisms extracted in the petri dish from this soil under the microscope and complete the following table. See if you can find any "soil critters" in the soil.
@@ -252,18 +261,31 @@ tab1.1
 
 NOTE: See the list of organisms. Lots are possible!
 
+{{< pagebreak >}}
+
 ## SETUP FOR NEXT WEEK'S LAB: Culturing Microorganisms from Soil Materials
 
 Soils are literally teeming with microbiota and it is very easy to culture them on many different types of media. Because soil microorganisms are highly diverse, we can only ever culture a small portion of the total in the lab. However, this exercise will show you that (unsterilized) soil materials are literally bursting at the seams with life.
 
-IMPORTANT! WHEN AND IF POSSIBLE, DO THIS SET-UP IN GROUPS OF 2-3. **WATCH VIDEO TUTORIAL ON IPADS!** Ask a TA if you need help.
+::: callout-note
+## Watch this video before you make your PDA plate - work in groups of 2-3 if possible.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+#note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://tinyurl.com/axn6bveh")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
 
 1.  Take a plate of PDA (Potato Dextrose Agar). Without opening it, flip it over and with a permanent marker, draw 2 perpendicular lines to divide the plate into 4 quadrants, label the quadrants as shown in the example plate, and put your names and today's date on the bottom of the plate.
 2.  Put on a pair of gloves (this is not a sterile environment!).
 3.  Using the sterilized toothpicks provided (use a different toothpick or set of toothpicks for each soil material provided!), inoculate each labelled quadrant of the plate. Inoculate by swishing a sterile toothpick through them and gently wiping the proper quadrant with the toothpick, leaving small bits of soil should be sufficient.
-4.  There are 4 materials to inoculate with: 
-    1. Autoclaved --Sterilized sand, 
-    2. Topsoil from the campus experimental fields, 
-    3. Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, and
-    4. A saturated wetland soil.
+4.  There are 4 materials to inoculate with:
+    1.  Autoclaved -- Sterilized sand,
+    2.  Topsoil from the campus experimental fields,
+    3.  Dried soil which is high in organic matter but has been sitting, air-dried, for over 10 years, and
+    4.  A saturated wetland soil.
 5.  Seal your plate with parafilm and place in the tray provided.
