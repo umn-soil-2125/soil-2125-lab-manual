@@ -22,7 +22,8 @@ book:
     - laboratory-10.qmd
     - laboratory-11.qmd
     - laboratory-12.qmd
-    - references.qmd
+    #- summary.qmd
+    #- references.qmd
 
 bibliography: references.bib
 

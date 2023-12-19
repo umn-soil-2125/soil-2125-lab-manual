@@ -82,15 +82,15 @@ tab1.1
 
 1.  The plant available form of phosphorus PO43- is an anion, yet phosphorus is not generally susceptible to leaching, unlike nitrogen. Why?
 
-<br> <br>
+$$\\[0.5in]$$
 
 2.  How is potassium (K) availability controlled by mineral weathering?
 
-<br> <br>
+$$\\[0.5in]$$
 
 3.  In Minnesota, what is the best time to soil test for an accurate understanding of plant available nitrogen (N)?
 
-<br> <br>
+$$\\[0.25in]$$
 
 {{< pagebreak >}}
 
@@ -242,11 +242,11 @@ tab1.1
 
 What are your thoughts on potential issues or nonissues with plant growth in your soil after measuring your soil's pH?
 
-<br> <br>
+$$\\[0.25in]$$
 
 Using your soil's nitrate result from investigation B, what is a plant you could grow without needing to add any more Nitrogen? Use the table on the next page.
 
-<br> <br>
+$$\\[0.25in]$$
 
 ![Nitrogen Requirements of Vegetables](nitrogen-requirements-veg.png){#fig-nitrogen}
 
@@ -374,7 +374,7 @@ tab1.1 = plantdeficiency_ht %>%
 tab1.1
 ```
 
-{{< pagebreak >}
+{{< pagebreak >}}
 
 ## INVESTIGATION F: Common Fertilizer Materials
 
@@ -550,7 +550,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-3 slide 7)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
+Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-4 slide 7)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
 LawnGarden <- c("", "", "", "", "", "lb N/1000 sq ft", "lb P2O5 /1000 sq ft", "lb K2O/1000 sq ft")
 FarmField <- c("", "", "", "", "", "lb N/acre", "lb P2O5/acre", "lb K2O/acre")
 

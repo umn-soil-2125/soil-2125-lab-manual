@@ -28,7 +28,7 @@ Using a moisture meter, you will construct a water retention curve for each of t
 ::: callout-note
 ## **Watch brief video on how to use moisture meter. If you have any questions, please ask the TA for assistance.**
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "15%"}
 #note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
 library(qrcode)
 
@@ -95,19 +95,19 @@ Use the data from the table on the previous page to construct water retention cu
 
 1.  Using the graph above, estimate the total plant available water (in % by volume) for each of these soils. FC is defined as -0.33 bars and wilting point is defined as -15 bars.
 
-<br> <br> <br>
+$$\\[0.25in]$$
 
 2.  Which soil will hold more plant available water when at field capacity? WHY?
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 3.  Describe the plant responses to these different treatments (i.e. field capacity and wilting point) - what do the plants look like?
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 4.  Using what you know about soil at this point in the class, describe the processes that are driving the plant response in each treatment. For example, think about why plants experiencing the saturated treatment look the way they do? Why do the plants experiencing the wilting point treatment look the way they do?
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 {{< pagebreak >}}
 
@@ -194,15 +194,15 @@ tab1.1 = volumeretainedpassed_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 1.  Explain why the different soil textures retained differing amounts of water.
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 2.  Which of these textures has the highest water content at field capacity?
 
-<br> <br> <br>
-
-{{< pagebreak >}}
+$$\\[0.25in]$$
 
 ## INVESTIGATION C: Tensiometer Observation
 
@@ -224,15 +224,15 @@ Capillary action enables soil moisture to move in any direction within the soil 
 
 1.  Explain the relationship between the height of the water in the capillary tubes and the tube diameter using the terms adhesion, cohesion and gravity.
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 2.  Now observe the two soil columns -- one is fine sand (particles \~ 200um in diameter) and the other a coarse sand (particles \~ 750um in diameter) and observe the height of water rise in each column. Explain the differences in the height of rise based on what you know about soil textural class, particle size, and pore size.
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 3.  The zone between the totally saturated soil material below the water surface in the tub and the highest height of rise due to matric potential is sometimes called the "capillary fringe" -- it represents the height at which water has been pulled up from a saturated zone against gravity by capillary action or matric potential. Would you expect a silty clay or a sandy clay loam to have a larger capillary fringe (you might want to reference your textural triangle)? Why?
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 {{< pagebreak >}}
 
@@ -313,30 +313,30 @@ Weight of soil core at present sampling time = **395 g**
 
 Weight of Oven dry soil core = **300 g**
 
-1. What is the **bulk density**?
+1.  What is the **bulk density**?
 
-     
+$$\\[0.25in]$$
 
 2.  What is **θg(FC)**?                         What is **θg(WP)**?                         What is **θg(at present)**?
 
-<br> <br> <br> <br>
+$$\\[0.25in]$$
 
 3.  What is **θv(FC)**?                         What is **θv(WP)**?                         What is **θv(at present)**?
 
-<br> <br> <br> <br>
+$$\\[0.25in]$$
 
 4.  What is the total possible plant available water by volume? Remember, total possible plant available water (PAW) for a given soil texture is the difference between the volumetric water content at field capacity (FC) and the wilting point (WP): **θv(FC) -- θv(WP)**? (*Use your results from question 3 above*)
 
-<br> <br> <br>
+$$\\[0.2in]$$
 
 5.  How many *inches* of plant available water would there be at field capacity if the soil layer was 3 ft. thick?
 
-<br> <br> <br>
+$$\\[0.2in]$$
 
 6.  How many inches of plant available water are left in the 3 ft. soil layer in the present condition *(i.e. at the time of sampling in the field)*?
 
-<br> <br> <br>
+$$\\[0.2in]$$
 
 7.  If a corn crop requires \~ 0.3 inches of water per day during the height of the growing season and the roots have access to the entire 3 ft layer you used for calculations in 5 and 6, how many days of corn growth can the current soil moisture storage support (without additional rainfall or irrigation) before the corn begins to wilt?
 
-<br> <br> <br>
+$$\\[0.2in]$$

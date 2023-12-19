@@ -64,7 +64,7 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 
 3.  After 40 seconds, read the number (at liquid level) on the hydrometer.
 
-4.  This reading must be corrected for temperature. Add 0.4 g/L for each degree above 20º Celcius or subtract 0.4 g/L for each degree below 20º Celcius.
+4.  This reading must be corrected for temperature. Add 0.4 g/L for each degree above 20º Celsius or subtract 0.4 g/L for each degree below 20º Celsius.
 
 **2 Hour Measurement**
 
@@ -91,7 +91,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr readng (corrected)", "% Clay", "% Silt")
+Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr reading (corrected)", "% Clay", "% Silt")
 Sample1 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 Sample2 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 
@@ -277,11 +277,11 @@ plot(hydrometer_test_video)
 
 Here is a suggested method of practicing (Nic's method to the madness):
 
-1.  Start with the silt loam -- you should be able to make a ribbon, but \< 1"
+1.  Start with the silt loam -- you should be able to make a ribbon, but \< 1".
 
-2.  Move to the silty clay loam -- you should notice that you can get a longer ribbon, 1-2"
+2.  Move to the silty clay loam -- you should notice that you can get a longer ribbon, 1-2".
 
-3.  Move to the silty clay -- you should be able to get an even longer ribbon, \> 2"
+3.  Move to the silty clay -- you should be able to get an even longer ribbon, \> 2".
 
 4.  In these three samples, you kept increasing clay content while decreasing sand content.
 
@@ -473,7 +473,7 @@ You know about soil *texture* (the proportion of sand, silt, and clay particles)
 
 In some cases, the soil is classified as having no structure (i.e. the individual grains are not cemented together in any natural way).
 
-Complete the charts below using lecture notes and the structural examples provided. For possible cementing agents and processes, review the lecture slides.
+Complete the charts below using lecture notes and the structural examples provided.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

@@ -177,7 +177,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Rock <- c("Quartzite is formed from the metamorphism of quartz sandstone", "Schist is formed by a continual metamorphosis of shale and often contains mica minerals.", "Gneiss may form from metamorphosed granite, or schist")
+Rock <- c("Quartzite is formed from the metamorphism of quartz sandstone.", "Schist is formed by a continual metamorphosis of shale and often contains mica minerals.", "Gneiss may form from metamorphosed granite, or schist.")
 PrincipleMinerals <- c("Quartz, some Feldspars", "Micas", "Micas, Quartz, Feldspar")
 MajorElements <- c("Si, O, K, Ca", "Si, Al, O, K, Na", "Si, Al, O, K, Ca, Fe")
 DominantCharacteristics <- c("", "", "")
@@ -191,14 +191,14 @@ row.num = 4 #including header
 ################
 ## SET AS HUXTABLE TYPE
 ################
-sedimentaryrock_ht <- as_hux(sedimentaryrock)
+metamorphicrock_ht <- as_hux(metamorphicrock)
 
 ################
 ## SET FORMATTING
 ################
 #NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
 
-tab1.1 = sedimentaryrock_ht %>% 
+tab1.1 = metamorphicrock_ht %>% 
       set_all_padding(4) %>% 
       set_outer_padding(0) %>% 
       set_number_format(0) %>% #this tells it how many decimals to print after any numbers
@@ -534,28 +534,38 @@ tab1.1
 
 1.  Using an eye dropper, apply a drop of 10% hydrochloric acid to the limestone rock located in the test plates.
 
-<br> a. Describe what you see when the acid makes contact with the limestone rock.
+<!-- -->
 
-<br> b. Describe what happens to the rock.
+a.  Describe what you see when the acid makes contact with the limestone rock.
 
-<br> c. What type of weathering does this represent (i.e. chemical, physical, or biological - and specific type therein)?
+$$\\[0.08in]$$
 
-<br>
+b.  Describe what happens to the rock.
+
+$$\\[0.08in]$$
+
+c.  What type of weathering does this represent (i.e. chemical, physical, or biological - and specific type therein)?
+
+$$\\[0.05in]$$
 
 2.  These two salt samples (NaCl crystals; common table salt) were equal in size at the beginning of this experiment. Using the squirt bottle, apply a stream of water to an edge or corner of the salt block on the left.
 
-<br> a. Describe what you see when the water makes contact with the salt.
+<!-- -->
 
-<br> b. Describe what happens to the salt block.
+a.  Describe what you see when the water makes contact with the salt.
 
-<br> c. What type of weathering does this represent  (i.e. chemical, physical, or biological - and specific type therein)?
+$$\\[0.08in]$$
 
-<br>
+b.  Describe what happens to the salt block.
 
-3.  How might physical weathering help promote chemical weathering?
+$$\\[0.08in]$$
 
-<br>
-<br>
+c.  What type of weathering does this represent (i.e. chemical, physical, or biological - and specific type therein)?
+
+$$\\[0.05in]$$
+
+3.  How might physical weathering help promote chemical weathering? 
+$$\\[0.05in]$$ 
 
 ## INVESTIGATION F: Naming Master Horizons - Review
 

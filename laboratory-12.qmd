@@ -28,11 +28,9 @@ Spread a thin layer of each soil on separate pieces of paper. Hold the water dro
 
 1.  What effect does the impact of the water have on each soil (explain any differences that you observe)?
 
-<br> <br>
+$$\\[0.25in]$$
 
 2.  How would the presence of plant cover change this?
-
-<br> <br>
 
 {{< pagebreak >}}
 
@@ -159,7 +157,7 @@ tab1.1 = usle_ht %>%
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
-      set_col_width(c(0.3, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)) %>%
+      #set_col_width(c(0.3, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
       #set_bottom_padding(row = 2:3, col= 1:2, 60) %>%
@@ -198,7 +196,9 @@ plot(hydrometer_test_video)
 
      d. Divide the measured slope obtained in Step 3c by 2 to correct for the vertical exaggeration of the model. For example, if you obtain a clinometer reading of 16° on the model, the corrected slope is 8° (16° ÷ 2 = 8°). Record your calculation in Table 2.
 
-     e. Using the Extended LS Factor Table on the next page, find the slope in degrees in Column 1 corresponding to the corrected value obtained in Step 3d. Record the corresponding slope in percent from Column 2 in Table 2. You will need percent slope to determine P. f. Continue moving across the row to the column that corresponds to the slope length in feet found in Step 3b and read the LS factor from the body of the table. There is no need to interpolate. Record the LS factor in Tables 1 and 2.
+     e. Using the Extended LS Factor Table on the next page, find the slope in degrees in Column 1 corresponding to the corrected value obtained in Step 3d. Record the corresponding slope in percent from Column 2 in Table 2. You will need percent slope to determine P.
+
+     f. Continue moving across the row to the column that corresponds to the slope length in feet found in Step 3b and read the LS factor from the body of the table. There is no need to interpolate. Record the LS factor in Tables 1 and 2.
 
 4.  C and P are found in the corresponding tables in Investigation D (last page of book). Use the information given in the first column of Table 1.
 

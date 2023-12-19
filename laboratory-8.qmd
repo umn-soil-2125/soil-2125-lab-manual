@@ -204,7 +204,7 @@ Climate refers to the amount of precipitation (rain, snow, humidity) and the tem
 
 1.  Match each soil profile with its location in Minnesota by the depth to CaCO~3~ (Bk or Ck). Mark the depth to effervescence in each case - use HCl to determine depths to carbonates. 1 inch on the monolith = 4 inches in real life.
 
-!["](depth-to-carbonates.png){#fig-carbonates} !["](mn-precip-evap.png){#fig-precipevap}
+![\"](depth-to-carbonates.png){#fig-carbonates} ![\"](mn-precip-evap.png){#fig-precipevap}
 
 2.  For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which of the other four soil forming factors contribute the most to these patterns, and why? (HINT: See lecture 3.3)
 
@@ -386,11 +386,11 @@ All three of these soils developed under a similar climate in central-eastern Mi
 
 1.  Which of these soils exhibits a clear peak in clay with depth?
 
-<br>
+$$\\[0.25in]$$
 
 2.  Knowing what you know about the soil forming factors and their effect on soil development and soil morphology, explain why the soil listed in your answer to question 1 has a peak in clay due to eluviation/illuviation while the other soils do not.
 
-<br> <br> <br> <br> <br>
+$$\\[0.5in]$$
 
 {{< pagebreak >}}
 

@@ -76,15 +76,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -148,15 +148,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -218,15 +218,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -290,15 +290,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -362,15 +362,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -434,15 +434,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -506,26 +506,25 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
-<br> <br> <br>
+$$\\[0.5in]$$
 
 {{< pagebreak >}}
 
 ## SOIL 8: CECIL
 
 Note, the suborder for Cecil is not in course handouts - make a guess!
-
 
 HORIZON CHOICES: Bt2, A, Bt1, C
 
@@ -583,15 +582,15 @@ tab1.1
 
 Epipedon:                                                                     Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Diagnostic Subsurface:                                              Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Order:                                                                    Explain:
 
-<br>
+$$\\[0.5in]$$
 
 Soil Suborder:                                                              Explain:
 
@@ -661,66 +660,54 @@ Answer the following questions about soil names. #1 is already answered for you.
 
 Order - **Histosol**; Suborder: **Saprist**
 
-1b. List two characteristics of the Okeechobee based on the suborder name.
+1b. **(EXAMPLE)** List two characteristics of the Okeechobee based on the suborder name.
 
 **Large accumulation of organic materials Sapric organic materials (well decomposed)**
 
-2. Name the family for the Clarion soil (Fine-loamy, mixed, mesic, Typic Hapludolls).
+2.  Name the family for the Clarion soil (Fine-loamy, mixed, mesic, Typic Hapludolls).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 3a. Name the order and suborder for the Fargo soil (Fine, smectitic, frigid, Typic Epiaquerts).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 3b. Name one characteristic of the Fargo based on the suborder name.
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 3c. Look at the *family* name of the Fargo -- what property of this soil might you predict based on the properties of the dominant mineral?
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 4a. Name the order and suborder for the Lester soil (Fine-loamy, mixed, mesic, Mollic Hapludalfs).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 4b. Name one characteristic of the Lester based on the suborder name.
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 5a. Name the order and suborder for the Hubbard soil (Sandy, mixed, frigid, Entic Hapludolls).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
 5b. List two characteristics of the Hubbard based on the suborder name.
 
-<br>
-<br>
+$$\\[0.1in]$$
 
-6. Name the order and suborder for the Omega soil (Sandy, mixed, frigid, Typic Haplorthods).
+6.  Name the order and suborder for the Omega soil (Sandy, mixed, frigid, Typic Haplorthods).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
-7. Name the suborder for the Rifle soil (Euic, frigid, Typic Haplohemists).
+7.  Name the suborder for the Rifle soil (Euic, frigid, Typic Haplohemists).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
-8. Name the soil order for the Ves soil (Fine-loamy, mixed, mesic, Calcic Hapludolls).
+8.  Name the soil order for the Ves soil (Fine-loamy, mixed, mesic, Calcic Hapludolls).
 
-<br>
-<br>
+$$\\[0.1in]$$
 
-9. Name the soil order for the Valentine soil (Mixed, mesic, Typic Ustipsamments).
+9.  Name the soil order for the Valentine soil (Mixed, mesic, Typic Ustipsamments).
 
-<br>
-<br>
+$$\\[0.1in]$$

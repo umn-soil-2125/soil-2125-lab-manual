@@ -142,7 +142,7 @@ You are encouraged to work in groups for this portion of the lab.
 ::: callout-note
 ## **Watch brief video on how to use pH meter. If you have any questions, please ask the TA for assistance.**
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "15%"}
 #note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
 library(qrcode)
 
@@ -208,7 +208,7 @@ tab1.1
 
 Very generally, compare these values to your pH predictions in the pre-investigation exercise:
 
-<br> <br> <br>
+$$\\[0.25in]$$
 
 {{< pagebreak >}}
 
@@ -272,7 +272,7 @@ Solutions of two dyes (Eosin red: negatively charged (-); and Methylene blue: po
 
 Explain the predominant color observed in the leachate after the solution filtered through the soil into the flask. What color do you see? What is the reason for this?
 
-<br> <br> <br> <br>
+$$\\[0.5in]$$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -323,8 +323,6 @@ tab1.1
 ```
 
 Explain why adding a concentrated salt (which contains no H+ ions) would decrease the pH (increase the number of H+ ions in solution). HINT: Cation exchange plays a huge role!
-
-<br> <br> <br>
 
 {{< pagebreak >}}
 
@@ -412,41 +410,41 @@ The same 8 soils that you have working with in this laboratory were also tested 
 
 1.  First **focus on soils 4, 5, 7, and 8,** which have specific exchange phase ion composition data reported on the data sheet. Calculate the CEC from the sum of exchange phase cations given for each soil. Do these numbers match the whole soil CEC reported in the table?
 
-<br> <br> <br> <br>
+$$\\[0.5in]$$
 
 2.  Calculate the Base Saturation percentage (BS%) for soils 4, 5, 7 and 8.
 
-<br> <br> <br> <br>
+$$\\[0.5in]$$
 
 3.  Look at the pH and exchange phase composition of Soil 4. What major problems might you expect with plant growth on this soil?
 
-<br> <br> <br>
+$$\\[0.25in]$$
 
 4.  Which of the 8 soils would be classified as Saline soils based on the analytical data reported on the sheet? (Saline soils are soils that have EC \> 4 dS/m).
 
-<br> <br>
+$$\\[0.1in]$$
 
 5.  Calculate the Exchangable Sodium Percentage (ESP%) for the soils you identified as saline in Question 4.
 
-<br> <br> <br>
+$$\\[0.1in]$$
 
 6.  Which of these soils would be classified as Sodic soils? (Sodic soils have an ESP% \> 15%).
 
-<br> <br>
+$$\\[0.1in]$$
 
 7.  What major problems for plant growth would you expect to encounter in Sodic soils?
 
-<br> <br> <br> <br>
+$$\\[0.25in]$$
 
 Now, consider the geographic location and climate of all 8 soil samples you investigated (from the table on the first page of this lab):
 
 8.  Soils 5 and 6 both occur in a temperate/humid climate and in relatively close proximity (Soil 5 is from East-Central MN and Soil 6 is from West-Central MN). They were both formed in parent material that dropped out of glacial ice (termed glacial till). However, their CECs, mineralogies, calcareous status, and pHs are very different. What "tale" did we talk about in class (see the end of lecture 1.8 -- soil pH) that would account for these differences?
 
-<br> <br> <br> <br>
+$$\\[0.5in]$$
 
 9.  Sodium carbonate salts (Na2CO3) are more soluble than calcium carbonate salts (CaCO3). This means that when sodium carbonates are dissolved, more OH- is released. Sodium carbonates also increase Na+ concentrations. Both soil 7 and 8 are saline, but differ in their sodicity status and pH. Briefly explain how the different solubilities of Na and Ca carbonate salts mean that sodic soils would be (1) found in drier climates and (2) have higher pHs than other non-sodic (but still saline) soils.
 
-<br> <br> <br> <br>
+$$\\[0.3in]$$
 
 ## Soil Water Data Preparation for Next Week's Lab (THIS IS IMPORTANT!)
 
