@@ -44,7 +44,8 @@ Using the hydrometer allows us to determine soil texture by measuring the grams 
 #note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
 library(qrcode)
 
-hydrometer_test_video <- qrcode::qr_code("https://www.youtube.com/watch?v=78sKJKsaUvY")
+hydrometer_test_video <- qrcode::qr_code("
+tinyurl.com/36p9bxcs")
 #print(hydrometer_test_video)
 plot(hydrometer_test_video)
 ```
