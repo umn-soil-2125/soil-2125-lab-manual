@@ -61,7 +61,7 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 
 1.  Carefully use the stirring rod (approximately 18 inches long with a disk on the end) to completely disperse the soil in the cylinder. This requires that you *slowly* lower and lift the stirring rod up and down in the cylinder until **all the sediment is removed from the bottom of the cylinder.**
 
-2.  After stirring, immediately note the time to the nearest second. *Carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on page 2. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
+2.  After stirring, *carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on the next page. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
 
 3.  After 40 seconds, read the number (at liquid level) on the hydrometer.
 
@@ -76,7 +76,7 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 **Calculations**: correct readings before calculating sand, silt, and clay!
 
 $$
-Sand (\%) = \frac{M_{sample,oven\ dry} - 40s \ reading}{M_{sample,oven\ dry}} x 100\ ;\  Clay (\%) = \frac{2hr\ reading}{M_{sample,oven\ dry}} x 100\ ;\ Silt (\%) = 100 - (\% Sand + \% Clay)
+Sand (\%) = \frac{M_{sample,oven\ dry} - corrected\ 40s \ reading}{M_{sample,oven\ dry}} x 100\ ;\  Clay (\%) = \frac{corrected\ 2hr\ reading}{M_{sample,oven\ dry}} x 100\ ;\ Silt (\%) = 100 - (\% Sand + \% Clay)
 $$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -92,7 +92,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr reading (corrected)", "% Clay", "% Silt")
+Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected)", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr reading (corrected)", "% Clay", "% Silt")
 Sample1 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 Sample2 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 

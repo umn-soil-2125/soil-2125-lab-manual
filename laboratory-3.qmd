@@ -30,7 +30,7 @@ $$
 D_{b,clod}=\frac{(weight\ of\ clod\ in\ air)\ g}{(weight\ of\ clod\ in\ air\ -\ weight\ of\ clod\ in\ water)\ g*1cm^{3}/1g}
 $$
 
-Bulk density is defined as mass (oven dry weight) divided by total volume. Measuring the mass of the clod is straightforward; measuring the volume is not. We can use Archimedes' Principle to measure the volume of any solid, regardless of its shape. Simply stated, if a 50g clod weighs 20g when immersed in water, it must have displaced 30g of water. Since 1 cm^3^ of water weighs 1 gram, the 30g of water is equivalent to 30 cm^3^ of water. The volume of the clod, therefore, is 30 cm^3^. A general mathematical expression for the above statement is:
+Bulk density is defined as mass (oven dry weight) divided by total volume. Measuring the mass of the clod is straightforward; measuring the volume is not. We can use Archimedes' Principle to measure the volume of any solid, regardless of its shape. **Simply stated, if a 50g clod weighs 20g when immersed in water, it must have displaced 30g of water.** Since 1 cm^3^ of water weighs 1 gram, the 30g of water is equivalent to 30 cm^3^ of water. The volume of the clod, therefore, is 30 cm^3^. A general mathematical expression for the above statement is:
 
 Volume of clod (in cm^3^) = \[(weight of clod in air) -- (weight of clod in water)\] g × 1 cm^3^/1 g
 
@@ -110,6 +110,8 @@ tab1.1 = clodclod_ht %>%
 tab1.1
 ```
 
+{{< pagebreak >}}
+
 ### Bulk Density: Soil Core Method
 
 $$
@@ -125,14 +127,14 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurement <- c("Soil core #", "Core weight (empty core provided)", "Weight of core and soil", "Weight of soil", "Core volume", "Bulk density of soil")
-Mass <- c("","grams", "grams", "grams", "cm3", "grams/cm3")
+Measurement <- c("Core weight (empty core provided)", "Weight of core and soil", "Weight of soil", "Core volume", "Bulk density of soil")
+Mass <- c("grams", "grams", "grams", "cm3", "grams/cm3")
 
 measurements <- data.frame(Measurement, Mass)
 colnames(measurements) = c("", "Measurements")
 
 col.num = 2
-row.num = 7 #including header
+row.num = 6 #including header
 
 ################
 ## SET AS HUXTABLE TYPE
@@ -305,13 +307,9 @@ $$
 Porosity(P)_{indirect} =\ [{1 - (\frac{(D_{b}\ by\ graduated\ cylinder\ method)\ \frac{g}{cm^{3}}}{(2.65 \ \frac{g}{cm^{3}})})}]\ *\ 100%
 $$
 
-Depending on accuracy in collecting your porosity data, your calculations of porosity by the direct method and the indirect method should be similar. Record and compare your results.
+Depending on accuracy in collecting your porosity data, your calculations of porosity by the direct method and the indirect method should be similar. Record and compare your results on the next page.
 
-Direct method:
-$$\\[0.1in]$$
-Indirect method:
-
-{{< pagebreak >}}
+Direct method: $$\\[0.1in]$$ Indirect method:
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
 
@@ -496,7 +494,7 @@ $$\\[0.25in]$$
 
 2.  What is the Db range (g/cm3) for typical uncultivated topsoils?
 
-$$\\[0.25in]$$
+{{< pagebreak >}}
 
 3.  I have two soils. Soil 1 is a clay with a Db of 1.4 g/cm3. Soil 2 is a loamy sand with a Db of 1.4 g/cm3. Will root penetration likely be inhibited in either of these soils? Why or why not?
 

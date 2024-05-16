@@ -34,7 +34,7 @@ $$\\[0.25in]$$
 
 2.  Based on what you know about the stability of the cation-oxygen bonds in the BIG 8 (Lecture 1.5), do you think Feldspars are more or less stable (or resistant to weathering) than Quartz?
 
-$$\\[0.25in]$$
+{{< pagebreak >}}
 
 3.  In the phyllosilicates, how are the Si-tetrahedral sheets and Al-octahedral sheets linked?
 
@@ -183,7 +183,7 @@ tab1.1 = slurryion_ht %>%
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      #set_bottom_padding(2:3, 1:2, 60) %>%
+      set_bottom_padding(4, 1:3, 10) %>%
       #set_top_padding(2:3, 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))
@@ -191,6 +191,8 @@ tab1.1 = slurryion_ht %>%
 
 tab1.1
 ```
+
+{{< pagebreak >}}
 
 **Interpret the results of Investigation D based on what you know about the charge on clays and the ionic potential of cations. What accounts for the differences observed?** Hint: Look at the lecture slides on clay mineralogy. The answer has to do with the charge on clay particles and the strength of the charge on the cation in solution.
 
