@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nic Jelinski and Nora Pearson">
+<meta name="dcterms.date" content="2023-12-13">
 
-<title>Soil 2125 Laboratory Manual - pdf edition - 7&nbsp; Biological Processes (2)</title>
+<title>Soil 2125 Laboratory Manual - pdf edition</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./laboratory-7.html" rel="next">
-<link href="./laboratory-6a.html" rel="prev">
+<link href="./laboratory-1-updated.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -110,7 +82,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./laboratory-6b.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Biological Processes (2)</strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -137,7 +109,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -179,7 +151,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./laboratory-6b.html" class="sidebar-item-text sidebar-link active">
+  <a href="./laboratory-6b.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Biological Processes (2)</strong></span></span></a>
   </div>
 </li>
@@ -229,10 +201,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#investigation-a-observation-of-inoculated-plates" id="toc-investigation-a-observation-of-inoculated-plates" class="nav-link active" data-scroll-target="#investigation-a-observation-of-inoculated-plates"><span class="header-section-number">7.1</span> INVESTIGATION A: Observation of Inoculated Plates</a></li>
-  <li><a href="#investigation-b-observation-of-redoximorphic-features-in-mini-monoliths" id="toc-investigation-b-observation-of-redoximorphic-features-in-mini-monoliths" class="nav-link" data-scroll-target="#investigation-b-observation-of-redoximorphic-features-in-mini-monoliths"><span class="header-section-number">7.2</span> INVESTIGATION B: Observation of Redoximorphic Features in Mini-Monoliths</a></li>
-  <li><a href="#investigation-c-observation-of-redox-features-in-vials" id="toc-investigation-c-observation-of-redox-features-in-vials" class="nav-link" data-scroll-target="#investigation-c-observation-of-redox-features-in-vials"><span class="header-section-number">7.3</span> INVESTIGATION C: Observation of Redox Features in Vials</a></li>
-  <li><a href="#investigation-d-earthworm-activity" id="toc-investigation-d-earthworm-activity" class="nav-link" data-scroll-target="#investigation-d-earthworm-activity"><span class="header-section-number">7.4</span> INVESTIGATION D: Earthworm Activity</a></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#sec-team" id="toc-sec-team" class="nav-link" data-scroll-target="#sec-team">Lab Teaching Team</a></li>
+  <li><a href="#logistics-and-laboratory-philosophy---why-is-this-lab-self-paced-and-what-does-that-even-mean" id="toc-logistics-and-laboratory-philosophy---why-is-this-lab-self-paced-and-what-does-that-even-mean" class="nav-link" data-scroll-target="#logistics-and-laboratory-philosophy---why-is-this-lab-self-paced-and-what-does-that-even-mean">Logistics and Laboratory Philosophy - Why is this lab self-paced and what does that even mean?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -241,14 +214,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Biological Processes (2)</strong></span></h1>
+<h1 class="title">Soil 2125 Laboratory Manual - pdf edition</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nic Jelinski and Nora Pearson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 13, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -258,161 +243,38 @@ window.Quarto = {
 </header>
 
 
+<section id="preface" class="level1 unnumbered">
+<h1 class="unnumbered">Preface</h1>
+<blockquote class="blockquote">
+<p><strong>“Tell me and I forget, teach me and I may remember, involve me and I learn.”</strong></p>
+<p><em>- Benjamin Franklin</em></p>
+</blockquote>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Objectives
+Laboratory Schedule
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Observation of inoculated plates.</li>
-<li>Understand concepts of redoximorphic features in soils.</li>
-<li>Understand concepts in bioturbation.</li>
-</ul>
+<p>Note that the laboratory portion of this course is self-paced. The lab has open hours and you can return as often as needed to complete the lab exercises (Laboratory TA’s will be in the lab during all open hours to help you). <strong>Make sure you sign in and out by using the posted QR code, reading the pre-lab instructions, and submitting the pre-lab Google Form.</strong></p>
+<p>Labs take approximately 1-2 hrs to complete. You will sign up for a primary timeslot of your choice during the first week of class. Open times: W 8:30 AM - 8:30 PM Th 9:00 AM - 8:30 PM F 9:00 AM - 4:30 PM at <em>241 Borlaug Hall</em>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Key Words &amp; Concepts
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Redoximorphic</li>
-<li>Well-drained</li>
-<li>Depletions</li>
-<li>Aerobic</li>
-<li>Poorly-drained</li>
-<li>Bioturbation</li>
-<li>Anaerobic</li>
-<li>Concentration</li>
-</ul>
-</div>
-</div>
-<div style="page-break-after: always;"></div>
-<section id="investigation-a-observation-of-inoculated-plates" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="investigation-a-observation-of-inoculated-plates"><span class="header-section-number">7.1</span> INVESTIGATION A: Observation of Inoculated Plates</h2>
-<p>The plates you inoculated with various soil materials last week are on display. Find and look at your plate and many others to see the diversity of microorganisms that have grown from your soil inoculants. Take a look at some of the plates under the microscopes provided and look at even the seemingly “empty” parts of the dish – you might be surprised at what you see growing there.</p>
-<p><strong>Fungi</strong> – the most ubiquitous soil fungi are in the <em>Trichoderma</em> and <em>Fusarium</em> genera. Most soil <em>Fusarium</em> sp. are non-pathogenic, but this genus is highly diverse and responsible for many important crop diseases. Fungi are readily identifiable in culture by their filamentous growth pattern (known as hyphae), which appear as strands to the naked eye and under the microscope. In addition to these two genera, there is a huge diversity of fungi that live in soils.</p>
-<p><strong>Bacteria</strong> – bacteria will form colonies (roughly spherical in shape). Actinobacteria are one of the most important groups of soil bacteria and include the <em>Streptomyces</em> genus, which are the origin of many modern antibiotics (these are also the “Geosmin” producing bacteria – the earthy smell of soil). In addition to the Actinobacteria, there is a huge diversity of bacteria that live in soils.</p>
-<ol type="1">
-<li>Are you surprised at the amount and diversity of organisms that grew in only one week from your soil inoculants?</li>
-</ol>
-<p><span class="math display">\[\\[0.25in]\]</span></p>
-<ol start="2" type="1">
-<li>Some of the plates have been completely overgrown. However, find one that wasn’t. Does it appear that anything grew from the autoclaved (sterilized) soil material?</li>
-</ol>
-<p><span class="math display">\[\\[0.25in]\]</span></p>
-<ol start="3" type="1">
-<li><em>Estimate</em> the total number of distinct colonies or organisms on your plate. If you were going to study soil microorganisms, does it make sense why you would need to do a soil dilution of 1,000 to 10,000 times in order to get individual countable colonies that you could work with in a lab?</li>
-</ol>
-<p><span class="math display">\[\\[0.25in]\]</span></p>
-<ol start="4" type="1">
-<li><em>Estimate</em> the total number of different organisms on your plate (that look different to the naked eye).</li>
-</ol>
-<p><span class="math display">\[\\[0.25in]\]</span></p>
-<ol start="5" type="1">
-<li>Finally, under the microscope, look at the small aggregate of air-dried soil (Soil 3) that you placed on the plate. Do see fungal hyphae growing out of it? Does it surprise you how many organisms are still alive and viable in soil that has been sitting air-dried for over 10 years?</li>
-</ol>
-<div style="page-break-after: always;"></div>
+<section id="sec-team" class="level2">
+<h2 class="anchored" data-anchor-id="sec-team">Lab Teaching Team</h2>
+<p><strong>Teaching Support and Lab Coordinator</strong></p>
+<p>Nora Pearson</p>
+<p>pear0747@umn.edu</p>
 </section>
-<section id="investigation-b-observation-of-redoximorphic-features-in-mini-monoliths" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="investigation-b-observation-of-redoximorphic-features-in-mini-monoliths"><span class="header-section-number">7.2</span> INVESTIGATION B: Observation of Redoximorphic Features in Mini-Monoliths</h2>
-<p>Observe the mini-monolith labelled “Mottles” to see redoximorphic features (one kind of mottling in soils) that are zones of iron depletion and iron concentrations. These zones are formed when the soil is saturated for a period of time (the iron oxides (Fe3+) coating the mineral grains are reduced by anaerobic bacteria which use the Fe3+ as an electron acceptor, reducing it to Fe2+, which is colorless, soluble and mobile in the soil solution). If the soil is then dried out during a drier part of the year, the iron reoxidizes into concentrations, but the zones in between the concentrations where the Fe was depleted will still appear grey because they won’t have iron oxide coatings.</p>
-<p>Because redoximorphic features only form where the soil is saturated for a significant period of time during the year, when we see them in a soil profile, they give us a record of the highest depth that the soil is saturated at throughout the year. For this reason, redoximorphic features play a large role in field determinations of septic system design as well as wetland delineation.</p>
-<p>Therefore, in general, <em>well-drained</em> (aerobic) soils will have continuous coatings of iron-oxides on all the mineral grains and will appear the typical Fe-oxide colors throughout (brown, red, orange, yellow), while <em>poorly drained</em> soils will exhibit redoximorphic features in the form of iron concentrations and depletions (mottles), or a completely grey color if iron has been reduced (solubilized) and removed by moving groundwater.</p>
-<p><strong>Question:</strong> Based on the colors you see in the <em>poorly drained</em> mini-monolith, what is the depth (measured from the soil surface) that the soil is saturated to at some point during the year?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>1 cm on the mini-monolith = 3 cm in the actual soil it was taken from; so multiply your depth measurement on the mini-monolith x 3 to get the actual depth.</p>
-</div>
-</div>
-<p><br> <br></p>
-<div style="page-break-after: always;"></div>
+<section id="logistics-and-laboratory-philosophy---why-is-this-lab-self-paced-and-what-does-that-even-mean" class="level2">
+<h2 class="anchored" data-anchor-id="logistics-and-laboratory-philosophy---why-is-this-lab-self-paced-and-what-does-that-even-mean">Logistics and Laboratory Philosophy - Why is this lab self-paced and what does that even mean?</h2>
+<p>This laboratory is self-paced to allow you to complete laboratory exercises in as much or as little time as you need for your learning style. During each weekly lab, you will work your way through a series of exercises that will be set up for you - you will use this laboratory manual to complete those exercises, which the TA will then evaluate for completeness and effort. Following evaluation of your lab manual for the week, you will take a short quiz before you leave the lab. The quiz is open book/open note, and you have two attempts on the quiz. The TA will grade your first attempt, after which you will know which questions (if any) you have gotten incorrect. You can then change or modify your answers during the second attempt. The two components (the laboratory exercises completed in the workbook + the lab quiz) make up the points you will earn for the laboratory component of this course.</p>
+
+
 </section>
-<section id="investigation-c-observation-of-redox-features-in-vials" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="investigation-c-observation-of-redox-features-in-vials"><span class="header-section-number">7.3</span> INVESTIGATION C: Observation of Redox Features in Vials</h2>
-<p>Three weeks ago, you filled two vials with a orangish-colored soil material from Tennessee. You saturated the soil materials in both vials by filling the vial up with water. In one vial (your control), you did not add anything. In the second vial (your experiment), you added a teaspoon of sugar and a small pinch of inoculant from an anaerobic wetland soil. Find the vials that your discussion group made and observe the vials of other groups as well. <strong>Do not open the vials.</strong></p>
-<p>You will also notice that your demo vial probably smells terrible. That is from the reduction of SO42- (sulfate) to H2S (hydrogen sulfide gas) and CO2 (carbon dioxide) to CH4 (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.</p>
-<p>Describe the differences you see between the vials. Do you see differences in the color of the soil materials and the quantity of gas bubbles?</p>
-<div class="cell">
-<div class="cell-output-display">
-<table id="tab:unnamed-chunk-1" class="huxtable caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th" style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 0pt 4pt 4pt 0pt; font-weight: bold;">Treatment</td>
-<td data-quarto-table-cell-role="th" style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 0pt 4pt 4pt 4pt; font-weight: bold;">Refridgerated</td>
-<td data-quarto-table-cell-role="th" style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 0pt 4pt 4pt 4pt; font-weight: bold;">Room Temperature</td>
-<td data-quarto-table-cell-role="th" style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 0pt 0pt 4pt 4pt; font-weight: bold;">Heated</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 4pt 4pt 4pt 0pt; font-weight: normal;">Control (No sugar or inoculum)</td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 4pt 40pt 4pt; font-weight: normal;"></td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 4pt 40pt 4pt; font-weight: normal;"></td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 0pt 40pt 4pt; font-weight: normal;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 4pt 4pt 0pt 0pt; font-weight: normal;">Sugar + inoculum</td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 4pt 40pt 4pt; font-weight: normal;"></td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 4pt 40pt 4pt; font-weight: normal;"></td>
-<td style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 40pt 0pt 40pt 4pt; font-weight: normal;"></td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-<p><strong>Question:</strong> Explain the differences between the three vials in terms of what you know about how redoximorphic features form and the effects of saturation on iron forms and the color of soil materials. Look at the chalkboard for help.</p>
-<p><br> <br> <br> <br></p>
-<div style="page-break-after: always;"></div>
-</section>
-<section id="investigation-d-earthworm-activity" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="investigation-d-earthworm-activity"><span class="header-section-number">7.4</span> INVESTIGATION D: Earthworm Activity</h2>
-<p>Earthworms play a significant role in mixing the soil. Observe the differences in the three columns and, based on your observations, provide four examples of how earthworm activity changes soil properties. Many of these changes are positive from a plant growth perspective, but can have other ecological effects as well. Please refer to Lecture 2-7 for assistance in answering the questions below.</p>
-<div class="cell">
-<div class="cell-output-display">
-<table id="tab:unnamed-chunk-2" class="huxtable caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th" style="text-align: center; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 0pt 0pt 4pt 0pt; font-weight: bold;">Earthworms change soil properties by:</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 30pt 0pt 30pt 0pt; font-weight: normal;">1.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 30pt 0pt 30pt 0pt; font-weight: normal;">2.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 30pt 0pt 30pt 0pt; font-weight: normal;">3.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; vertical-align: middle; white-space: normal; border-style: solid solid solid solid; border-width: 1pt 1pt 1pt 1pt; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); padding: 30pt 0pt 30pt 0pt; font-weight: normal;">4.</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-
-
 </section>
 
 </main> <!-- /main -->
@@ -827,13 +689,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./laboratory-6a.html" class="pagination-link" aria-label="**Biological Processes (1)**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>Biological Processes (1)</strong></span></span>
-      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./laboratory-7.html" class="pagination-link" aria-label="**Rocks, Weathering, and Master Horizons**">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>Rocks, Weathering, and Master Horizons</strong></span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./laboratory-1-updated.html" class="pagination-link" aria-label="**Soil Texture, Color, and Structure**">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Soil Texture, Color, and Structure</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
