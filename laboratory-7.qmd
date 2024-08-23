@@ -52,7 +52,7 @@ Minerals, even of the same type, can vary in color and physical properties makin
 
 ## INVESTIGATION B: Rock Identification -- Rocks are Aggregates of Minerals
 
-Rocks are composed of minerals. Observe the rock displays and complete the following tables on igneous, sedimentary, metamorphic, and organic rocks. Record the one or two characteristics of each rock that you find most obvious or most helpful for distinguishing one from the other *within each rock type* (i.e. within Igneous/Sedimentary/Metamorphic groups). For example, compare granite to basalt; then compare sandstone, shale, limestone, and so on.
+Rocks are composed of minerals. Observe the rock displays and complete the following tables on igneous, sedimentary, metamorphic, and organic rocks. Record the one or two characteristics of each rock that you find most obvious or most helpful for distinguishing one from the other *within each rock type* (i.e. within Igneous/Sedimentary/Metamorphic groups). For example, compare granite to basalt; then compare sandstone, shale, limestone, and so on. Rock types are listeed in the "Rock" column in each table.
 
 #### Igneous Rock
 
@@ -356,7 +356,7 @@ Physical weathering involves mechanical processes by which rocks exposed to weat
 
 -   **Unloading/Exfoliation**: Many rocks are formed at great depth under intense temperatures and pressures. As these rocks make their way to the surface and overlying rock is removed through erosion, some of the pressure is released. This release of pressure causes the rock to fracture horizontally. Cracks of this type increase in number as the rock reaches the surface.
 
-Observe the examples of physical weathering, then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process.
+Observe the examples of physical weathering, then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process. Weathering processes can be reused.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -418,7 +418,7 @@ Chemical weathering involves chemical processes by which rocks and minerals expo
 
 -   **Dissolution**: Occurs when the component minerals of rocks are dissolved by water. The dissolved material is transported away leaving a space in the rock.
 
--   **Acidification**: Dissolving of calcium carbonate (limestone) in acidic groundwater. One consequence of this process is the formation of caves in limestone areas.
+-   **Acidification**: Dissolving of calcium carbonate (limestone) in acidic groundwater or rainwater. One consequence of this process is the formation of caves in limestone areas.
 
 Observe the examples of chemical weathering then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process.
 
@@ -540,7 +540,7 @@ a.  Describe what you see when the acid makes contact with the limestone rock.
 
 $$\\[0.08in]$$
 
-b.  Describe what happens to the rock.
+b.  Describe what happens to the rock at the molecular level.
 
 $$\\[0.08in]$$
 
@@ -556,7 +556,7 @@ a.  Describe what you see when the water makes contact with the salt.
 
 $$\\[0.08in]$$
 
-b.  Describe what happens to the salt block.
+b.  Describe what happens to the salt block at the molecular level.
 
 $$\\[0.08in]$$
 
@@ -564,8 +564,7 @@ c.  What type of weathering does this represent (i.e. chemical, physical, or bio
 
 $$\\[0.05in]$$
 
-3.  How might physical weathering help promote chemical weathering? 
-$$\\[0.05in]$$ 
+3.  How might physical weathering help promote chemical weathering? $$\\[0.05in]$$
 
 ## INVESTIGATION F: Naming Master Horizons - Review
 

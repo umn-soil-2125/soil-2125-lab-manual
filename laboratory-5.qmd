@@ -89,11 +89,11 @@ tab1.1 = matricvolumetric_ht %>%
 tab1.1
 ```
 
-Use the data from the table on the previous page to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure) note that the scale is logarithmic) for each of these soils on the table on the next page and answer the following questions:
+Use the data from the table above to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure) note that the scale is logarithmic) for each of these soils on the table on the next page and answer the following questions:
 
 ![Water Retention Curve](water-retention-curve-Picture1.png){#fig-waterretention}
 
-1.  Using the graph above, estimate the total plant available water (in % by volume) for each of these soils. FC is defined as -0.33 bars and wilting point is defined as -15 bars.
+1.  Using the table above, estimate the total plant available water (in % by volume) for each of these soils. FC is defined as -0.33 bars and wilting point is defined as -15 bars.
 
 $$\\[0.25in]$$
 
@@ -250,7 +250,7 @@ library(dplyr)
 ## BUILD TABLE
 ################
 Property <- c("Weight of can", "Weight of moist soil + can", "Weight of moist soil", "Weight of oven dry soil + can", "Weight of oven-dried soil", "θg of moist soil last week")
-Measurement <- c("grams", "grams", "grams", "grams", "grams", "%")
+Measurement <- c("grams", "grams", "grams", "grams", "grams", "grams H2O / grams soil")
 
 propertymeasurement <- data.frame(Property, Measurement)
 colnames(propertymeasurement) = c("Property", "Measurement")

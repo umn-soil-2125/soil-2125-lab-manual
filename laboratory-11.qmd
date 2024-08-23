@@ -541,7 +541,7 @@ tab1.1
 
 ## INVESTIGATION G: Reading and Using a Soil Test Report
 
-Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil reports from the soil we observed in the field last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain.
+Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil reports from the soil we observed in the field last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain using row/drill fertilizer application.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -550,7 +550,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-4 slide 7)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
+Question <- c("What is the pH of the soil?", "What is the estimated soil texture?", "Was the soil test for P Bray or Olsen?", "Why was that particular method chosen? (see lecture 4-3)", "What is the K soil test result? (ppm)", "What is the nitrogen (N) recommendation?", "What is the phosphate (P) recommendation?", "What is the potash (K) recommendation?")
 LawnGarden <- c("", "", "", "", "", "lb N/1000 sq ft", "lb P2O5 /1000 sq ft", "lb K2O/1000 sq ft")
 FarmField <- c("", "", "", "", "", "lb N/acre", "lb P2O5/acre", "lb K2O/acre")
 

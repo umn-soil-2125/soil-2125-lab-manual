@@ -44,7 +44,7 @@ Soils develop in many different kinds of parent materials. Parent material, in s
 
 ![Minnesota](residual-parent-materials-Picture1.png){#fig-residual}
 
-A:                                                         B:                                                        C:
+**A:**                                                         **B:**                                                        **C:**
 
 {{< pagebreak >}}
 
@@ -100,6 +100,8 @@ tab1.1 = glacialtillobserv_ht %>%
 tab1.1
 ```
 
+$$\\[0.5in]$$
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
 library(dplyr)
@@ -147,6 +149,8 @@ tab1.1 = watersortedobserv_ht %>%
 
 tab1.1
 ```
+
+$$\\[0.5in]$$
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -202,9 +206,9 @@ tab1.1
 
 Climate refers to the amount of precipitation (rain, snow, humidity) and the temperature in a given locale. The hotter and more humid a climate, the faster and more completely it is going to weather into soil. If a climate is cool and or dry, the weathering process proceeds more slowly. Below are temperature and precipitation maps for Minnesota. The difference in temperature will not change the weathering of rocks in Minnesota. However, the precipitation and temperature together will influence the leaching and horizon formation. Calcium carbonate will occur closer to the surface in soils with less leaching as in western Minnesota. NOTE: The diagram below shows the general pattern but DOES NOT correspond to the exact depth of leaching for any one particular profile.
 
-1.  Match each soil profile with its location in Minnesota by the depth to CaCO~3~ (Bk or Ck). Mark the depth to effervescence in each case - use HCl to determine depths to carbonates. 1 inch on the monolith = 4 inches in real life.
+1.  Use HCl, provided in dropper bottles, to identify the depth to carbonates (CaCO~3~; Bk or Ck horizon) for each of the three mini-monoloiths. Mark the depth to effervescence for each in the boxes below. 1 inch on the mini-monolith = 4 inches in real life.
 
-![\"](depth-to-carbonates.png){#fig-carbonates} ![\"](mn-precip-evap.png){#fig-precipevap}
+!["](depth-to-carbonates.png){#fig-carbonates} !["](mn-precip-evap.png){#fig-precipevap}
 
 2.  For a more detailed and complex representation of the depth to carbonates in soils across Minnesota, see the depth to carbonates map in Soil Explorer on the iPads. In addition to climate, which of the other four soil forming factors contribute the most to these patterns, and why? (HINT: See lecture 3.3)
 
@@ -253,7 +257,7 @@ tab1.1 = soilhistoricveg_ht %>%
       set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
       set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
-      #set_col_width(c(0.3, 0.6)) %>%
+      set_col_width(c(0.2, 0.4, 0.4)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
       set_bottom_padding(row = 2:7, col= 1:2, 10) %>%
@@ -278,7 +282,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Topography <- c("Summit/Well Drained; No Mottles", "Backslope/Moderately Well Drained; Gray mottles 50-75 cm deep", "Footslope/Somewhat Poorly Drained; Gray mottles 25-50 cm deep", "Toeslope/Poorly Drained; Gray (Bg) colors below dark A", "Depression/Very Poorly Drained; Gray Cg colors below thick A")
+Topography <- c("Summit/Well Drained; No Mottles", "Backslope/Moderately Well Drained; Gray mottles 50-75 cm deep", "Footslope/Somewhat Poorly Drained; Gray mottles 25-50 cm deep", "Toeslope/Poorly Drained; Gray colors below dark A", "Depression/Very Poorly Drained; Gray Cg colors below thick A")
 SoilName <- c("", "", "NOT PRESENT IN DISPLAY", "", "")
 Explanation <- c("", "", "NOT PRESENT IN DISPLAY", "", "")
 
@@ -396,7 +400,7 @@ $$\\[0.5in]$$
 
 ## INVESTIGATION H: Properties from Factors and Factors from Properties
 
-Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the "Soil Forming Factors" and "Soil Properties" tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils.
+Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the "Soil Forming Factors" and "Soil Properties" tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils. Use both tables to determine missing information.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

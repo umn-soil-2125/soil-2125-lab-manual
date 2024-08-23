@@ -206,7 +206,7 @@ tab1.1 = soilnumber_ht %>%
 tab1.1
 ```
 
-Very generally, compare these values to your pH predictions in the pre-investigation exercise:
+**Generally, how do these values compare to your pH predictions in the pre-investigation exercise?**
 
 $$\\[0.25in]$$
 
@@ -441,10 +441,6 @@ Now, consider the geographic location and climate of all 8 soil samples you inve
 8.  Soils 5 and 6 both occur in a temperate/humid climate and in relatively close proximity (Soil 5 is from East-Central MN and Soil 6 is from West-Central MN). They were both formed in parent material that dropped out of glacial ice (termed glacial till). However, their CECs, mineralogies, calcareous status, and pHs are very different. What "tale" did we talk about in class (see the end of lecture 1.8 -- soil pH) that would account for these differences?
 
 $$\\[0.5in]$$
-
-9.  Sodium carbonate salts (Na2CO3) are more soluble than calcium carbonate salts (CaCO3). This means that when sodium carbonates are dissolved, more OH- is released. Sodium carbonates also increase Na+ concentrations. Both soil 7 and 8 are saline, but differ in their sodicity status and pH. Briefly explain how the different solubilities of Na and Ca carbonate salts mean that sodic soils would be (1) found in drier climates and (2) have higher pHs than other non-sodic (but still saline) soils.
-
-$$\\[0.3in]$$
 
 ## Soil Water Data Preparation for Next Week's Lab (THIS IS IMPORTANT!)
 

@@ -47,7 +47,7 @@ $$\\[0.25in]$$
 
 $$\\[0.25in]$$
 
-5.  Finally, under the microscope, look at the small aggregate of air-dried soil (Soil 3) that you placed on the plate. Do see fungal hyphae growing out of it? Does it surprise you how many organisms are still alive and viable in soil that has been sitting air-dried for over 10 years?
+5.  Finally, under the microscope, look at soil 3; air-dried soil was the inoculant for this section. Do see fungal hyphae growing out of it? Does it surprise you how many organisms are still alive and viable in soil that has been sitting air-dried for over 10 years?
 
 {{< pagebreak >}}
 
@@ -71,9 +71,9 @@ Therefore, in general, *well-drained* (aerobic) soils will have continuous coati
 
 ## INVESTIGATION C: Observation of Redox Features in Vials
 
-Three weeks ago, you filled two vials with a orangish-colored soil material from Tennessee. You saturated the soil materials in both vials by filling the vial up with water. In one vial (your control), you did not add anything. In the second vial (your experiment), you added a teaspoon of sugar and a small pinch of inoculant from an anaerobic wetland soil. Find the vials that your discussion group made and observe the vials of other groups as well. **Do not open the vials.**
+Three weeks ago, you filled two vials with a orangish-colored soil material from Tennessee. You saturated the soil materials in both vials by filling the vial up with water. In one vial (your control), you did not add anything. In the second vial (your experiment), you added a teaspoon of sugar and a small pinch of inoculant from an anaerobic wetland soil. Observe the demonstration vials on the lab bench. **Do not open the vials.**
 
-You will also notice that your demo vial probably smells terrible. That is from the reduction of SO42- (sulfate) to H2S (hydrogen sulfide gas) and CO2 (carbon dioxide) to CH4 (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.
+You may notice that the demo vial smells terrible. That is from the reduction of SO~4~^2-^ (sulfate) to H~2~S (hydrogen sulfide gas) and CO~2~ (carbon dioxide) to CH~4~ (methane), as evidenced by the large gas bubbles. Hydrogen sulfide and methane smell bad and are produced in copious amounts in saturated soils (like wetlands). This is why wetlands can sometimes smell bad as you walk through them.
 
 Describe the differences you see between the vials. Do you see differences in the color of the soil materials and the quantity of gas bubbles?
 

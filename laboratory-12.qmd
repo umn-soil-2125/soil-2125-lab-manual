@@ -93,7 +93,7 @@ tab1.1
 
 ## INVESTIGATION C: Predicting Erosion with the Universal Soil Loss Equation
 
-Determine the erosion rates for the Seaton and Frontenac soils (located on the plaster landscape model). Use the white-painted lines and indicated lengths for the LS factor for the three erosion estimates. These soils are located in Winona County, MN.
+Determine the erosion rates for the Seaton and Frontenac soils (located on the plaster landscape model). Use the white-painted lines and indicated lengths for the LS factor for the three erosion estimates. These soils are located in Winona County, MN. Instructions for finding each componenet of the USLE are listed on the next page.
 
 $$
 USLE:\ A\ =\ R\ *\ K\ *\ LS\ *\ C\ *\ P
@@ -169,6 +169,8 @@ tab1.1 = usle_ht %>%
 tab1.1
 ```
 
+$$\\[0.1in]$$
+
 1.  R is found on the laminated map in the lab.
 
 2.  K and T are found in the Winona County Soil Survey, Table 16, page 261.
@@ -184,7 +186,7 @@ tab1.1
 ::: callout-note
 ## Watch this video on use of the clinometer
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "15%"}
 #note - control plotting size with fig.width and fig.height in chunk option above - numbers are in inches. see here: https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html - out.width works!!!!!
 library(qrcode)
 
@@ -262,8 +264,6 @@ tab1.1
 {{< pagebreak >}}
 
 ![Extended LS Factor Table. Use values from steps 3b and 3d.](extended-ls-factor-table.png){#fig-ls}
-
-{{< pagebreak >}}
 
 ## INVESTIGATION D: Modifying Soil Loss
 
