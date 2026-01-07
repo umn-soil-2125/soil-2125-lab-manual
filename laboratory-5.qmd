@@ -89,7 +89,7 @@ tab1.1 = matricvolumetric_ht %>%
 tab1.1
 ```
 
-Use the data from the table above to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure) note that the scale is logarithmic) for each of these soils on the table on the next page and answer the following questions:
+Use the data from the table above to construct water retention curves (volumetric water content vs. matric potential (i.e., tension, or negative pressure)) for each of these soils on the table on the next page and answer the following questions. Note that the scale is logarithmic.
 
 ![Water Retention Curve](water-retention-curve-Picture1.png){#fig-waterretention}
 
@@ -128,16 +128,15 @@ plot(hydrometer_test_video)
 
 **Preparation**
 
-1.  Weigh a small plastic tray on the balance.
-2.  Move the weight on the far beam to 20 grams.
-3.  With a spoon, add soil to the tray until balanced.
-4.  Take a single sheet of the round filter paper and fold it in half and then fold it in half again. You should be able to create a small cone of filter paper that will fit inside one of the funnels.
-5.  Once you have the filter in place in the funnel, add 20 grams of soil to the funnel.
-6.  Carefully fill one of the graduated cylinders (BLUE base) with 25 mL of water.
-7.  Place the funnel with the filter paper and soil on top of one of the 100 mL graduated cylinder.
-8.  Carefully pour all 25 mL of water on top of the soil. Add about a third of the water, wait for it to be absorbed into the soil. Then slowly add the remainder. Do not add so much water at one time that it overtops the filter paper. *The silt loam may take 10 minutes or so to add all of the water.*
-9.  Record the amount of water (in mL) that has passed through the soil sample and has collected in the graduated clynder. Assume that 2 mL of water is absorbed by the filter paper.
-10. Repeat this process for the soils labeled Sand and Silt Loam and record your results in the table below.
+1.  Place a small plastic tray on the scale and zero (tare) it.
+2.  With a spoon, add 20 grams of soil to the tray.
+3.  Take a single sheet of the round filter paper and fold it in half and then fold it in half again. You should be able to create a small cone of filter paper that will fit inside one of the funnels.
+4.  Once you have the filter in place in the funnel, add 20 grams of soil to the funnel.
+5.  Carefully fill one of the graduated cylinders (BLUE base) with 25 mL of water.
+6.  Place the funnel with the filter paper and soil on top of one of the 100 mL graduated cylinder.
+7.  Carefully pour all 25 mL of water on top of the soil. Add about a third of the water, wait for it to be absorbed into the soil. Then slowly add the remainder. *Do not add so much water at one time that it overtops the filter paper. The silt loam may take 10 minutes or so to add all of the water.*
+8.  Record the amount of water (in mL) that has passed through the soil sample and has collected in the graduated cylinder. Assume that 2 mL of water is absorbed by the filter paper.
+9.  Repeat this process for the soils labeled Sand and Silt Loam and record your results in the table below.
 
 **Volume retained in the soil** = (25mL) - (Volume retained on filter paper) - (Volume passed through the soil). This is an estimate of field capacity.
 
@@ -196,13 +195,13 @@ tab1.1
 
 {{< pagebreak >}}
 
-1.  Explain why the different soil textures retained differing amounts of water.
-
-$$\\[0.5in]$$
-
-2.  Which of these textures has the highest water content at field capacity?
+1.  Which of these textures has the highest water content at field capacity?
 
 $$\\[0.25in]$$
+
+2.  Explain why the different soil textures retained differing amounts of water.
+
+$$\\[0.5in]$$
 
 ## INVESTIGATION C: Tensiometer Observation
 
@@ -230,7 +229,7 @@ $$\\[0.5in]$$
 
 $$\\[0.5in]$$
 
-3.  The zone between the totally saturated soil material below the water surface in the tub and the highest height of rise due to matric potential is sometimes called the "capillary fringe" -- it represents the height at which water has been pulled up from a saturated zone against gravity by capillary action or matric potential. Would you expect a silty clay or a sandy clay loam to have a larger capillary fringe (you might want to reference your textural triangle)? Why?
+3.  The zone between the totally saturated soil material below the water surface in the tub and the highest height of rise due to matric potential is sometimes called the "capillary fringe" -- it represents the height at which water has been pulled up from a saturated zone against gravity by capillary action or matric potential. Would you expect a silty clay or a sandy clay loam to have a larger capillary fringe? Why? You might want to reference your textural triangle.
 
 $$\\[0.5in]$$
 

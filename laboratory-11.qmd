@@ -252,75 +252,7 @@ $$\\[0.25in]$$
 
 {{< pagebreak >}}
 
-## INVESTIGATION D: Liming and Base Saturation
-
-In the field, quick lime or elemental sulfur is used to adjust pH to a desired range. The following investigation demonstrates a soil with low base saturation (Low B.S.) and a soil with high base saturation (High B.S.) combined with two different amendments. The diagram shows six variations of soil + solution and the pH for each sample. We used HCl in place of elemental sulfur. Before recoding the diagram provided in lab, answer the following questions.
-
-How do you think the quick lime will impact the Low B.S. sample?
-
-<br> <br>
-
-How will the addition of acid affect the pH in soil with High B.S.?
-
-<br> <br>
-
-**Record the pH of each solution here.**
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-library(huxtable)
-library(dplyr)
-
-################
-## BUILD TABLE
-################
-TypeofSolution <- c("Low Base Saturation Soil Slurry", "Low Base Saturation and 1 scoop Lime", "Low Base Saturation and 10 scoops Lime", "High Base Saturation Soil Slurry", "High Base Saturation and 1 mL of 5% Acid", "High Base Saturation and 5 mL of 10% Acid")
-pH <- c("","", "", "", "", "")
-
-solutionph <- data.frame(TypeofSolution, pH)
-colnames(solutionph) = c("Type of Solution", "pH")
-
-col.num = 2
-row.num = 7 #including header
-
-################
-## SET AS HUXTABLE TYPE
-################
-solutionph_ht <- as_hux(solutionph)
-
-################
-## SET FORMATTING
-################
-#NOTE: only thing you really need to mess with down here is the padding. If you need extra row height, keep them - if not, just put a hastag in front of them
-
-tab1.1 = solutionph_ht %>% 
-      set_all_padding(4) %>% 
-      set_outer_padding(0) %>% 
-      set_number_format(0) %>% #this tells it how many decimals to print after any numbers
-      set_bold(row = 1, col = everywhere) %>% #make header row bold
-      #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
-      set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:row.num, col = 1:col.num, value = 'center') %>%
-      set_valign(row = 1:row.num, col = 1:col.num, value = 'middle') %>%
-      #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
-      #set_col_width(c(0.3, 0.6)) %>%
-      set_latex_float(value = "h!") %>%
-      #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(row = 2:7, col= 1:2, 20) %>%
-      set_top_padding(row = 2:7, col = 1:2, 20) %>%
-      #set_row_height(c(0.02, 0.2, 0.2)) %>%
-      set_all_borders(brdr(1, "solid", "black"))
-      #set_caption("Pots of jam for sale") # this is if we want a caption - I don't think we need any captions but leaving it here just in case
-
-tab1.1
-```
-
-Explain the impact on the pH of each soil after the different solutions were added. Did the results surprise you?
-
-<br> <br>
-
-{{< pagebreak >}}
-
-## INVESTIGATION E: Observation of Plant Nutrient Deficiencies
+## INVESTIGATION D: Observation of Plant Nutrient Deficiencies
 
 Nutrient deficiencies in plants can sometimes have complex causes and symptoms, and can also be related to drought and other types of stress. Just having a sufficient total amount of an element in the soil does not always eliminate deficiencies because plant nutrient uptake is dependent on a wide range of factors including nutrient form, mobility, and soil properties such as pH, mineralogy, and organic matter. Nutrient deficiencies can be outwardly manifested in different ways in different plant species, and the symptoms of some nutrient deficiencies can mimic other forms of stress. However, experts with enough experience can diagnose nutrient deficiencies in the field. In this investigation, you will examine the outward effect of N, P and K deficiencies in corn. Note that symptoms in other plant species may look similar or may vary, depending on biology and growth conditions.
 
@@ -376,7 +308,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION F: Common Fertilizer Materials
+## INVESTIGATION E: Common Fertilizer Materials
 
 **Inorganic Fertilizers**
 
@@ -539,7 +471,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION G: Reading and Using a Soil Test Report
+## INVESTIGATION F: Reading and Using a Soil Test Report
 
 Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil reports from the soil we observed in the field last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain using row/drill fertilizer application.
 

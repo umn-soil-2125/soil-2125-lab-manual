@@ -183,7 +183,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurement <- c("Weight of clean, dry 100 mL graduated cylinder", "Weight of clean, dry 100 ml graduated cylinder filled with 100 ml of fine sand", "Weight of soil", "Volume of soil (1 ml in cylinder = 1 cm3)", "Bulk density of soil")
+Measurement <- c("Weight of clean, dry 100 mL graduated cylinder", "Weight of clean, dry 100 mL graduated cylinder filled with 100 mL of fine sand", "Weight of soil", "Volume of soil (1 mL in cylinder = 1 cm3)", "Bulk density of soil")
 Mass <- c("grams","grams", "grams", "cm3", "grams/cm3")
 
 measurementsgradcyl <- data.frame(Measurement, Mass)
@@ -254,7 +254,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurement <- c("Initial volume of water", "Volume of water remaining in cylinder after all soil pores are filled", "Volume of water filling soil pores (initial – remaining)", "Total volume of soil (1 cm3 = 1 ml)", "Porosity = (volume of water filling pores / total volume) × 100%")
+Measurement <- c("Initial volume of water", "Volume of water remaining in cylinder after all soil pores are filled", "Volume of water filling soil pores (initial – remaining)", "Total volume of soil (1 cm3 = 1 mL)", "Porosity = (volume of water filling pores / total volume) × 100%")
 Volume <- c("100 mL","mL", "mL", "100 mL", "%")
 
 measurementsporositydirect <- data.frame(Measurement, Volume)
@@ -313,7 +313,7 @@ Direct method: $$\\[0.1in]$$ Indirect method:
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
 
-Soil bulk density is the mass of oven dry soil (grams) divided by the total volume of soil (cm3). Soil bulk density may be highly variable over small distances and may even change within the same horizon. Bulk density is also highly correlated with soil texture. Compare and rank the bulk densities for the soil materials within each box from low to high bulk density:
+Soil bulk density is the mass of oven dry soil (grams) divided by the total volume of soil (cm3). Soil bulk density may be highly variable over small distances and may even change within the same horizon. Bulk density is also highly correlated with soil texture. Estimate bulk density using mass. Compare and rank the bulk densities for the soil materials within each box from low to high bulk density.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

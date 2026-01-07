@@ -366,7 +366,7 @@ RibbonLength <- c("", "", "")
 TexturalClass <- c("", "", "")
 
 texturegrittysmooth <- data.frame(Texture, Gritty, Smooth, Equal, RibbonLength, TexturalClass)
-colnames(texturegrittysmooth) = c("Texture", "Dominated by gritty feel (Y/N)", "Dominated by smooth feel (Y/N)", "Equally gritty/smooth (Y/N)", "Ribbon length", "Textural Class Name")
+colnames(texturegrittysmooth) = c("Sample", "Dominated by gritty feel (Y/N)", "Dominated by smooth feel (Y/N)", "Equally gritty/smooth (Y/N)", "Ribbon length", "Textural Class Name")
 
 col.num = 6
 row.num = 4 #including header
