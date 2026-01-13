@@ -38,17 +38,7 @@
 -   Sesquioxides
 :::
 
-## INVESTIGATION A: Residual Parent Materials
-
-Soils develop in many different kinds of parent materials. Parent material, in some cases, can be the bedrock under the soil and this non-transported parent material is called residuum. The soils that develop in residuum can be shallow if the rock is hard and difficult to weather, or deep if the rock is soft or has weathered for a long time. In Minnesota, four types of bedrock can be located that are only thinly or not covered by glacial drift and thus can become residual parent material--- limestone, sandstone, basalt, and granite. Use the depth to bedrock map and simplified geological map to describe the most likely rock type for residual soils at points A, B and C.
-
-![Minnesota](residual-parent-materials-Picture1.png){#fig-residual}
-
-**A:**                                                         **B:**                                                        **C:**
-
-{{< pagebreak >}}
-
-## INVESTIGATION B: Transported Parent Materials
+## INVESTIGATION A: Parent Materials
 
 In Minnesota, most soils are formed in a parent material that was transported by ice, wind or water. Ice deposited glacial till, water deposited glacial outwash, glacial lacustrine and alluvium, and wind deposited eolian sand and loess. Observe the samples of transported parent materials and note characteristics for each sample. These characteristics (particularly color and texture) are very useful for identifying the parent material of many Minnesota soils.
 
@@ -202,7 +192,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION C: Climatic Factors
+## INVESTIGATION B: Climatic Factors
 
 Climate refers to the amount of precipitation (rain, snow, humidity) and the temperature in a given locale. The hotter and more humid a climate, the faster and more completely it is going to weather into soil. If a climate is cool and or dry, the weathering process proceeds more slowly. Below are temperature and precipitation maps for Minnesota. The difference in temperature will not change the weathering of rocks in Minnesota. However, the precipitation and temperature together will influence the leaching and horizon formation. Calcium carbonate will occur closer to the surface in soils with less leaching as in western Minnesota. NOTE: The diagram below shows the general pattern but DOES NOT correspond to the exact depth of leaching for any one particular profile.
 
@@ -216,7 +206,7 @@ Climate refers to the amount of precipitation (rain, snow, humidity) and the tem
 
 {{< pagebreak >}}
 
-## INVESTIGATION D: Biotic Factors (Vegetation)
+## INVESTIGATION C: Biotic Factors (Vegetation)
 
 One of the most obvious biotic factors is the effect that vegetation has on soil formation. The most common pre-European settlement vegetative types (this is the vegetation the soil formed under for \~ 10,000 -- 13,000 years after glaciation -- the native vegetation in many areas has been replaced by agriculture or other land uses, but only very recently) in Minnesota are forest, grassland (prairie), and a transitional zone between forest and grassland prairie (called savannah). Using the six micro-monoliths (1/4 scale), determine the vegetation that the following soils were formed under, and briefly explain your answer.
 
@@ -271,7 +261,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION E: Topographic Factors
+## INVESTIGATION D: Topographic Factors
 
 When forming within a landscape, soils with the same parent material, vegetation, and climate often have different depths to the water table (e.g. are different due to topography only). This grouping of soils is called a catena. Find and examine the Clarion, Nicollet, Webster, and Glencoe monoliths against the elevator shaft in the display area and determine the location of each soil on the following catena block diagram and explain your answers.
 
@@ -326,7 +316,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION F: Time Factors
+## INVESTIGATION E: Time Factors
 
 Soil "age" is measured in geologic terms (Minnesota soils are quite young due to glacial deposits that happened only 10,000 -- 13,000 years ago), as well as measured in terms of development (soils in colder climates develop slower and therefore show "young" morphology). For practical purposes, the number and type of horizons and the depth of soil development (pedogenic processes or A, E, & B horizons) is a decent starting indicator of a soil's age. Determine the "age" sequence for the three micro-monoliths on display.
 
@@ -380,7 +370,7 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION G: Clay Eluviation/Illuviation and the Soil Forming Factors
+## INVESTIGATION F: Clay Eluviation/Illuviation and the Soil Forming Factors
 
 **Graph** the % clay for each profile with depth. When we graph the clay % with depth we can easily identify whether or not there is a peak in clay percentage in the B horizon which is indicative of the eluviation of clay from the top of the profile and its illuviation lower in the profile. (Note: these are micro-monoliths at 1:4 scale, or 1 inch on monolith = 4 inches on the graph).
 
@@ -398,9 +388,9 @@ $$\\[0.5in]$$
 
 {{< pagebreak >}}
 
-## INVESTIGATION H: Properties from Factors and Factors from Properties
+## INVESTIGATION G: Properties from Factors and Factors from Properties
 
-Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the "Soil Forming Factors" and "Soil Properties" tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils. Use both tables to determine missing information.
+Some knowledge of soil forming factors at work on a particular landscape or in the formation of a particular soil allow us to predict soil properties such as horizon morphology, texture, color, organic matter, and mineralogy. Below, complete the tables with the choices given on the handout (use each only once) based on your knowledge from class. Use the information on both the "Soil Forming Factors" and "Soil Properties" tables to fill in the blanks. All of the information you need should be present in these tables, however, you can use the monoliths in the display area to help you with your choices if that helps you to better visualize the soils. **For example, in the first table, there is a blank in the parent material for Port Byron. In the second table, there is information regarding the soil texture in the second table (Silt/Silt Loam). Of the two choices for parent material, the best option therefore is Loess for Port Byron. Use the same technique to fill in the blanks on both tables, using all of the information available to you for that soil.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

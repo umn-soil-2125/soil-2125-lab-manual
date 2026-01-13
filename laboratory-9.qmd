@@ -656,13 +656,10 @@ There are twelve soil orders at the highest hierarchical level of soil taxonomy.
 
 Answer the following questions about soil names. Two examples are provided below.
 
-$$\\[0.05in]$$
 
 **EXAMPLE:** Name the order and suborder for the Okeechobee soil (Euic, hyperthermic, Hemic Haplosaprists).
 
 Order - *Histosol*; Suborder: *Saprist*
-
-$$\\[0.05in]$$
 
 **EXAMPLE:** List two characteristics of the Okeechobee based on the suborder name.
 

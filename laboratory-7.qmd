@@ -24,9 +24,11 @@
 -   Precipitated
 :::
 
+{{< pagebreak >}}
+
 ## INVESTIGATION A: Mineral Identification
 
-Minerals, even of the same type, can vary in color and physical properties making visual identification challenging. Some of the most common and important primary soil minerals are quartz, orthoclase (feldspar), micas (biotite and muscovite), apatite, and calcite, and amphiboles/pyroxenes. Common iron-containing soil minerals are goethite and hematite. Check each one off as you read the description and examine the specimen provided.
+Minerals, even of the same type, can vary in color and physical properties making visual identification challenging. Some of the most common and important primary soil minerals are quartz, orthoclase (feldspar), micas (biotite and muscovite), apatite, and calcite, and amphiboles/pyroxenes. Common iron-containing soil minerals are goethite and hematite. **Check each one off as you read the description and examine the specimen provided.**
 
 **PRIMARY MINERALS** are formed from the original crystallization and solidification of magma). These minerals are present in igneous rocks and can be present in sedimentary rocks and metamorphic rocks if they survive the weathering process (sedimentary) or increased heat and pressure (metamorphic).
 
@@ -49,6 +51,8 @@ Minerals, even of the same type, can vary in color and physical properties makin
 □ **Goethite** (FeOOH) (pronounced GUR-tite) is an oxidized iron mineral (iron oxide) that gives many Minnesota soils their brown color. In soils, it is found mostly as thin coatings on soil particles. Goethite is often a secondary mineral, meaning that it forms through the weathering of other primary minerals such as basalt. The example given is from a large geologic deposit of Goethite -- we would never observe such a large accumulation of pure Goethite in soils.
 
 □ **Hematite** (Fe~2~O~3~) is another iron oxide mineral that gives other Minnesota soils a reddish color, especially those in northeast Minnesota. Hematite is the iron oxide mineral that made the Iron Range of Minnesota famous. Like goethite, it is found as thin coatings on soil particles. The example given is from a large geologic deposit of Hematite -- we would never observe such a large accumulation of pure Hematite in soils.
+
+{{< pagebreak >}}
 
 ## INVESTIGATION B: Rock Identification -- Rocks are Aggregates of Minerals
 
@@ -222,11 +226,11 @@ tab1.1
 
 {{< pagebreak >}}
 
-## INVESTIGATION C: Mineral Identification in the Sand Fraction
+## INVESTIGATION C: Mineral Identification and Abundance in the Sand Fraction
 
-Minerals, even of the same type, can vary in color and physical properties making visual four soil samples have been washed and sieved to remove the silt and clay leaving only the larger sand grains. Sand grains can range in size from 0.05 to 2 mm in diameter. Observe the four samples under the microscope. Fill out the Soil Mineral Observations table below. Record the presence of any quartz, feldspars, amphiboles/pyroxenes, shale, limestone, and organic matter. Use your findings from Investigations A and B and other examples provided to help with identification. Record the quantity of each fragment as "N," "F," "C," or "M" in the square under the corresponding mineral or mineral color. Consult the table legend and two other tables below. Describe the color of any coatings and state which minerals have coatings. Coatings usually only partially cover the grain.
+Four soil samples have been washed and sieved to remove the silt and clay leaving only the larger sand grains. Observe the four samples under the microscope. Fill out the Soil Mineral Abundance Estimates table below for each sample. Record the presence of any quartz, feldspars, amphiboles/pyroxenes, shale, limestone, and organic matter. See the examples provided of these minerals to help with identification. Estimate the abundance of each of the major minerals groups as a proportion of the whole sample. Record your estimate of each mineral as “N,” “F,” “C,” or “M” in the square under the corresponding mineral type.
 
-**SOIL MINERAL OBSERVATIONS**
+**SAND GRAIN MINERAL ABUNDANCE ESTIMATES**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -283,7 +287,7 @@ tab1.1
 
 Qz = quartz (colorless/frosted) Feld = feldspars (pink/grey) A./P. = amphiboles/pyroxenes (dark/black) Sh = shale (dull gray/brown) Ls = limestone (chalky white) Color = overall sand color (grey, brown, red, etc.)
 
-**Quantity of Fragments**
+**Abundance Classes**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -334,7 +338,7 @@ tab1.1 = classabbr_ht %>%
 tab1.1
 ```
 
-**Area of Coverage**
+**Example Areas of Coverage**
 
 2%           ![2% area covered](area-of-coverage-2-Picture1.png){#fig-2}
 
@@ -356,7 +360,7 @@ Physical weathering involves mechanical processes by which rocks exposed to weat
 
 -   **Unloading/Exfoliation**: Many rocks are formed at great depth under intense temperatures and pressures. As these rocks make their way to the surface and overlying rock is removed through erosion, some of the pressure is released. This release of pressure causes the rock to fracture horizontally. Cracks of this type increase in number as the rock reaches the surface.
 
-Observe the examples of physical weathering, then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process. Weathering processes can be reused.
+Observe the examples of physical weathering and complete the table below. **Using the descriptions above and images from lecture 3.1, record ONE POTENTIAL physical weathering process for each example.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -420,7 +424,7 @@ Chemical weathering involves chemical processes by which rocks and minerals expo
 
 -   **Acidification**: Dissolving of calcium carbonate (limestone) in acidic groundwater or rainwater. One consequence of this process is the formation of caves in limestone areas.
 
-Observe the examples of chemical weathering then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process.
+Observe the examples of chemical weathering then complete the table below. **Using the descriptions above and images from lecture 3.1, record ONE POTENTIAL chemical weathering process for each example.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -480,7 +484,7 @@ Biological weathering involves physical and chemical processes by which organism
 
 -   **Lichen**: Lichen play an important part in chemical weathering because they producing organic acids that act as chelating (chelate = claw, it is a compounds that "grabs" elements such as Fe) agents that trap the insoluble elements of the decomposing rock in soluble organo-metallic complexes and destroy the crystal structure of the component minerals.
 
-Observe the examples of biological weathering then complete the table below. Record ONE POTENTIAL weathering process for each example and give a brief description of the process.
+Observe the examples of chemical weathering then complete the table below. **Using the descriptions above and images from lecture 3.1, record ONE POTENTIAL chemical weathering process for each example.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -564,12 +568,4 @@ c.  What type of weathering does this represent (i.e. chemical, physical, or bio
 
 $$\\[0.05in]$$
 
-3.  How might physical weathering help promote chemical weathering? $$\\[0.05in]$$
-
-## INVESTIGATION F: Naming Master Horizons - Review
-
-Observe the six mini-monoliths on the table. The monoliths are scaled so that one inch on a monolith equals four inches on a soil profile. Label the master horizons and the mark depths of these horizons for monoliths 2 through 3. Monolith 1 is done for you. Note that horizon depth is always measured from the soil surface. All profiles are 48" deep. NOTE: There are no "O" (organic) horizons in this investigation.
-
-![Naming Master Horizons](naming-master-horizons-Picture1.png){#fig-horizons}
-
-**Remember: 1 monolith inch = 4 soil profile inches**
+3.  How might physical weathering help promote chemical weathering?

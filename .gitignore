@@ -17,3 +17,5 @@
 ### Quarto ###
 .quarto/
 /.quarto/
+
+**/*.quarto_ipynb

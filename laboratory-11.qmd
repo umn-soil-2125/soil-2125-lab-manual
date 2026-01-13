@@ -18,10 +18,6 @@
 -   Fertilizer grade
 :::
 
-## PRE-LAB PREP
-
-Collect approximately 1 cup of soil from anywhere! A garden or farm, park, boulevard, or yard are all good places, but anywhere else is fine too! Make sure to sample only to a 0-3 inch depth. **Optional**: Determine the texture of your soil sample using the ribbon method and record it.
-
 {{< pagebreak >}}
 
 ## INVESTIGATION A: Macronutrient Cycles
@@ -94,7 +90,7 @@ $$\\[0.25in]$$
 
 {{< pagebreak >}}
 
-## INVESTIGATION B: Measuring Soil pH and Nitrate Levels with Test Strips
+## INVESTIGATION B: Estimating Soil pH and Nitrate Levels with Test Strips
 
 Below are instructions for prepping two different setups for soil analysis using pH and nitrate strips. **Preparing them in advance will be helpful to you as they need 10 mins before reading.** We are using test strips in the lab to provide a rapid indication of the pH and nitrate in your soil sample. However, note that for making detailed decisions regarding soil management and plant growth, you would want a more accurate, laboratory measurement of pH and nitrate.
 
@@ -128,9 +124,7 @@ Below are instructions for prepping two different setups for soil analysis using
 
 **Estimated Nitrate-Nitrogen (NO3 -- N) in lbs /acre formula below.**
 
-Note that "NO3 -- N" does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip.
-
-Assume a bulk density of 1. Refer to the Pre-Lab Prep for depth.
+Note that "NO3 -- N" does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip. Assume a bulk density of 1.0. Use 15cm (~6 inches) for depth.
 
 $$
 NO\ {3}-N\ (lbs/ac) = \frac{(ppm\ extract\ NO_{3}-N)\ *\ (depth\ of\ soil\ sampled\ in\ cm)\ *\ (bulk\ density)\ *\ 0.89}{10}

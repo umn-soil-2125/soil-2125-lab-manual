@@ -33,9 +33,11 @@
 
 ## INVESTIGATION A: Using a Hydrometer to Determine Particle Size
 
-Particle size distribution has become a standard means for characterizing and classifying the fine earth fraction of solid soil particles, and is used to determine the soil texture class. This experiment uses a Bouyoucos hydrometer to measure the density (grams per L) of a liquid mixture ("slurry") of soil and water.
+This experiment uses a Bouyoucos hydrometer to measure the density (grams per L) of a liquid mixture (“slurry”) of soil and water to determine the particle size distribution (sand, silt and clay percentages) of the fine earth portion of a soil sample. Using the hydrometer allows us to determine the grams of particular sizes of soil particles (sand, silt, and, clay) that remain suspended in the cylinder after a specific period of time. Different sized soil particles are separated by their different sedimentation rates – e.g. larger particles will settle faster in a column of water, while smaller particles remain suspended much longer in the solution (based on Stokes Law).
 
-Using the hydrometer allows us to determine soil texture by measuring the grams of the soil particles (sand, silt, and, clay) that remain suspended in the cylinder after a specific period of time. Different sized soil particles are separated by their different sedimentation rates -- e.g. larger particles will settle faster in a column of water, while smaller particles remain suspended much longer in the solution (based on Stokes Law).
+### Preparation
+
+The cylinders in this investigation each contain 60 grams of oven-dry dispersed soil After mixing thor- oughly with a stir stick, the largest particles (sand) will quickly drop to the bottom of the cylinder. After 40 seconds, only silt and clay particles are left suspended in the water. After two hours, only clay-sized particles remain.
 
 ::: callout-note
 ## Watch this video before you start Investigation A
@@ -51,17 +53,13 @@ plot(hydrometer_test_video)
 ```
 :::
 
-### Preparation
-
-The two cylinders in this investigation each contain **60** grams of oven-dry dispersed soil -- one soil is from an E horizon and one is from a B horizon. After mixing thoroughly with a stir stick, the largest particles (sand) will quickly drop to the bottom of the cylinder. After 40 seconds, only silt and clay particles are left suspended in the water. After two hours, only clay-sized particles remain.
-
 ### Measurements
 
 **40 Second Measurement**
 
 1.  Carefully use the stirring rod (approximately 18 inches long with a disk on the end) to completely disperse the soil in the cylinder. This requires that you *slowly* lower and lift the stirring rod up and down in the cylinder until **all the sediment is removed from the bottom of the cylinder.**
 
-2.  After stirring, *carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on the next page. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
+2.  After stirring, immediately note the time to the nearest second. *Carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on the next page. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
 
 3.  After 40 seconds, read the number (at liquid level) on the hydrometer.
 
@@ -69,21 +67,25 @@ The two cylinders in this investigation each contain **60** grams of oven-dry di
 
 **2 Hour Measurement**
 
-1.  Due to time constraints, two hour readings will be provided in lab.
+Due to time constraints, two hour readings will be provided in lab.
+
+{{< pagebreak >}}
 
 ![The soil in the diagram above would have: (60-30)/60 x 100= 50% Sand; 10/60 x100= 17% Clay; 100-50-17=33% Silt)](hydrometer-Picture1.png){#fig-hydrometer}
 
 **Calculations**: correct readings before calculating sand, silt, and clay!
 
 $$
-Sand (\%) = \frac{M_{sample,oven\ dry} - corrected\ 40s \ reading}{M_{sample,oven\ dry}} x 100\ ;\  Clay (\%) = \frac{corrected\ 2hr\ reading}{M_{sample,oven\ dry}} x 100\ ;\ Silt (\%) = 100 - (\% Sand + \% Clay)
+Sand\ (\%) = \frac{M_{sample,oven\ dry} - corrected\ 40s \ reading}{M_{sample,oven\ dry}}\ *\ 100\ 
 $$
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-#make tables here: https://www.tablesgenerator.com/markdown_tables
-```
+$$
+Clay\ (\%) = \frac{corrected\ 2hr\ reading}{M_{sample,oven\ dry}}\ *\ 100\ 
+$$
 
-**Results**
+$$
+Silt\ (\%) = 100 - (\%\ Sand + \%\ Clay)
+$$ **Results**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -192,7 +194,7 @@ The USDA textural triangle is used to classify the texture class of a soil. The 
 
 **Results**
 
-Using the soil particle percent data from Investigation A, determine the texture class for the soil samples 1 and 2.
+Using the soil particle percent data from Investigation A, determine the texture class for the soil samples 1 and 2 and record your estimates in the table below.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -272,10 +274,15 @@ plot(hydrometer_test_video)
 
 5.  Use the provided flow chart and suggested order below to assist in calibrating yourself.
 
-**Practicing -- WASH YOUR HANDS BETWEEN EVERY SAMPLE!!!!!!!** Use the known texture samples to practice texturing soil with the "feel" method.
+### Practicing Texture by Feel
 
-<br>
+Use the **known** texture samples to practice texturing soil with the "feel" method.
 
+::: callout-warning
+RINSE YOUR HANDS IN THE DUNK BUCKETS PROVIDED BETWEEN EVERY SAMPLE! DRY YOUR HANDS WITH A PROVIDED TOWEL. ASK THE TA IF THERE ARE NO CLEAN TOWELS.
+:::
+
+::: callout-tip
 Here is a suggested method of practicing (Nic's method to the madness):
 
 1.  Start with the silt loam -- you should be able to make a ribbon, but \< 1".
@@ -293,8 +300,9 @@ Here is a suggested method of practicing (Nic's method to the madness):
 7.  Finally move to the sand. This should feel extremely gritty and you shouldn't be able to make a ribbon. You need to get sands excessively wet in order make a ball out of them.
 
 8.  Lastly, try moving from the loam to the clay loam and finally the clay. You should feel a clay increase similar to the silt loam to silty clay loam to silty clay samples, but since these all have more sand, they should feel less smooth and more like a mixture of the particle size classes.
+:::
 
-**Note**: Check one box to choose between the characteristics (gritty, smooth, or gritty/smooth). For ribbon length, choose between short (\<1"), medium (1-2"), or long (\>2").
+**Note**: In the table below, check one box to choose between the characteristics (gritty, smooth, or gritty/smooth). For ribbon length, choose between short (\<1"), medium (1-2"), or long (\>2").
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -347,7 +355,9 @@ tab1.1 = texturegritty_ht %>%
 tab1.1
 ```
 
-<br>
+$$\\[3in]$$
+
+### Estimating Unknown Textures by Feel
 
 Texture the following unknown soils and complete the table.
 
@@ -402,6 +412,8 @@ tab1.1 = texturegrittysmooth_ht %>%
 
 tab1.1
 ```
+
+<br>
 
 ## INVESTIGATION D: Soil Color
 
@@ -486,12 +498,11 @@ library(dplyr)
 Structure <- c("Granular", "Platy", "Angular Blocky", "Subangular Blocky", "Prismatic")
 Horizon <- c("A", "E", "B", "B", "B")
 Characteristics <- c("", "", "", "", "")
-Cementing <- c("", "", "", "", "")
 
-structurehorizon <- data.frame(Structure, Horizon, Characteristics, Cementing)
-colnames(structurehorizon) = c("Structure", "Common Master Horizon", "Characteristics", "Possible cementing agent or process")
+structurehorizon <- data.frame(Structure, Horizon, Characteristics)
+colnames(structurehorizon) = c("Structure", "Common Master Horizon", "Characteristics")
 
-col.num = 4
+col.num = 3
 row.num = 6 #including header
 
 ################

@@ -206,10 +206,6 @@ tab1.1 = soilnumber_ht %>%
 tab1.1
 ```
 
-**Generally, how do these values compare to your pH predictions in the pre-investigation exercise?**
-
-$$\\[0.25in]$$
-
 {{< pagebreak >}}
 
 ## INVESTIGATION B: Calcareous Soils
@@ -268,11 +264,15 @@ tab1.1
 
 ## INVESTIGATION C: Cation Exchange Observation
 
+### Movement of Charged Dyes Through Soil
+
 Solutions of two dyes (Eosin red: negatively charged (-); and Methylene blue: positively charged (+)) were added to the soil in the filter and the leachate was collected in the flask.
 
 Explain the predominant color observed in the leachate after the solution filtered through the soil into the flask. What color do you see? What is the reason for this?
 
-$$\\[0.5in]$$
+{{< pagebreak >}}
+
+### Soil pH in Water and a Salt Solution
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -322,13 +322,15 @@ tab1.1 = slurrypH_ht %>%
 tab1.1
 ```
 
-Explain why adding a concentrated salt (which contains no H+ ions) would decrease the pH (increase the number of H+ ions in solution). HINT: Cation exchange plays a huge role!
+Explain why adding a concentrated salt (which contains no H+ ions) would decrease the pH (increase the number of H+ ions in solution). HINT: Cation exchange plays a huge role! See Lecture 2.1 and 2.2 slides for more information.
 
 {{< pagebreak >}}
 
-## INVESTIGATION D: Saline Soils
+## INVESTIGATION D: Soil Salinity
 
-Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not. **READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), *divide* the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m.
+Determine the electrical conductivity of each soil slurry provided using the conductivity meter. You will have to convert the reading on the meter to the units of dS/m to determine if the soil would classify as a saline soil or not.
+
+**READ CAREFULLY: The meter will output two different salinity units depending on the concentration of salts in the solution or slurry.** If the conductivity meter is reading a number in microsiemens (uS), *divide* the number by 1000 to obtain the salinity in dS/m. If the conductivity meter is reading a number in millisiemens (mS), the number on the display is equivalent to dS/m.
 
 ::: callout-note
 ## **Watch brief video on how to use electrical conductivity meter. If you have any questions, please ask the TA for assistance.**
@@ -356,12 +358,12 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-SoilNumber <- c("", "Deionized Water", "Tap Water", "1", "2", "3", "4", "5", "6", "7", "8")
-EC <- c("EC (dS/m)", "", "", "", "", "", "", "", "", "", "")
+SampleNumber <- c("", "Deionized Water", "Tap Water", "1", "2", "3", "4", "5", "6", "7", "8")
+EC <- c("EC (uS/m)", "", "", "", "", "", "", "", "", "", "")
 Salinity <- c("Saline Soil (Yes/No); recall that soil is saline if the EC is > 4 dS/m", "", "", "", "", "", "", "", "", "", "")
 
-soilnumbersalinity <- data.frame(SoilNumber, EC, Salinity)
-colnames(soilnumbersalinity) = c("Soil Number", "Salinity", "Salinity")
+soilnumbersalinity <- data.frame(SampleNumber, EC, Salinity)
+colnames(soilnumbersalinity) = c("Sample Number", "Electrical Conductivity", "Salinity")
 
 col.num = 3
 row.num = 12 #including header
@@ -398,10 +400,6 @@ tab1.1 = soilnumbersalinity_ht %>%
 tab1.1
 ```
 
-6.  Very generally, compare these values to your predictions in the pre-investigation exercise:
-
-<br> <br> <br> <br>
-
 {{< pagebreak >}}
 
 ## INVESTIGATION E: Calculation and Interpretation of CEC, pH and Salinity
@@ -435,12 +433,6 @@ $$\\[0.1in]$$
 7.  What major problems for plant growth would you expect to encounter in Sodic soils?
 
 $$\\[0.25in]$$
-
-Now, consider the geographic location and climate of all 8 soil samples you investigated (from the table on the first page of this lab):
-
-8.  Soils 5 and 6 both occur in a temperate/humid climate and in relatively close proximity (Soil 5 is from East-Central MN and Soil 6 is from West-Central MN). They were both formed in parent material that dropped out of glacial ice (termed glacial till). However, their CECs, mineralogies, calcareous status, and pHs are very different. What "tale" did we talk about in class (see the end of lecture 1.8 -- soil pH) that would account for these differences?
-
-$$\\[0.5in]$$
 
 ## Soil Water Data Preparation for Next Week's Lab (THIS IS IMPORTANT!)
 

@@ -116,10 +116,6 @@ Explain why Kaolinite does not expand and Smectite does expand.
 
 $$\\[1in]$$
 
-Draw a picture to aid your explanation.
-
-$$\\[1in]$$
-
 {{< pagebreak >}}
 
 ## INVESTIGATION C: Clay Mineral Charges
@@ -141,10 +137,11 @@ What does this tell you about the charge on those clay particles?
 
 ## INVESTIGATION D: Clay Charge, Ion Charge, and Flocculation
 
-1.  Shake up each of the 3 pre-made tubes containing a slurry of a clay-enriched B horizon in eastern MN with 20ml of either deionized H2O, NaCl, or AlCl3. The deionized H2O contains no cations, the NaCl solution contains Na+ ions, and the AlCl3 solution contains Al3+ ions.
-2.  Wait 5 minutes and watch each tube for the formation of colloids (clay particles held together by electrical attraction to an ion) -- when they form, you should be able to see them with your naked eye. The clay colloids will start to settle to the bottom, whereas in the absence of colloid formation the clays will stay in suspension.
+Observe each of the three tubes provided of a soil slurry (from a soil with a clay loam texture) that has been shaken with three different solutions: de-ionized water (containing virtually no ions), NaCl (containing dissolved Na+ cations), and AlCl3 (containing dissolved Al3+ cations). These tubes were shaken up and allowed to settle for approximately 8 hours.
 
-Record your observations in the table below. PAY ATTENTION TO THE CLARITY OF THE LIQUID AT THE TOP OF EACH TUBE OF SLURRYS AFTER 5 MINUTES. High clarity indicates the absence of suspended clay particles, while cloudy liquid indicates that clay particles are still floating around in suspension and have not settled out.
+Record your observations of each tube in the table below. PAY ATTENTION TO THE CLARITY OF THE LIQUID AT THE TOP OF EACH TUBE. High clarity indicates the absence of suspended fine clay particles, while cloudy liquid indicates that clay particles are still floating around in suspension and have not settled out.
+
+**Record your observations of water clarity, depth to the settled soil particles from the top of the water column, and how easily you can see the “floccules” or conglomeration of clay particles caused by any introduced ions.**
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -156,10 +153,12 @@ library(dplyr)
 Slurry <- c("DI-H20", "NaCl", "AlCl3") 
 Ion <- c("None", "Na+", "Al3+")
 WaterClarity <-c("", "", "")
+DepthtoSediment <-c("", "", "")
+Floccules <-c("", "", "")
 
-slurryion <- data.frame(Slurry, Ion, WaterClarity)
+slurryion <- data.frame(Slurry, Ion, WaterClarity, DepthtoSediment, Floccules)
 
-colnames(slurryion) = c("Solution", "Ion", "Water Clarity")
+colnames(slurryion) = c("Solution", "Ion", "Water Clarity", "Depth to Sediment", "Easy to See Floccules?")
 
 ################
 ## SET AS HUXTABLE TYPE
@@ -177,13 +176,13 @@ tab1.1 = slurryion_ht %>%
       set_bold(row = 1, col = everywhere) %>% #make header row bold
       #set_bottom_border(row = 1, col = everywhere) %>% # probably dont need this because you set all borders below
       set_width(0.9) %>% #; 1 == full width
-      set_align(row = 1:4, col = 1:3, value = 'center') %>%
+      set_align(row = 1:4, col = 1:5, value = 'center') %>%
       #set_valign(row = 2:3, col = 1:2, value = 'middle') %>%
       #set_number_format(2:3, 1, value = NA) %>% #; don't format these cells as numbers
       #set_col_width(c(0.3, 0.6)) %>%
       set_latex_float(value = "h!") %>%
       #set_row_height(1:3, c(0.02, 0.2, 0.2)) %>%
-      set_bottom_padding(4, 1:3, 10) %>%
+      set_bottom_padding(4, 1:5, 10) %>%
       #set_top_padding(2:3, 1:2, 60) %>%
       #set_row_height(c(0.02, 0.2, 0.2)) %>%
       set_all_borders(brdr(1, "solid", "black"))

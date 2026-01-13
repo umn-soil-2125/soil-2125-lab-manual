@@ -29,7 +29,7 @@
 
 ## INVESTIGATION A: Forms of Nitrogen
 
-You will probably come across many complex and confusing representations of the nitrogen cycle in other venues. Use your knowledge of the simplified representation of the nitrogen cycle that we discussed in class to fill in the blanks in the appropriate places on the diagram below (which I note is also incomplete).
+You will probably come across many complex and confusing representations of the nitrogen cycle in other venues. Use your knowledge of the simplified representation of the nitrogen cycle that we discussed in class and the chalkboard in lab to fill in the blanks in the appropriate places on the diagram below (which I note is also incomplete).
 
 ![The Nitrogen Cycle](forms-of-nitrogenPicture1.png){#fig-nitrogen}
 
@@ -90,9 +90,7 @@ Observe the roots of the live alfalfa and soybean plants (both uninoculated (no 
 
 Draw a diagram of a nodule and a root:
 
-<br> <br>
-
-{{< pagebreak >}}
+$$\\[0.6in]$$
 
 ## INVESTIGATION B2: Dissecting Nodules
 
@@ -114,6 +112,18 @@ The ability of a soil aggregate to withstand disruption by water depends in larg
 2.  Place each aggregate on a screen.
 3.  Immerse the screen below the water level of the container.
 4.  Observe differences between the aggregates in terms of their ability to withstand disruption by water. You should see that one of the aggregates "slakes" or falls apart significantly faster than the other.
+
+::: callout-note
+##  Watch this video before you complete this investigation
+```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width = "25%"}
+library(qrcode)
+
+hydrometer_test_video <- qrcode::qr_code("https://youtube.com/watch?v=8Q3uqN-0rlU")
+#print(hydrometer_test_video)
+plot(hydrometer_test_video)
+```
+:::
+
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
