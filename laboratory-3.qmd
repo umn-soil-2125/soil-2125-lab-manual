@@ -241,7 +241,7 @@ Direct method: $$\\[0.1in]$$ Indirect method:
 
 ## INVESTIGATION C: Bulk Density of Mineral Soils
 
-Soil bulk density is also highly correlated with soil texture and organic matter content. Each of the tupper- wares has been filled with the same volume of a range of materials. Lift up each tupperware and do your best to estimate their relative masses, ordering them from lowest bulk density (lightest) to highest bulk density (heaviest). Write down the box number and material (provided on box label) in the right column of the table below.
+Soil bulk density is also highly correlated with soil texture and organic matter content. Each of the tupper- wares has been filled with the same volume of a range of materials. **Lift up each tupperware and do your best to estimate their relative masses, ordering them from lowest bulk density (lightest) to highest bulk density (heaviest).** Write down the box number and material (provided on box label) in the right column of the table below.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
@@ -295,7 +295,7 @@ Give a general description of why the soil materials are ranked that way. Using 
 
 $$\\[0.5in]$$
 
-## INVESTIGATION D: Soil Organic Matter
+## INVESTIGATION D: Soil Organic Matter Estimation from Color
 
 You can use soil color to roughly estimate the amount of organic matter within a soil. Use the Munsell color charts and the estimation cards to determine soil color and the subsequent amount of soil organic matter.
 

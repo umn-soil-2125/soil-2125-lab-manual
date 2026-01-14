@@ -20,8 +20,8 @@ book:
     - laboratory-8.qmd
     - laboratory-9.qmd
     - laboratory-10.qmd
-    - laboratory-12.qmd # switched chemical and physical for 25 and 26. not renumbering file names
     - laboratory-11.qmd
+    - laboratory-12.qmd
     #- summary.qmd
     #- references.qmd
 

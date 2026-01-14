@@ -24,7 +24,7 @@
 
 ## PRE-INVESTIGATION
 
-In this laboratory exercise, you will be working with a set of 8 soils that vary in their CEC, base saturation, pH, and salinity. Material from lectures 1.8 and 2.2 will help you. To predict CEC, focus on the mineralogy, texture and OM% (soils with high OM, more clay, and 2:1 minerals will have higher CEC). To predict pH, calcareous status, and salinity, think about the climate that these soils come from (soils in wetter climates typically have lower pH, and are not calcareous -- only soils in the driest climates are usually saline because water dissolves salts). Fill out the table on the next page before you begin; **you are strongly encouraged to work in groups!** When you have completed the pre-exercise, have the TA check it over and proceed with the lab exercises.
+In this laboratory exercise, you will be working with a set of 8 soils that vary in their CEC, base saturation, pH, and salinity. Material from lectures 1.8 and 2.1/2.2 will help you. To predict CEC, focus on the mineralogy, texture and OM% (soils with high OM, more clay, and 2:1 minerals will have higher CEC). To predict pH, calcareous status, and salinity, think about the climate that these soils come from (soils in wetter climates typically have lower pH, and are not calcareous -- only soils in the driest climates are usually saline because water dissolves salts). Fill out the table on the next page before you begin; **you are strongly encouraged to work in groups!** When you have completed the pre-exercise, have the TA check it over and proceed with the lab exercises.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

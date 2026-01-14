@@ -213,7 +213,7 @@ $$\\[0.5in]$$
 
 {{< pagebreak >}}
 
-## INVESTIGATION F: Clay Soils
+## INVESTIGATION F: Soil Texture, Mineralogy, and Cracking Behavior
 
 Two soils have been set out for you to look at. One is dominated by Kaolinite clays and one by Smectite clays. Both soils have a clay percentage greater than 35%. Unlike the Kaolinite and Smectite clays in Investigation E, which are from mined geological deposits, these are real soil materials (dominated by each of these different clay types) and so they have color associated with them which is not due to the clay minerals alone.
 

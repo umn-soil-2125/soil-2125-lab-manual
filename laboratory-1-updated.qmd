@@ -57,7 +57,7 @@ plot(hydrometer_test_video)
 
 **40 Second Measurement**
 
-1.  Carefully use the stirring rod (approximately 18 inches long with a disk on the end) to completely disperse the soil in the cylinder. This requires that you *slowly* lower and lift the stirring rod up and down in the cylinder until **all the sediment is removed from the bottom of the cylinder.**
+1.  Carefully use the stirring rod (approximately 18 inches long with a disk on the end) to completely disperse the soil in the cylinder. This requires that you **quickly** lower and lift the stirring rod up and down in the cylinder until **all the sediment is removed from the bottom of the cylinder.**
 
 2.  After stirring, immediately note the time to the nearest second. *Carefully* and *slowly* insert the hydrometer (**the hydrometers are extremely fragile**) into the cylinder. Please refer to the figure on the next page. *Note*: you may need to use your finger to stop the hydrometer from bobbing.
 
@@ -94,7 +94,7 @@ library(dplyr)
 ################
 ## BUILD TABLE
 ################
-Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected)", "Temperature (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @2hr (C)", "2hr reading (corrected)", "% Clay", "% Silt")
+Measurements <- c("Sample mass (oven-dry)", "40s reading (uncorrected)", "Temperature @ 40s (C)", "40s reading (corrected)", "% Sand", "2hr reading (uncorrected)", "Temperature @ 2hr (C)", "2hr reading (corrected)", "% Clay", "% Silt")
 Sample1 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 Sample2 <- c("60 g", "g/L", "ºC", "g/L", "%", "g/L", "ºC", "g/L", "%", "%")
 
@@ -302,7 +302,7 @@ Here is a suggested method of practicing (Nic's method to the madness):
 8.  Lastly, try moving from the loam to the clay loam and finally the clay. You should feel a clay increase similar to the silt loam to silty clay loam to silty clay samples, but since these all have more sand, they should feel less smooth and more like a mixture of the particle size classes.
 :::
 
-**Note**: In the table below, check one box to choose between the characteristics (gritty, smooth, or gritty/smooth). For ribbon length, choose between short (\<1"), medium (1-2"), or long (\>2").
+**Note**: In the table below, check one box to choose between the characteristics (gritty, smooth, or gritty/smooth) that you feel for each texture class.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)

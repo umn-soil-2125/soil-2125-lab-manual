@@ -124,7 +124,7 @@ Below are instructions for prepping two different setups for soil analysis using
 
 **Estimated Nitrate-Nitrogen (NO3 -- N) in lbs /acre formula below.**
 
-Note that "NO3 -- N" does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip. Assume a bulk density of 1.0. Use 15cm (~6 inches) for depth.
+Note that "NO3 -- N" does not mean subtract a value for N from a value for NO3; it just refers to the form of nitrogen, which is nitrate. It is pronounced as "nitrate nitrogen" and is one value - the value given by the test strip. Assume a bulk density of 1.0. Use 15cm (\~6 inches) for depth.
 
 $$
 NO\ {3}-N\ (lbs/ac) = \frac{(ppm\ extract\ NO_{3}-N)\ *\ (depth\ of\ soil\ sampled\ in\ cm)\ *\ (bulk\ density)\ *\ 0.89}{10}
@@ -467,7 +467,7 @@ tab1.1
 
 ## INVESTIGATION F: Reading and Using a Soil Test Report
 
-Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil reports from the soil we observed in the field last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain using row/drill fertilizer application.
+Soil testing is a useful nutrient management tool. If used in a predictive mode, a soil test can reduce the environmental risks from the addition of nutrients to the soil while optimizing plant growth. There are two soil test reports from the soil we observed in the field on campus last week on the bench. One has soil test results and recommendations for a lawn and garden, while the other report is for future farm and field planting. Fill in the following table of each soil test. Note that recommendations are in P2O5 and K2O, so there is no need to convert. Use the farm and field report to make a recommendation for planting corn or grain using row/drill fertilizer application.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(huxtable)
