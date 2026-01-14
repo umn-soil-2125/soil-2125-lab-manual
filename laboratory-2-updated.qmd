@@ -215,7 +215,8 @@ $$\\[0.5in]$$
 
 ## INVESTIGATION F: Soil Texture, Mineralogy, and Cracking Behavior
 
-Two soils have been set out for you to look at. One is dominated by Kaolinite clays and one by Smectite clays. Both soils have a clay percentage greater than 35%. Unlike the Kaolinite and Smectite clays in Investigation E, which are from mined geological deposits, these are real soil materials (dominated by each of these different clay types) and so they have color associated with them which is not due to the clay minerals alone.
+Two soils have been set out for you to look at. One is dominated by Kaolinite clays and one by Smectite clays. Both soils have a clay percentage greater than 35%. You should notice significant differences in cracking behavior when dried, which is related to both the
+texture (how much clay is in the soil) AND the mineralogy. Unlike the Kaolinite and Smectite clays in Investigation E, which are from mined geological deposits, these are real soil materials (dominated by each of these different clay types) and so they have color associated with them which is not due to the clay minerals alone.
 
 Note the wetted and dried samples of each and describe what you see in terms of its behavior. Describe the characteristics of each.
 
